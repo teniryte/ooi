@@ -4,7 +4,9 @@
       <div class="section">
         <div class="section--miniheader">
           <h3>
-            <a href="#section-{{this.lowerName}}" class="ooi-contents__sections__section large-button">
+            <a href="#section-{{this.lowerName}}"
+              data-name={{name}}
+              class="ooi-contents__sections__section large-button">
               <div class="ooi-contents__sections__section__header">
                 🚀 {{name}}
               </div>
@@ -17,7 +19,12 @@
         </div>
         <div class="ooi-contents__sections__section__docs">
           {{#each docs}}
-            <a href="javascript: void(0);" class="ooi-contents__doc large-button large-button--secondary" data-expanded="false" onclick="this.dataset.expanded = this.dataset.expanded === 'true' ? 'false' : 'true'; /* window.activeDoc ? window.activeDoc.dataset.expanded = 'false' : ''; window.activeDoc = this; */">
+            <a
+              href="javascript: void(0);"
+              data-section={{section}}
+              class="ooi-contents__doc large-button large-button--secondary"
+              data-expanded="false"
+              onclick="this.dataset.expanded = this.dataset.expanded === 'true' ? 'false' : 'true'; /* window.activeDoc ? window.activeDoc.dataset.expanded = 'false' : ''; window.activeDoc = this; */">
               <div class="ooi-contents__doc__header">
                 <div class="ooi-contents__doc__header__type">{{type}}</div>
                 <div class="ooi-contents__doc__header__name">{{{call}}}</div>
