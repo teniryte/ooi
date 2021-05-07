@@ -17,17 +17,25 @@
         </div>
         <div class="ooi-contents__sections__section__docs">
           {{#each docs}}
-            <a href="javascript: void(0);" class="ooi-contents__doc large-button large-button--secondary" data-expanded="false" onclick="this.dataset.expanded = this.dataset.expanded === 'true' ? 'false' : 'true'; window.activeDoc ? window.activeDoc.dataset.expanded = 'false' : ''; window.activeDoc = this;">
+            <a href="javascript: void(0);" class="ooi-contents__doc large-button large-button--secondary" data-expanded="false" onclick="this.dataset.expanded = this.dataset.expanded === 'true' ? 'false' : 'true'; /* window.activeDoc ? window.activeDoc.dataset.expanded = 'false' : ''; window.activeDoc = this; */">
               <div class="ooi-contents__doc__header">
                 <div class="ooi-contents__doc__header__type">{{type}}</div>
-                <div class="ooi-contents__doc__header__name">{{{name}}}</div>
+                <div class="ooi-contents__doc__header__name">{{{call}}}</div>
               </div>
               <div class="ooi-contents__doc__desc">
                 {{{desc}}}
               </div>
               <div class="ooi-contents__doc__code">
                 <pre><code class="lang-js language-javascript language-js">{{{code}}}</code></pre>
-              </div>         
+              </div>
+              {{#if deps.length}}
+                <div class="ooi-contents__doc__deps ooi-contents__doc__desc">
+                  <strong>Зависимости:</strong> {{{depsDisplay}}}
+                </div>
+              {{/if}}
+              <div class="ooi-contents__doc__file ooi-contents__doc__desc">
+                <strong>Файл:</strong> <code>ooi/{{{file}}}</code>
+              </div>
             </a>
           {{/each}}
         </div>

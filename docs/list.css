@@ -11,6 +11,28 @@
 .markdown-body .forum-teniryte .ooi-contents__sections__section__docs .ooi-contents__doc {
   min-width: 300px !important;
 }
+.markdown-body .forum-teniryte .ooi-contents__sections__section__docs .ooi-contents__doc .ooi-contents__doc__deps {
+  display: none !important;
+  margin-top: 10px !important;
+}
+.markdown-body .forum-teniryte .ooi-contents__sections__section__docs .ooi-contents__doc[data-expanded="true"] {
+  display: block !important;
+  margin-bottom: 20px !important;
+}
+.markdown-body .forum-teniryte .ooi-contents__sections__section__docs .ooi-contents__doc[data-expanded="true"] .ooi-contents__doc__deps {
+  display: block !important;
+}
+.markdown-body .forum-teniryte .ooi-contents__sections__section__docs .ooi-contents__doc .ooi-contents__doc__file {
+  display: none !important;
+  margin-top: 10px !important;
+}
+.markdown-body .forum-teniryte .ooi-contents__sections__section__docs .ooi-contents__doc[data-expanded="true"] {
+  display: block !important;
+  margin-bottom: 20px !important;
+}
+.markdown-body .forum-teniryte .ooi-contents__sections__section__docs .ooi-contents__doc[data-expanded="true"] .ooi-contents__doc__file {
+  display: block !important;
+}
 .markdown-body .forum-teniryte .ooi-contents__sections__section__docs .ooi-contents__doc .ooi-contents__doc__code {
   display: none !important;
   margin-top: 10px !important;
