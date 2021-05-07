@@ -19,6 +19,20 @@
           type="text/css"
           media="all"
           href="./list.css" />
+        <link
+          rel="stylesheet"
+          type="text/css"
+          media="all"
+          href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/monokai.min.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/languages/javascript.min.js"></script>
+        <script>
+          document.addEventListener('DOMContentLoaded', (event) => {
+            document.querySelectorAll('pre code').forEach((block) => {
+              hljs.highlightBlock(block);
+            });
+          });
+        </script>
       
   </head>
   <body>
@@ -58,54 +72,85 @@
         <div class="section--miniheader">
           <h3>
             <a href="#section-arrays" class="ooi-contents__sections__section large-button">
-              🚀 Arrays
+              <div class="ooi-contents__sections__section__header">
+                🚀 Arrays
+              </div>
+              <div class="ooi-contents__sections__section__desc">
+                <span>Section,</span>
+                <strong>5 tools</strong>
+              </div>
             </a>
           </h3>
         </div>
         <div class="ooi-contents__sections__section__docs">
-            <a href="#doc-append" class="ooi-contents__doc large-button large-button--secondary">
+            <a href="javascript: void(0);" class="ooi-contents__doc large-button large-button--secondary" data-expanded="false" onclick="this.dataset.expanded = this.dataset.expanded === 'true' ? 'false' : 'true'; window.activeDoc ? window.activeDoc.dataset.expanded = 'false' : ''; window.activeDoc = this;">
               <div class="ooi-contents__doc__header">
                 <div class="ooi-contents__doc__header__type">function</div>
-                <div class="ooi-contents__doc__header__name">append(arr, ...items) <span style="color: #666;">=></span> <span style="color: #0087e0;">arr</span></div>
+                <div class="ooi-contents__doc__header__name">append</div>
               </div>
               <div class="ooi-contents__doc__desc">
                 Appends elements to array.
+              </div>
+              <div class="ooi-contents__doc__code">
+                <pre><code class="lang-js language-javascript language-js">import append from 'ooi/append';
+
+let result = append(arr, ...items);</code></pre>
               </div>         
             </a>
-            <a href="#doc-concat" class="ooi-contents__doc large-button large-button--secondary">
+            <a href="javascript: void(0);" class="ooi-contents__doc large-button large-button--secondary" data-expanded="false" onclick="this.dataset.expanded = this.dataset.expanded === 'true' ? 'false' : 'true'; window.activeDoc ? window.activeDoc.dataset.expanded = 'false' : ''; window.activeDoc = this;">
               <div class="ooi-contents__doc__header">
                 <div class="ooi-contents__doc__header__type">function</div>
-                <div class="ooi-contents__doc__header__name">concat() <span style="color: #666;">=></span> <span style="color: #0087e0;">array</span></div>
+                <div class="ooi-contents__doc__header__name">concat</div>
               </div>
               <div class="ooi-contents__doc__desc">
                 Concatenates arrays.
+              </div>
+              <div class="ooi-contents__doc__code">
+                <pre><code class="lang-js language-javascript language-js">import concat from 'ooi/concat';
+
+let result = concat();</code></pre>
               </div>         
             </a>
-            <a href="#doc-ensure-array" class="ooi-contents__doc large-button large-button--secondary">
+            <a href="javascript: void(0);" class="ooi-contents__doc large-button large-button--secondary" data-expanded="false" onclick="this.dataset.expanded = this.dataset.expanded === 'true' ? 'false' : 'true'; window.activeDoc ? window.activeDoc.dataset.expanded = 'false' : ''; window.activeDoc = this;">
               <div class="ooi-contents__doc__header">
                 <div class="ooi-contents__doc__header__type">function</div>
-                <div class="ooi-contents__doc__header__name">ensureArray() <span style="color: #666;">=></span> <span style="color: #0087e0;">array</span></div>
+                <div class="ooi-contents__doc__header__name">ensureArray</div>
               </div>
               <div class="ooi-contents__doc__desc">
                 Wrapper for array.
+              </div>
+              <div class="ooi-contents__doc__code">
+                <pre><code class="lang-js language-javascript language-js">import ensureArray from 'ooi/ensure-array';
+
+let result = ensureArray();</code></pre>
               </div>         
             </a>
-            <a href="#doc-list" class="ooi-contents__doc large-button large-button--secondary">
+            <a href="javascript: void(0);" class="ooi-contents__doc large-button large-button--secondary" data-expanded="false" onclick="this.dataset.expanded = this.dataset.expanded === 'true' ? 'false' : 'true'; window.activeDoc ? window.activeDoc.dataset.expanded = 'false' : ''; window.activeDoc = this;">
               <div class="ooi-contents__doc__header">
                 <div class="ooi-contents__doc__header__type">class</div>
-                <div class="ooi-contents__doc__header__name">List(...values) <span style="color: #666;">=></span> <span style="color: #0087e0;">new List</span></div>
+                <div class="ooi-contents__doc__header__name">List</div>
               </div>
               <div class="ooi-contents__doc__desc">
                 List class.
+              </div>
+              <div class="ooi-contents__doc__code">
+                <pre><code class="lang-js language-javascript language-js">import List from 'ooi/list';
+
+let result = List(...values);</code></pre>
               </div>         
             </a>
-            <a href="#doc-list" class="ooi-contents__doc large-button large-button--secondary">
+            <a href="javascript: void(0);" class="ooi-contents__doc large-button large-button--secondary" data-expanded="false" onclick="this.dataset.expanded = this.dataset.expanded === 'true' ? 'false' : 'true'; window.activeDoc ? window.activeDoc.dataset.expanded = 'false' : ''; window.activeDoc = this;">
               <div class="ooi-contents__doc__header">
                 <div class="ooi-contents__doc__header__type">function</div>
-                <div class="ooi-contents__doc__header__name">list(...array) <span style="color: #666;">=></span> <span style="color: #0087e0;">new List(...array)</span></div>
+                <div class="ooi-contents__doc__header__name">list</div>
               </div>
               <div class="ooi-contents__doc__desc">
                 Creates List object (extends Array) with additional list methods.
+              </div>
+              <div class="ooi-contents__doc__code">
+                <pre><code class="lang-js language-javascript language-js">import list from 'ooi/list';
+
+let result = list(...array);</code></pre>
               </div>         
             </a>
         </div>
@@ -114,54 +159,85 @@
         <div class="section--miniheader">
           <h3>
             <a href="#section-collections" class="ooi-contents__sections__section large-button">
-              🚀 Collections
+              <div class="ooi-contents__sections__section__header">
+                🚀 Collections
+              </div>
+              <div class="ooi-contents__sections__section__desc">
+                <span>Section,</span>
+                <strong>5 tools</strong>
+              </div>
             </a>
           </h3>
         </div>
         <div class="ooi-contents__sections__section__docs">
-            <a href="#doc-clone" class="ooi-contents__doc large-button large-button--secondary">
+            <a href="javascript: void(0);" class="ooi-contents__doc large-button large-button--secondary" data-expanded="false" onclick="this.dataset.expanded = this.dataset.expanded === 'true' ? 'false' : 'true'; window.activeDoc ? window.activeDoc.dataset.expanded = 'false' : ''; window.activeDoc = this;">
               <div class="ooi-contents__doc__header">
                 <div class="ooi-contents__doc__header__type">function</div>
-                <div class="ooi-contents__doc__header__name">clone(data) <span style="color: #666;">=></span> <span style="color: #0087e0;">data</span></div>
+                <div class="ooi-contents__doc__header__name">clone</div>
               </div>
               <div class="ooi-contents__doc__desc">
                 Shallow copy of object.
+              </div>
+              <div class="ooi-contents__doc__code">
+                <pre><code class="lang-js language-javascript language-js">import clone from 'ooi/clone';
+
+let result = clone(data);</code></pre>
               </div>         
             </a>
-            <a href="#doc-deep-clone" class="ooi-contents__doc large-button large-button--secondary">
+            <a href="javascript: void(0);" class="ooi-contents__doc large-button large-button--secondary" data-expanded="false" onclick="this.dataset.expanded = this.dataset.expanded === 'true' ? 'false' : 'true'; window.activeDoc ? window.activeDoc.dataset.expanded = 'false' : ''; window.activeDoc = this;">
               <div class="ooi-contents__doc__header">
                 <div class="ooi-contents__doc__header__type">function</div>
-                <div class="ooi-contents__doc__header__name">deepClone(data) <span style="color: #666;">=></span> <span style="color: #0087e0;">data</span></div>
+                <div class="ooi-contents__doc__header__name">deepClone</div>
               </div>
               <div class="ooi-contents__doc__desc">
                 Deep copy of object
+              </div>
+              <div class="ooi-contents__doc__code">
+                <pre><code class="lang-js language-javascript language-js">const deepClone = require('ooi/deep-clone');
+// or
+const deepClone = require('ooi/clone').deep;</code></pre>
               </div>         
             </a>
-            <a href="#doc-each" class="ooi-contents__doc large-button large-button--secondary">
+            <a href="javascript: void(0);" class="ooi-contents__doc large-button large-button--secondary" data-expanded="false" onclick="this.dataset.expanded = this.dataset.expanded === 'true' ? 'false' : 'true'; window.activeDoc ? window.activeDoc.dataset.expanded = 'false' : ''; window.activeDoc = this;">
               <div class="ooi-contents__doc__header">
                 <div class="ooi-contents__doc__header__type">function</div>
-                <div class="ooi-contents__doc__header__name">each(data, cb) <span style="color: #666;">=></span> <span style="color: #0087e0;">void</span></div>
+                <div class="ooi-contents__doc__header__name">each</div>
               </div>
               <div class="ooi-contents__doc__desc">
                 Iterates over all properties of data and calls cb(value, key) for each of them.
+              </div>
+              <div class="ooi-contents__doc__code">
+                <pre><code class="lang-js language-javascript language-js">import each from 'ooi/each';
+
+let result = each(data, cb);</code></pre>
               </div>         
             </a>
-            <a href="#doc-flatten" class="ooi-contents__doc large-button large-button--secondary">
+            <a href="javascript: void(0);" class="ooi-contents__doc large-button large-button--secondary" data-expanded="false" onclick="this.dataset.expanded = this.dataset.expanded === 'true' ? 'false' : 'true'; window.activeDoc ? window.activeDoc.dataset.expanded = 'false' : ''; window.activeDoc = this;">
               <div class="ooi-contents__doc__header">
                 <div class="ooi-contents__doc__header__type">function</div>
-                <div class="ooi-contents__doc__header__name">flatten(object) <span style="color: #666;">=></span> <span style="color: #0087e0;">object</span></div>
+                <div class="ooi-contents__doc__header__name">flatten</div>
               </div>
               <div class="ooi-contents__doc__desc">
                 Flattens all `object` properties and returns plain object.
+              </div>
+              <div class="ooi-contents__doc__code">
+                <pre><code class="lang-js language-javascript language-js">import flatten from 'ooi/flatten';
+
+let result = flatten(object);</code></pre>
               </div>         
             </a>
-            <a href="#doc-flatten" class="ooi-contents__doc large-button large-button--secondary">
+            <a href="javascript: void(0);" class="ooi-contents__doc large-button large-button--secondary" data-expanded="false" onclick="this.dataset.expanded = this.dataset.expanded === 'true' ? 'false' : 'true'; window.activeDoc ? window.activeDoc.dataset.expanded = 'false' : ''; window.activeDoc = this;">
               <div class="ooi-contents__doc__header">
                 <div class="ooi-contents__doc__header__type">function</div>
-                <div class="ooi-contents__doc__header__name">flatten.unflatten(object) <span style="color: #666;">=></span> <span style="color: #0087e0;">object</span></div>
+                <div class="ooi-contents__doc__header__name">flatten.unflatten</div>
               </div>
               <div class="ooi-contents__doc__desc">
                 Returns object with resurrected properties structure.
+              </div>
+              <div class="ooi-contents__doc__code">
+                <pre><code class="lang-js language-javascript language-js">import flatten.unflatten from 'ooi/flatten';
+
+let result = flatten.unflatten(object);</code></pre>
               </div>         
             </a>
         </div>
@@ -170,72 +246,113 @@
         <div class="section--miniheader">
           <h3>
             <a href="#section-convert" class="ooi-contents__sections__section large-button">
-              🚀 Convert
+              <div class="ooi-contents__sections__section__header">
+                🚀 Convert
+              </div>
+              <div class="ooi-contents__sections__section__desc">
+                <span>Section,</span>
+                <strong>7 tools</strong>
+              </div>
             </a>
           </h3>
         </div>
         <div class="ooi-contents__sections__section__docs">
-            <a href="#doc-base64" class="ooi-contents__doc large-button large-button--secondary">
+            <a href="javascript: void(0);" class="ooi-contents__doc large-button large-button--secondary" data-expanded="false" onclick="this.dataset.expanded = this.dataset.expanded === 'true' ? 'false' : 'true'; window.activeDoc ? window.activeDoc.dataset.expanded = 'false' : ''; window.activeDoc = this;">
               <div class="ooi-contents__doc__header">
                 <div class="ooi-contents__doc__header__type">function</div>
-                <div class="ooi-contents__doc__header__name">base64.decode() <span style="color: #666;">=></span> <span style="color: #0087e0;">string</span></div>
+                <div class="ooi-contents__doc__header__name">base64.decode</div>
               </div>
               <div class="ooi-contents__doc__desc">
                 Converts base64-string to regular string.
+              </div>
+              <div class="ooi-contents__doc__code">
+                <pre><code class="lang-js language-javascript language-js">import base64.decode from 'ooi/base64';
+
+let result = base64.decode();</code></pre>
               </div>         
             </a>
-            <a href="#doc-base64" class="ooi-contents__doc large-button large-button--secondary">
+            <a href="javascript: void(0);" class="ooi-contents__doc large-button large-button--secondary" data-expanded="false" onclick="this.dataset.expanded = this.dataset.expanded === 'true' ? 'false' : 'true'; window.activeDoc ? window.activeDoc.dataset.expanded = 'false' : ''; window.activeDoc = this;">
               <div class="ooi-contents__doc__header">
                 <div class="ooi-contents__doc__header__type">function</div>
-                <div class="ooi-contents__doc__header__name">base64.encode() <span style="color: #666;">=></span> <span style="color: #0087e0;">string</span></div>
+                <div class="ooi-contents__doc__header__name">base64.encode</div>
               </div>
               <div class="ooi-contents__doc__desc">
                 Convert regular string to base64.
+              </div>
+              <div class="ooi-contents__doc__code">
+                <pre><code class="lang-js language-javascript language-js">import base64.encode from 'ooi/base64';
+
+let result = base64.encode();</code></pre>
               </div>         
             </a>
-            <a href="#doc-query" class="ooi-contents__doc large-button large-button--secondary">
+            <a href="javascript: void(0);" class="ooi-contents__doc large-button large-button--secondary" data-expanded="false" onclick="this.dataset.expanded = this.dataset.expanded === 'true' ? 'false' : 'true'; window.activeDoc ? window.activeDoc.dataset.expanded = 'false' : ''; window.activeDoc = this;">
               <div class="ooi-contents__doc__header">
                 <div class="ooi-contents__doc__header__type">function</div>
-                <div class="ooi-contents__doc__header__name">parse(string) <span style="color: #666;">=></span> <span style="color: #0087e0;">object</span></div>
+                <div class="ooi-contents__doc__header__name">parse</div>
               </div>
               <div class="ooi-contents__doc__desc">
                 Parse url query string.
+              </div>
+              <div class="ooi-contents__doc__code">
+                <pre><code class="lang-js language-javascript language-js">import parse from 'ooi/query';
+
+let result = parse(string);</code></pre>
               </div>         
             </a>
-            <a href="#doc-query" class="ooi-contents__doc large-button large-button--secondary">
+            <a href="javascript: void(0);" class="ooi-contents__doc large-button large-button--secondary" data-expanded="false" onclick="this.dataset.expanded = this.dataset.expanded === 'true' ? 'false' : 'true'; window.activeDoc ? window.activeDoc.dataset.expanded = 'false' : ''; window.activeDoc = this;">
               <div class="ooi-contents__doc__header">
                 <div class="ooi-contents__doc__header__type">function</div>
-                <div class="ooi-contents__doc__header__name">query(string | object) <span style="color: #666;">=></span> <span style="color: #0087e0;">object | string</span></div>
+                <div class="ooi-contents__doc__header__name">query</div>
               </div>
               <div class="ooi-contents__doc__desc">
                 If receives not URI string, returns parsed query object. If receives object, returns stringified query url.
+              </div>
+              <div class="ooi-contents__doc__code">
+                <pre><code class="lang-js language-javascript language-js">import query from 'ooi/query';
+
+let result = query(string | object);</code></pre>
               </div>         
             </a>
-            <a href="#doc-query" class="ooi-contents__doc large-button large-button--secondary">
+            <a href="javascript: void(0);" class="ooi-contents__doc large-button large-button--secondary" data-expanded="false" onclick="this.dataset.expanded = this.dataset.expanded === 'true' ? 'false' : 'true'; window.activeDoc ? window.activeDoc.dataset.expanded = 'false' : ''; window.activeDoc = this;">
               <div class="ooi-contents__doc__header">
                 <div class="ooi-contents__doc__header__type">function</div>
-                <div class="ooi-contents__doc__header__name">stringify(object) <span style="color: #666;">=></span> <span style="color: #0087e0;">string</span></div>
+                <div class="ooi-contents__doc__header__name">stringify</div>
               </div>
               <div class="ooi-contents__doc__desc">
                 Stringifies plain object into query url.
+              </div>
+              <div class="ooi-contents__doc__code">
+                <pre><code class="lang-js language-javascript language-js">import stringify from 'ooi/query';
+
+let result = stringify(object);</code></pre>
               </div>         
             </a>
-            <a href="#doc-uri" class="ooi-contents__doc large-button large-button--secondary">
+            <a href="javascript: void(0);" class="ooi-contents__doc large-button large-button--secondary" data-expanded="false" onclick="this.dataset.expanded = this.dataset.expanded === 'true' ? 'false' : 'true'; window.activeDoc ? window.activeDoc.dataset.expanded = 'false' : ''; window.activeDoc = this;">
               <div class="ooi-contents__doc__header">
                 <div class="ooi-contents__doc__header__type">function</div>
-                <div class="ooi-contents__doc__header__name">uri(string) <span style="color: #666;">=></span> <span style="color: #0087e0;">object</span></div>
+                <div class="ooi-contents__doc__header__name">uri</div>
               </div>
               <div class="ooi-contents__doc__desc">
                 Parses string URI and returns object with properties uri, protocol, host, path, filename, extname, query, request.
+              </div>
+              <div class="ooi-contents__doc__code">
+                <pre><code class="lang-js language-javascript language-js">import uri from 'ooi/uri';
+
+let result = uri(string);</code></pre>
               </div>         
             </a>
-            <a href="#doc-uri" class="ooi-contents__doc large-button large-button--secondary">
+            <a href="javascript: void(0);" class="ooi-contents__doc large-button large-button--secondary" data-expanded="false" onclick="this.dataset.expanded = this.dataset.expanded === 'true' ? 'false' : 'true'; window.activeDoc ? window.activeDoc.dataset.expanded = 'false' : ''; window.activeDoc = this;">
               <div class="ooi-contents__doc__header">
                 <div class="ooi-contents__doc__header__type">function</div>
-                <div class="ooi-contents__doc__header__name">uri(string) <span style="color: #666;">=></span> <span style="color: #0087e0;">object</span></div>
+                <div class="ooi-contents__doc__header__name">uri</div>
               </div>
               <div class="ooi-contents__doc__desc">
                 Same as uri.parse.
+              </div>
+              <div class="ooi-contents__doc__code">
+                <pre><code class="lang-js language-javascript language-js">import uri from 'ooi/uri';
+
+let result = uri(string);</code></pre>
               </div>         
             </a>
         </div>
@@ -244,678 +361,27 @@
         <div class="section--miniheader">
           <h3>
             <a href="#section-events" class="ooi-contents__sections__section large-button">
-              🚀 Events
+              <div class="ooi-contents__sections__section__header">
+                🚀 Events
+              </div>
+              <div class="ooi-contents__sections__section__desc">
+                <span>Section,</span>
+                <strong>1 tools</strong>
+              </div>
             </a>
           </h3>
         </div>
         <div class="ooi-contents__sections__section__docs">
-            <a href="#doc-event-emitter" class="ooi-contents__doc large-button large-button--secondary">
+            <a href="javascript: void(0);" class="ooi-contents__doc large-button large-button--secondary" data-expanded="false" onclick="this.dataset.expanded = this.dataset.expanded === 'true' ? 'false' : 'true'; window.activeDoc ? window.activeDoc.dataset.expanded = 'false' : ''; window.activeDoc = this;">
               <div class="ooi-contents__doc__header">
                 <div class="ooi-contents__doc__header__type">class</div>
-                <div class="ooi-contents__doc__header__name">EventEmitter() <span style="color: #666;">=></span> <span style="color: #0087e0;">new EventEmitter()</span></div>
+                <div class="ooi-contents__doc__header__name">EventEmitter</div>
               </div>
               <div class="ooi-contents__doc__desc">
                 Class for events handling.
-              </div>         
-            </a>
-        </div>
-      </div>
-      <div class="section">
-        <div class="section--miniheader">
-          <h3>
-            <a href="#section-format" class="ooi-contents__sections__section large-button">
-              🚀 Format
-            </a>
-          </h3>
-        </div>
-        <div class="ooi-contents__sections__section__docs">
-            <a href="#doc-class-names" class="ooi-contents__doc large-button large-button--secondary">
-              <div class="ooi-contents__doc__header">
-                <div class="ooi-contents__doc__header__type">function</div>
-                <div class="ooi-contents__doc__header__name">classNames(...any) <span style="color: #666;">=></span> <span style="color: #0087e0;">array</span></div>
               </div>
-              <div class="ooi-contents__doc__desc">
-                Receives classes in any format, returns array of class names
-              </div>         
-            </a>
-            <a href="#doc-template" class="ooi-contents__doc large-button large-button--secondary">
-              <div class="ooi-contents__doc__header">
-                <div class="ooi-contents__doc__header__type">function</div>
-                <div class="ooi-contents__doc__header__name">template(source, opts) <span style="color: #666;">=></span> <span style="color: #0087e0;">function(data)</span></div>
-              </div>
-              <div class="ooi-contents__doc__desc">
-                Creates function-template with specified template code, which returns content with replaced all expressions surrounded by [[ and ]].
-              </div>         
-            </a>
-        </div>
-      </div>
-      <div class="section">
-        <div class="section--miniheader">
-          <h3>
-            <a href="#section-meta" class="ooi-contents__sections__section large-button">
-              🚀 Meta
-            </a>
-          </h3>
-        </div>
-        <div class="ooi-contents__sections__section__docs">
-            <a href="#doc-class-meta" class="ooi-contents__doc large-button large-button--secondary">
-              <div class="ooi-contents__doc__header">
-                <div class="ooi-contents__doc__header__type">function</div>
-                <div class="ooi-contents__doc__header__name">classMeta(Class) <span style="color: #666;">=></span> <span style="color: #0087e0;">{ methods, methodsNames, staticMethods, staticMethodsNames, extended }</span></div>
-              </div>
-              <div class="ooi-contents__doc__desc">
-                Extemdan;
-              </div>         
-            </a>
-            <a href="#doc-wrap" class="ooi-contents__doc large-button large-button--secondary">
-              <div class="ooi-contents__doc__header">
-                <div class="ooi-contents__doc__header__type">function</div>
-                <div class="ooi-contents__doc__header__name">wrap.class(Class, options) <span style="color: #666;">=></span> <span style="color: #0087e0;">Class</span></div>
-              </div>
-              <div class="ooi-contents__doc__desc">
-                Modifies target class with options: init.
-              </div>         
-            </a>
-        </div>
-      </div>
-      <div class="section">
-        <div class="section--miniheader">
-          <h3>
-            <a href="#section-objects" class="ooi-contents__sections__section large-button">
-              🚀 Objects
-            </a>
-          </h3>
-        </div>
-        <div class="ooi-contents__sections__section__docs">
-            <a href="#doc-aliases" class="ooi-contents__doc large-button large-button--secondary">
-              <div class="ooi-contents__doc__header">
-                <div class="ooi-contents__doc__header__type">function</div>
-                <div class="ooi-contents__doc__header__name">aliases(data, { propName: [...aliases] }) <span style="color: #666;">=></span> <span style="color: #0087e0;">data</span></div>
-              </div>
-              <div class="ooi-contents__doc__desc">
-                Defines property aliases for object.
-              </div>         
-            </a>
-            <a href="#doc-define" class="ooi-contents__doc large-button large-button--secondary">
-              <div class="ooi-contents__doc__header">
-                <div class="ooi-contents__doc__header__type">function</div>
-                <div class="ooi-contents__doc__header__name">define.box(object, name[, isEnumerable]) <span style="color: #666;">=></span> <span style="color: #0087e0;">data</span></div>
-              </div>
-              <div class="ooi-contents__doc__desc">
-                Defines new virtual property on object and serves it by property name. If the property gets assigned — new object deep merges with existing.
-              </div>         
-            </a>
-            <a href="#doc-define" class="ooi-contents__doc large-button large-button--secondary">
-              <div class="ooi-contents__doc__header">
-                <div class="ooi-contents__doc__header__type">function</div>
-                <div class="ooi-contents__doc__header__name">define.prop({ object, name, value, get, set, configurable, enumerable, writable }) <span style="color: #666;">=></span> <span style="color: #0087e0;">object</span></div>
-              </div>
-              <div class="ooi-contents__doc__desc">
-                Defines new property on object.
-              </div>         
-            </a>
-            <a href="#doc-extend" class="ooi-contents__doc large-button large-button--secondary">
-              <div class="ooi-contents__doc__header">
-                <div class="ooi-contents__doc__header__type">function</div>
-                <div class="ooi-contents__doc__header__name">extend(target, ...sources) <span style="color: #666;">=></span> <span style="color: #0087e0;">object</span></div>
-              </div>
-              <div class="ooi-contents__doc__desc">
-                Extends `target` object with properties of sources objects.
-              </div>         
-            </a>
-            <a href="#doc-extend" class="ooi-contents__doc large-button large-button--secondary">
-              <div class="ooi-contents__doc__header">
-                <div class="ooi-contents__doc__header__type">function</div>
-                <div class="ooi-contents__doc__header__name">extend.deep(target, ...sources) <span style="color: #666;">=></span> <span style="color: #0087e0;">object</span></div>
-              </div>
-              <div class="ooi-contents__doc__desc">
-                Extends `target` object with properties of sources objects (deep extending).
-              </div>         
-            </a>
-            <a href="#doc-keys" class="ooi-contents__doc large-button large-button--secondary">
-              <div class="ooi-contents__doc__header">
-                <div class="ooi-contents__doc__header__type">function</div>
-                <div class="ooi-contents__doc__header__name">keys(object) <span style="color: #666;">=></span> <span style="color: #0087e0;">array</span></div>
-              </div>
-              <div class="ooi-contents__doc__desc">
-                Returns array of `object` property names.
-              </div>         
-            </a>
-            <a href="#doc-proto" class="ooi-contents__doc large-button large-button--secondary">
-              <div class="ooi-contents__doc__header">
-                <div class="ooi-contents__doc__header__type">function</div>
-                <div class="ooi-contents__doc__header__name">proto(object) <span style="color: #666;">=></span> <span style="color: #0087e0;">prototype</span></div>
-              </div>
-              <div class="ooi-contents__doc__desc">
-                Returns object's prototype.
-              </div>         
-            </a>
-            <a href="#doc-proto" class="ooi-contents__doc large-button large-button--secondary">
-              <div class="ooi-contents__doc__header">
-                <div class="ooi-contents__doc__header__type">function</div>
-                <div class="ooi-contents__doc__header__name">proto.chain(obj1, obj2, obj3) <span style="color: #666;">=></span> <span style="color: #0087e0;">void</span></div>
-              </div>
-              <div class="ooi-contents__doc__desc">
-                Sets second argument as prototype of first, third as prototype of second etc.
-              </div>         
-            </a>
-        </div>
-      </div>
-      <div class="section">
-        <div class="section--miniheader">
-          <h3>
-            <a href="#section-util" class="ooi-contents__sections__section large-button">
-              🚀 Util
-            </a>
-          </h3>
-        </div>
-        <div class="ooi-contents__sections__section__docs">
-            <a href="#doc-type-manager" class="ooi-contents__doc large-button large-button--secondary">
-              <div class="ooi-contents__doc__header">
-                <div class="ooi-contents__doc__header__type">class</div>
-                <div class="ooi-contents__doc__header__name">TypeEntity(opts) <span style="color: #666;">=></span> <span style="color: #0087e0;">new TypeEntity</span></div>
-              </div>
-              <div class="ooi-contents__doc__desc">
-                Type entity class.
-              </div>         
-            </a>
-            <a href="#doc-type-manager" class="ooi-contents__doc large-button large-button--secondary">
-              <div class="ooi-contents__doc__header">
-                <div class="ooi-contents__doc__header__type">class</div>
-                <div class="ooi-contents__doc__header__name">TypeManager(opts) <span style="color: #666;">=></span> <span style="color: #0087e0;">new TypeManager</span></div>
-              </div>
-              <div class="ooi-contents__doc__desc">
-                Type manager class.
-              </div>         
-            </a>
-            <a href="#doc-type-manager" class="ooi-contents__doc large-button large-button--secondary">
-              <div class="ooi-contents__doc__header">
-                <div class="ooi-contents__doc__header__type">function</div>
-                <div class="ooi-contents__doc__header__name">typeManager(name, options) <span style="color: #666;">=></span> <span style="color: #0087e0;">new TypeManager()</span></div>
-              </div>
-              <div class="ooi-contents__doc__desc">
-                Creates and returns new TypeManager instance;
-              </div>         
-            </a>
-        </div>
-      </div>
-      <div class="section">
-        <div class="section--miniheader">
-          <h3>
-            <a href="#section-utils" class="ooi-contents__sections__section large-button">
-              🚀 Utils
-            </a>
-          </h3>
-        </div>
-        <div class="ooi-contents__sections__section__docs">
-            <a href="#doc-defaults" class="ooi-contents__doc large-button large-button--secondary">
-              <div class="ooi-contents__doc__header">
-                <div class="ooi-contents__doc__header__type">function</div>
-                <div class="ooi-contents__doc__header__name">defaults(data, defaultData) <span style="color: #666;">=></span> <span style="color: #0087e0;">data</span></div>
-              </div>
-              <div class="ooi-contents__doc__desc">
-                Replaces all undefined properties of data object with defaultData analog.
-              </div>         
-            </a>
-        </div>
-      </div>
-  </div>
-</div>
-
-</div>
-
-<div class="ooi-sections">
-  <div class="ooi-section">
-
-  <a name="section-arrays"></a>
-
-  <div class="ooi-section__name">Arrays</div>
-
-  <div class="ooi-section__docs">
-      <div class="ooi-section__docs__doc">
-        <div class="ooi-doc">
-
-  <a name="doc-append"></a>
-
-  <div class="ooi-doc__header">
-    <div class="ooi-doc__header__type">function</div>
-    <div class="ooi-doc__header__name">append</div>
-  </div>
-  
-  <div class="ooi-doc__desc">
-    Appends elements to array.
-  </div>
-  
-  <div class="ooi-doc__code">
-    import append from 'ooi/append';
-
-let result = append(arr, ...items);
-  </div>
-
-</div>
-
-      </div>
-      <div class="ooi-section__docs__doc">
-        <div class="ooi-doc">
-
-  <a name="doc-concat"></a>
-
-  <div class="ooi-doc__header">
-    <div class="ooi-doc__header__type">function</div>
-    <div class="ooi-doc__header__name">concat</div>
-  </div>
-  
-  <div class="ooi-doc__desc">
-    Concatenates arrays.
-  </div>
-  
-  <div class="ooi-doc__code">
-    import concat from 'ooi/concat';
-
-let result = concat();
-  </div>
-
-</div>
-
-      </div>
-      <div class="ooi-section__docs__doc">
-        <div class="ooi-doc">
-
-  <a name="doc-ensure-array"></a>
-
-  <div class="ooi-doc__header">
-    <div class="ooi-doc__header__type">function</div>
-    <div class="ooi-doc__header__name">ensureArray</div>
-  </div>
-  
-  <div class="ooi-doc__desc">
-    Wrapper for array.
-  </div>
-  
-  <div class="ooi-doc__code">
-    import ensureArray from 'ooi/ensure-array';
-
-let result = ensureArray();
-  </div>
-
-</div>
-
-      </div>
-      <div class="ooi-section__docs__doc">
-        <div class="ooi-doc">
-
-  <a name="doc-list"></a>
-
-  <div class="ooi-doc__header">
-    <div class="ooi-doc__header__type">class</div>
-    <div class="ooi-doc__header__name">List</div>
-  </div>
-  
-  <div class="ooi-doc__desc">
-    List class.
-  </div>
-  
-  <div class="ooi-doc__code">
-    import List from 'ooi/list';
-
-let result = List(...values);
-  </div>
-
-</div>
-
-      </div>
-      <div class="ooi-section__docs__doc">
-        <div class="ooi-doc">
-
-  <a name="doc-list"></a>
-
-  <div class="ooi-doc__header">
-    <div class="ooi-doc__header__type">function</div>
-    <div class="ooi-doc__header__name">list</div>
-  </div>
-  
-  <div class="ooi-doc__desc">
-    Creates List object (extends Array) with additional list methods.
-  </div>
-  
-  <div class="ooi-doc__code">
-    import list from 'ooi/list';
-
-let result = list(...array);
-  </div>
-
-</div>
-
-      </div>
-  </div>
-
-</div>
-
-
-<div class="ooi-section">
-
-  <a name="section-collections"></a>
-
-  <div class="ooi-section__name">Collections</div>
-
-  <div class="ooi-section__docs">
-      <div class="ooi-section__docs__doc">
-        <div class="ooi-doc">
-
-  <a name="doc-clone"></a>
-
-  <div class="ooi-doc__header">
-    <div class="ooi-doc__header__type">function</div>
-    <div class="ooi-doc__header__name">clone</div>
-  </div>
-  
-  <div class="ooi-doc__desc">
-    Shallow copy of object.
-  </div>
-  
-  <div class="ooi-doc__code">
-    import clone from 'ooi/clone';
-
-let result = clone(data);
-  </div>
-
-</div>
-
-      </div>
-      <div class="ooi-section__docs__doc">
-        <div class="ooi-doc">
-
-  <a name="doc-deep-clone"></a>
-
-  <div class="ooi-doc__header">
-    <div class="ooi-doc__header__type">function</div>
-    <div class="ooi-doc__header__name">deepClone</div>
-  </div>
-  
-  <div class="ooi-doc__desc">
-    Deep copy of object
-  </div>
-  
-  <div class="ooi-doc__code">
-    const deepClone = require('ooi/deep-clone');
-// or
-const deepClone = require('ooi/clone').deep;
-
-  </div>
-
-</div>
-
-      </div>
-      <div class="ooi-section__docs__doc">
-        <div class="ooi-doc">
-
-  <a name="doc-each"></a>
-
-  <div class="ooi-doc__header">
-    <div class="ooi-doc__header__type">function</div>
-    <div class="ooi-doc__header__name">each</div>
-  </div>
-  
-  <div class="ooi-doc__desc">
-    Iterates over all properties of data and calls cb(value, key) for each of them.
-  </div>
-  
-  <div class="ooi-doc__code">
-    import each from 'ooi/each';
-
-let result = each(data, cb);
-  </div>
-
-</div>
-
-      </div>
-      <div class="ooi-section__docs__doc">
-        <div class="ooi-doc">
-
-  <a name="doc-flatten"></a>
-
-  <div class="ooi-doc__header">
-    <div class="ooi-doc__header__type">function</div>
-    <div class="ooi-doc__header__name">flatten</div>
-  </div>
-  
-  <div class="ooi-doc__desc">
-    Flattens all `object` properties and returns plain object.
-  </div>
-  
-  <div class="ooi-doc__code">
-    import flatten from 'ooi/flatten';
-
-let result = flatten(object);
-  </div>
-
-</div>
-
-      </div>
-      <div class="ooi-section__docs__doc">
-        <div class="ooi-doc">
-
-  <a name="doc-flatten"></a>
-
-  <div class="ooi-doc__header">
-    <div class="ooi-doc__header__type">function</div>
-    <div class="ooi-doc__header__name">flatten.unflatten</div>
-  </div>
-  
-  <div class="ooi-doc__desc">
-    Returns object with resurrected properties structure.
-  </div>
-  
-  <div class="ooi-doc__code">
-    import flatten.unflatten from 'ooi/flatten';
-
-let result = flatten.unflatten(object);
-  </div>
-
-</div>
-
-      </div>
-  </div>
-
-</div>
-
-
-<div class="ooi-section">
-
-  <a name="section-convert"></a>
-
-  <div class="ooi-section__name">Convert</div>
-
-  <div class="ooi-section__docs">
-      <div class="ooi-section__docs__doc">
-        <div class="ooi-doc">
-
-  <a name="doc-base64"></a>
-
-  <div class="ooi-doc__header">
-    <div class="ooi-doc__header__type">function</div>
-    <div class="ooi-doc__header__name">base64.decode</div>
-  </div>
-  
-  <div class="ooi-doc__desc">
-    Converts base64-string to regular string.
-  </div>
-  
-  <div class="ooi-doc__code">
-    import base64.decode from 'ooi/base64';
-
-let result = base64.decode();
-  </div>
-
-</div>
-
-      </div>
-      <div class="ooi-section__docs__doc">
-        <div class="ooi-doc">
-
-  <a name="doc-base64"></a>
-
-  <div class="ooi-doc__header">
-    <div class="ooi-doc__header__type">function</div>
-    <div class="ooi-doc__header__name">base64.encode</div>
-  </div>
-  
-  <div class="ooi-doc__desc">
-    Convert regular string to base64.
-  </div>
-  
-  <div class="ooi-doc__code">
-    import base64.encode from 'ooi/base64';
-
-let result = base64.encode();
-  </div>
-
-</div>
-
-      </div>
-      <div class="ooi-section__docs__doc">
-        <div class="ooi-doc">
-
-  <a name="doc-query"></a>
-
-  <div class="ooi-doc__header">
-    <div class="ooi-doc__header__type">function</div>
-    <div class="ooi-doc__header__name">parse</div>
-  </div>
-  
-  <div class="ooi-doc__desc">
-    Parse url query string.
-  </div>
-  
-  <div class="ooi-doc__code">
-    import parse from 'ooi/query';
-
-let result = parse(string);
-  </div>
-
-</div>
-
-      </div>
-      <div class="ooi-section__docs__doc">
-        <div class="ooi-doc">
-
-  <a name="doc-query"></a>
-
-  <div class="ooi-doc__header">
-    <div class="ooi-doc__header__type">function</div>
-    <div class="ooi-doc__header__name">query</div>
-  </div>
-  
-  <div class="ooi-doc__desc">
-    If receives not URI string, returns parsed query object. If receives object, returns stringified query url.
-  </div>
-  
-  <div class="ooi-doc__code">
-    import query from 'ooi/query';
-
-let result = query(string | object);
-  </div>
-
-</div>
-
-      </div>
-      <div class="ooi-section__docs__doc">
-        <div class="ooi-doc">
-
-  <a name="doc-query"></a>
-
-  <div class="ooi-doc__header">
-    <div class="ooi-doc__header__type">function</div>
-    <div class="ooi-doc__header__name">stringify</div>
-  </div>
-  
-  <div class="ooi-doc__desc">
-    Stringifies plain object into query url.
-  </div>
-  
-  <div class="ooi-doc__code">
-    import stringify from 'ooi/query';
-
-let result = stringify(object);
-  </div>
-
-</div>
-
-      </div>
-      <div class="ooi-section__docs__doc">
-        <div class="ooi-doc">
-
-  <a name="doc-uri"></a>
-
-  <div class="ooi-doc__header">
-    <div class="ooi-doc__header__type">function</div>
-    <div class="ooi-doc__header__name">uri</div>
-  </div>
-  
-  <div class="ooi-doc__desc">
-    Parses string URI and returns object with properties uri, protocol, host, path, filename, extname, query, request.
-  </div>
-  
-  <div class="ooi-doc__code">
-    import uri from 'ooi/uri';
-
-let result = uri(string);
-  </div>
-
-</div>
-
-      </div>
-      <div class="ooi-section__docs__doc">
-        <div class="ooi-doc">
-
-  <a name="doc-uri"></a>
-
-  <div class="ooi-doc__header">
-    <div class="ooi-doc__header__type">function</div>
-    <div class="ooi-doc__header__name">uri</div>
-  </div>
-  
-  <div class="ooi-doc__desc">
-    Same as uri.parse.
-  </div>
-  
-  <div class="ooi-doc__code">
-    import uri from 'ooi/uri';
-
-let result = uri(string);
-  </div>
-
-</div>
-
-      </div>
-  </div>
-
-</div>
-
-
-<div class="ooi-section">
-
-  <a name="section-events"></a>
-
-  <div class="ooi-section__name">Events</div>
-
-  <div class="ooi-section__docs">
-      <div class="ooi-section__docs__doc">
-        <div class="ooi-doc">
-
-  <a name="doc-event-emitter"></a>
-
-  <div class="ooi-doc__header">
-    <div class="ooi-doc__header__type">class</div>
-    <div class="ooi-doc__header__name">EventEmitter</div>
-  </div>
-  
-  <div class="ooi-doc__desc">
-    Class for events handling.
-  </div>
-  
-  <div class="ooi-doc__code">
-    const ooi = require('ooi');
+              <div class="ooi-contents__doc__code">
+                <pre><code class="lang-js language-javascript language-js">const ooi = require('ooi');
 
 class Manager extends ooi.EventEmitter {
 
@@ -933,157 +399,126 @@ manager.on('message', message => {
 
 setTimeout(() => {
   manager.emit('message', 'This is new message!');
-}, 1000);
-
-  </div>
-
-</div>
-
+}, 1000);</code></pre>
+              </div>         
+            </a>
+        </div>
       </div>
-  </div>
+      <div class="section">
+        <div class="section--miniheader">
+          <h3>
+            <a href="#section-format" class="ooi-contents__sections__section large-button">
+              <div class="ooi-contents__sections__section__header">
+                🚀 Format
+              </div>
+              <div class="ooi-contents__sections__section__desc">
+                <span>Section,</span>
+                <strong>2 tools</strong>
+              </div>
+            </a>
+          </h3>
+        </div>
+        <div class="ooi-contents__sections__section__docs">
+            <a href="javascript: void(0);" class="ooi-contents__doc large-button large-button--secondary" data-expanded="false" onclick="this.dataset.expanded = this.dataset.expanded === 'true' ? 'false' : 'true'; window.activeDoc ? window.activeDoc.dataset.expanded = 'false' : ''; window.activeDoc = this;">
+              <div class="ooi-contents__doc__header">
+                <div class="ooi-contents__doc__header__type">function</div>
+                <div class="ooi-contents__doc__header__name">classNames</div>
+              </div>
+              <div class="ooi-contents__doc__desc">
+                Receives classes in any format, returns array of class names
+              </div>
+              <div class="ooi-contents__doc__code">
+                <pre><code class="lang-js language-javascript language-js">import classNames from 'ooi/class-names';
 
-</div>
+let result = classNames(...any);</code></pre>
+              </div>         
+            </a>
+            <a href="javascript: void(0);" class="ooi-contents__doc large-button large-button--secondary" data-expanded="false" onclick="this.dataset.expanded = this.dataset.expanded === 'true' ? 'false' : 'true'; window.activeDoc ? window.activeDoc.dataset.expanded = 'false' : ''; window.activeDoc = this;">
+              <div class="ooi-contents__doc__header">
+                <div class="ooi-contents__doc__header__type">function</div>
+                <div class="ooi-contents__doc__header__name">template</div>
+              </div>
+              <div class="ooi-contents__doc__desc">
+                Creates function-template with specified template code, which returns content with replaced all expressions surrounded by [[ and ]].
+              </div>
+              <div class="ooi-contents__doc__code">
+                <pre><code class="lang-js language-javascript language-js">import template from 'ooi/template';
 
-
-<div class="ooi-section">
-
-  <a name="section-format"></a>
-
-  <div class="ooi-section__name">Format</div>
-
-  <div class="ooi-section__docs">
-      <div class="ooi-section__docs__doc">
-        <div class="ooi-doc">
-
-  <a name="doc-class-names"></a>
-
-  <div class="ooi-doc__header">
-    <div class="ooi-doc__header__type">function</div>
-    <div class="ooi-doc__header__name">classNames</div>
-  </div>
-  
-  <div class="ooi-doc__desc">
-    Receives classes in any format, returns array of class names
-  </div>
-  
-  <div class="ooi-doc__code">
-    import classNames from 'ooi/class-names';
-
-let result = classNames(...any);
-  </div>
-
-</div>
-
+let result = template(source, opts);</code></pre>
+              </div>         
+            </a>
+        </div>
       </div>
-      <div class="ooi-section__docs__doc">
-        <div class="ooi-doc">
+      <div class="section">
+        <div class="section--miniheader">
+          <h3>
+            <a href="#section-meta" class="ooi-contents__sections__section large-button">
+              <div class="ooi-contents__sections__section__header">
+                🚀 Meta
+              </div>
+              <div class="ooi-contents__sections__section__desc">
+                <span>Section,</span>
+                <strong>2 tools</strong>
+              </div>
+            </a>
+          </h3>
+        </div>
+        <div class="ooi-contents__sections__section__docs">
+            <a href="javascript: void(0);" class="ooi-contents__doc large-button large-button--secondary" data-expanded="false" onclick="this.dataset.expanded = this.dataset.expanded === 'true' ? 'false' : 'true'; window.activeDoc ? window.activeDoc.dataset.expanded = 'false' : ''; window.activeDoc = this;">
+              <div class="ooi-contents__doc__header">
+                <div class="ooi-contents__doc__header__type">function</div>
+                <div class="ooi-contents__doc__header__name">classMeta</div>
+              </div>
+              <div class="ooi-contents__doc__desc">
+                Extemdan;
+              </div>
+              <div class="ooi-contents__doc__code">
+                <pre><code class="lang-js language-javascript language-js">import classMeta from 'ooi/class-meta';
 
-  <a name="doc-template"></a>
+let result = classMeta(Class);</code></pre>
+              </div>         
+            </a>
+            <a href="javascript: void(0);" class="ooi-contents__doc large-button large-button--secondary" data-expanded="false" onclick="this.dataset.expanded = this.dataset.expanded === 'true' ? 'false' : 'true'; window.activeDoc ? window.activeDoc.dataset.expanded = 'false' : ''; window.activeDoc = this;">
+              <div class="ooi-contents__doc__header">
+                <div class="ooi-contents__doc__header__type">function</div>
+                <div class="ooi-contents__doc__header__name">wrap.class</div>
+              </div>
+              <div class="ooi-contents__doc__desc">
+                Modifies target class with options: init.
+              </div>
+              <div class="ooi-contents__doc__code">
+                <pre><code class="lang-js language-javascript language-js">import wrap.class from 'ooi/wrap';
 
-  <div class="ooi-doc__header">
-    <div class="ooi-doc__header__type">function</div>
-    <div class="ooi-doc__header__name">template</div>
-  </div>
-  
-  <div class="ooi-doc__desc">
-    Creates function-template with specified template code, which returns content with replaced all expressions surrounded by [[ and ]].
-  </div>
-  
-  <div class="ooi-doc__code">
-    import template from 'ooi/template';
-
-let result = template(source, opts);
-  </div>
-
-</div>
-
+let result = wrap.class(Class, options);</code></pre>
+              </div>         
+            </a>
+        </div>
       </div>
-  </div>
-
-</div>
-
-
-<div class="ooi-section">
-
-  <a name="section-meta"></a>
-
-  <div class="ooi-section__name">Meta</div>
-
-  <div class="ooi-section__docs">
-      <div class="ooi-section__docs__doc">
-        <div class="ooi-doc">
-
-  <a name="doc-class-meta"></a>
-
-  <div class="ooi-doc__header">
-    <div class="ooi-doc__header__type">function</div>
-    <div class="ooi-doc__header__name">classMeta</div>
-  </div>
-  
-  <div class="ooi-doc__desc">
-    Extemdan;
-  </div>
-  
-  <div class="ooi-doc__code">
-    import classMeta from 'ooi/class-meta';
-
-let result = classMeta(Class);
-  </div>
-
-</div>
-
-      </div>
-      <div class="ooi-section__docs__doc">
-        <div class="ooi-doc">
-
-  <a name="doc-wrap"></a>
-
-  <div class="ooi-doc__header">
-    <div class="ooi-doc__header__type">function</div>
-    <div class="ooi-doc__header__name">wrap.class</div>
-  </div>
-  
-  <div class="ooi-doc__desc">
-    Modifies target class with options: init.
-  </div>
-  
-  <div class="ooi-doc__code">
-    import wrap.class from 'ooi/wrap';
-
-let result = wrap.class(Class, options);
-  </div>
-
-</div>
-
-      </div>
-  </div>
-
-</div>
-
-
-<div class="ooi-section">
-
-  <a name="section-objects"></a>
-
-  <div class="ooi-section__name">Objects</div>
-
-  <div class="ooi-section__docs">
-      <div class="ooi-section__docs__doc">
-        <div class="ooi-doc">
-
-  <a name="doc-aliases"></a>
-
-  <div class="ooi-doc__header">
-    <div class="ooi-doc__header__type">function</div>
-    <div class="ooi-doc__header__name">aliases</div>
-  </div>
-  
-  <div class="ooi-doc__desc">
-    Defines property aliases for object.
-  </div>
-  
-  <div class="ooi-doc__code">
-    const ooi = require('ooi');
+      <div class="section">
+        <div class="section--miniheader">
+          <h3>
+            <a href="#section-objects" class="ooi-contents__sections__section large-button">
+              <div class="ooi-contents__sections__section__header">
+                🚀 Objects
+              </div>
+              <div class="ooi-contents__sections__section__desc">
+                <span>Section,</span>
+                <strong>8 tools</strong>
+              </div>
+            </a>
+          </h3>
+        </div>
+        <div class="ooi-contents__sections__section__docs">
+            <a href="javascript: void(0);" class="ooi-contents__doc large-button large-button--secondary" data-expanded="false" onclick="this.dataset.expanded = this.dataset.expanded === 'true' ? 'false' : 'true'; window.activeDoc ? window.activeDoc.dataset.expanded = 'false' : ''; window.activeDoc = this;">
+              <div class="ooi-contents__doc__header">
+                <div class="ooi-contents__doc__header__type">function</div>
+                <div class="ooi-contents__doc__header__name">aliases</div>
+              </div>
+              <div class="ooi-contents__doc__desc">
+                Defines property aliases for object.
+              </div>
+              <div class="ooi-contents__doc__code">
+                <pre><code class="lang-js language-javascript language-js">const ooi = require('ooi');
 
 let data = {
   one: 1,
@@ -1095,248 +530,162 @@ ooi.aliases(data, {
   one: ['first', 'number1'],
   two: ['second', 'number2'],
   three: ['third', 'number3'],
-});
+});</code></pre>
+              </div>         
+            </a>
+            <a href="javascript: void(0);" class="ooi-contents__doc large-button large-button--secondary" data-expanded="false" onclick="this.dataset.expanded = this.dataset.expanded === 'true' ? 'false' : 'true'; window.activeDoc ? window.activeDoc.dataset.expanded = 'false' : ''; window.activeDoc = this;">
+              <div class="ooi-contents__doc__header">
+                <div class="ooi-contents__doc__header__type">function</div>
+                <div class="ooi-contents__doc__header__name">define.box</div>
+              </div>
+              <div class="ooi-contents__doc__desc">
+                Defines new virtual property on object and serves it by property name. If the property gets assigned — new object deep merges with existing.
+              </div>
+              <div class="ooi-contents__doc__code">
+                <pre><code class="lang-js language-javascript language-js">import define.box from 'ooi/define';
 
-  </div>
+let result = define.box(object, name[, isEnumerable]);</code></pre>
+              </div>         
+            </a>
+            <a href="javascript: void(0);" class="ooi-contents__doc large-button large-button--secondary" data-expanded="false" onclick="this.dataset.expanded = this.dataset.expanded === 'true' ? 'false' : 'true'; window.activeDoc ? window.activeDoc.dataset.expanded = 'false' : ''; window.activeDoc = this;">
+              <div class="ooi-contents__doc__header">
+                <div class="ooi-contents__doc__header__type">function</div>
+                <div class="ooi-contents__doc__header__name">define.prop</div>
+              </div>
+              <div class="ooi-contents__doc__desc">
+                Defines new property on object.
+              </div>
+              <div class="ooi-contents__doc__code">
+                <pre><code class="lang-js language-javascript language-js">import define.prop from 'ooi/define';
 
-</div>
+let result = define.prop({ object, name, value, get, set, configurable, enumerable, writable });</code></pre>
+              </div>         
+            </a>
+            <a href="javascript: void(0);" class="ooi-contents__doc large-button large-button--secondary" data-expanded="false" onclick="this.dataset.expanded = this.dataset.expanded === 'true' ? 'false' : 'true'; window.activeDoc ? window.activeDoc.dataset.expanded = 'false' : ''; window.activeDoc = this;">
+              <div class="ooi-contents__doc__header">
+                <div class="ooi-contents__doc__header__type">function</div>
+                <div class="ooi-contents__doc__header__name">extend</div>
+              </div>
+              <div class="ooi-contents__doc__desc">
+                Extends `target` object with properties of sources objects.
+              </div>
+              <div class="ooi-contents__doc__code">
+                <pre><code class="lang-js language-javascript language-js">import extend from 'ooi/extend';
 
+let result = extend(target, ...sources);</code></pre>
+              </div>         
+            </a>
+            <a href="javascript: void(0);" class="ooi-contents__doc large-button large-button--secondary" data-expanded="false" onclick="this.dataset.expanded = this.dataset.expanded === 'true' ? 'false' : 'true'; window.activeDoc ? window.activeDoc.dataset.expanded = 'false' : ''; window.activeDoc = this;">
+              <div class="ooi-contents__doc__header">
+                <div class="ooi-contents__doc__header__type">function</div>
+                <div class="ooi-contents__doc__header__name">extend.deep</div>
+              </div>
+              <div class="ooi-contents__doc__desc">
+                Extends `target` object with properties of sources objects (deep extending).
+              </div>
+              <div class="ooi-contents__doc__code">
+                <pre><code class="lang-js language-javascript language-js">import extend.deep from 'ooi/extend';
+
+let result = extend.deep(target, ...sources);</code></pre>
+              </div>         
+            </a>
+            <a href="javascript: void(0);" class="ooi-contents__doc large-button large-button--secondary" data-expanded="false" onclick="this.dataset.expanded = this.dataset.expanded === 'true' ? 'false' : 'true'; window.activeDoc ? window.activeDoc.dataset.expanded = 'false' : ''; window.activeDoc = this;">
+              <div class="ooi-contents__doc__header">
+                <div class="ooi-contents__doc__header__type">function</div>
+                <div class="ooi-contents__doc__header__name">keys</div>
+              </div>
+              <div class="ooi-contents__doc__desc">
+                Returns array of `object` property names.
+              </div>
+              <div class="ooi-contents__doc__code">
+                <pre><code class="lang-js language-javascript language-js">import keys from 'ooi/keys';
+
+let result = keys(object);</code></pre>
+              </div>         
+            </a>
+            <a href="javascript: void(0);" class="ooi-contents__doc large-button large-button--secondary" data-expanded="false" onclick="this.dataset.expanded = this.dataset.expanded === 'true' ? 'false' : 'true'; window.activeDoc ? window.activeDoc.dataset.expanded = 'false' : ''; window.activeDoc = this;">
+              <div class="ooi-contents__doc__header">
+                <div class="ooi-contents__doc__header__type">function</div>
+                <div class="ooi-contents__doc__header__name">proto</div>
+              </div>
+              <div class="ooi-contents__doc__desc">
+                Returns object's prototype.
+              </div>
+              <div class="ooi-contents__doc__code">
+                <pre><code class="lang-js language-javascript language-js">import proto from 'ooi/proto';
+
+let result = proto(object);</code></pre>
+              </div>         
+            </a>
+            <a href="javascript: void(0);" class="ooi-contents__doc large-button large-button--secondary" data-expanded="false" onclick="this.dataset.expanded = this.dataset.expanded === 'true' ? 'false' : 'true'; window.activeDoc ? window.activeDoc.dataset.expanded = 'false' : ''; window.activeDoc = this;">
+              <div class="ooi-contents__doc__header">
+                <div class="ooi-contents__doc__header__type">function</div>
+                <div class="ooi-contents__doc__header__name">proto.chain</div>
+              </div>
+              <div class="ooi-contents__doc__desc">
+                Sets second argument as prototype of first, third as prototype of second etc.
+              </div>
+              <div class="ooi-contents__doc__code">
+                <pre><code class="lang-js language-javascript language-js">import proto.chain from 'ooi/proto';
+
+let result = proto.chain(obj1, obj2, obj3);</code></pre>
+              </div>         
+            </a>
+        </div>
       </div>
-      <div class="ooi-section__docs__doc">
-        <div class="ooi-doc">
+      <div class="section">
+        <div class="section--miniheader">
+          <h3>
+            <a href="#section-util" class="ooi-contents__sections__section large-button">
+              <div class="ooi-contents__sections__section__header">
+                🚀 Util
+              </div>
+              <div class="ooi-contents__sections__section__desc">
+                <span>Section,</span>
+                <strong>3 tools</strong>
+              </div>
+            </a>
+          </h3>
+        </div>
+        <div class="ooi-contents__sections__section__docs">
+            <a href="javascript: void(0);" class="ooi-contents__doc large-button large-button--secondary" data-expanded="false" onclick="this.dataset.expanded = this.dataset.expanded === 'true' ? 'false' : 'true'; window.activeDoc ? window.activeDoc.dataset.expanded = 'false' : ''; window.activeDoc = this;">
+              <div class="ooi-contents__doc__header">
+                <div class="ooi-contents__doc__header__type">class</div>
+                <div class="ooi-contents__doc__header__name">TypeEntity</div>
+              </div>
+              <div class="ooi-contents__doc__desc">
+                Type entity class.
+              </div>
+              <div class="ooi-contents__doc__code">
+                <pre><code class="lang-js language-javascript language-js">import TypeEntity from 'ooi/type-manager';
 
-  <a name="doc-define"></a>
+let result = TypeEntity(opts);</code></pre>
+              </div>         
+            </a>
+            <a href="javascript: void(0);" class="ooi-contents__doc large-button large-button--secondary" data-expanded="false" onclick="this.dataset.expanded = this.dataset.expanded === 'true' ? 'false' : 'true'; window.activeDoc ? window.activeDoc.dataset.expanded = 'false' : ''; window.activeDoc = this;">
+              <div class="ooi-contents__doc__header">
+                <div class="ooi-contents__doc__header__type">class</div>
+                <div class="ooi-contents__doc__header__name">TypeManager</div>
+              </div>
+              <div class="ooi-contents__doc__desc">
+                Type manager class.
+              </div>
+              <div class="ooi-contents__doc__code">
+                <pre><code class="lang-js language-javascript language-js">import TypeManager from 'ooi/type-manager';
 
-  <div class="ooi-doc__header">
-    <div class="ooi-doc__header__type">function</div>
-    <div class="ooi-doc__header__name">define.box</div>
-  </div>
-  
-  <div class="ooi-doc__desc">
-    Defines new virtual property on object and serves it by property name. If the property gets assigned — new object deep merges with existing.
-  </div>
-  
-  <div class="ooi-doc__code">
-    import define.box from 'ooi/define';
-
-let result = define.box(object, name[, isEnumerable]);
-  </div>
-
-</div>
-
-      </div>
-      <div class="ooi-section__docs__doc">
-        <div class="ooi-doc">
-
-  <a name="doc-define"></a>
-
-  <div class="ooi-doc__header">
-    <div class="ooi-doc__header__type">function</div>
-    <div class="ooi-doc__header__name">define.prop</div>
-  </div>
-  
-  <div class="ooi-doc__desc">
-    Defines new property on object.
-  </div>
-  
-  <div class="ooi-doc__code">
-    import define.prop from 'ooi/define';
-
-let result = define.prop({ object, name, value, get, set, configurable, enumerable, writable });
-  </div>
-
-</div>
-
-      </div>
-      <div class="ooi-section__docs__doc">
-        <div class="ooi-doc">
-
-  <a name="doc-extend"></a>
-
-  <div class="ooi-doc__header">
-    <div class="ooi-doc__header__type">function</div>
-    <div class="ooi-doc__header__name">extend</div>
-  </div>
-  
-  <div class="ooi-doc__desc">
-    Extends `target` object with properties of sources objects.
-  </div>
-  
-  <div class="ooi-doc__code">
-    import extend from 'ooi/extend';
-
-let result = extend(target, ...sources);
-  </div>
-
-</div>
-
-      </div>
-      <div class="ooi-section__docs__doc">
-        <div class="ooi-doc">
-
-  <a name="doc-extend"></a>
-
-  <div class="ooi-doc__header">
-    <div class="ooi-doc__header__type">function</div>
-    <div class="ooi-doc__header__name">extend.deep</div>
-  </div>
-  
-  <div class="ooi-doc__desc">
-    Extends `target` object with properties of sources objects (deep extending).
-  </div>
-  
-  <div class="ooi-doc__code">
-    import extend.deep from 'ooi/extend';
-
-let result = extend.deep(target, ...sources);
-  </div>
-
-</div>
-
-      </div>
-      <div class="ooi-section__docs__doc">
-        <div class="ooi-doc">
-
-  <a name="doc-keys"></a>
-
-  <div class="ooi-doc__header">
-    <div class="ooi-doc__header__type">function</div>
-    <div class="ooi-doc__header__name">keys</div>
-  </div>
-  
-  <div class="ooi-doc__desc">
-    Returns array of `object` property names.
-  </div>
-  
-  <div class="ooi-doc__code">
-    import keys from 'ooi/keys';
-
-let result = keys(object);
-  </div>
-
-</div>
-
-      </div>
-      <div class="ooi-section__docs__doc">
-        <div class="ooi-doc">
-
-  <a name="doc-proto"></a>
-
-  <div class="ooi-doc__header">
-    <div class="ooi-doc__header__type">function</div>
-    <div class="ooi-doc__header__name">proto</div>
-  </div>
-  
-  <div class="ooi-doc__desc">
-    Returns object's prototype.
-  </div>
-  
-  <div class="ooi-doc__code">
-    import proto from 'ooi/proto';
-
-let result = proto(object);
-  </div>
-
-</div>
-
-      </div>
-      <div class="ooi-section__docs__doc">
-        <div class="ooi-doc">
-
-  <a name="doc-proto"></a>
-
-  <div class="ooi-doc__header">
-    <div class="ooi-doc__header__type">function</div>
-    <div class="ooi-doc__header__name">proto.chain</div>
-  </div>
-  
-  <div class="ooi-doc__desc">
-    Sets second argument as prototype of first, third as prototype of second etc.
-  </div>
-  
-  <div class="ooi-doc__code">
-    import proto.chain from 'ooi/proto';
-
-let result = proto.chain(obj1, obj2, obj3);
-  </div>
-
-</div>
-
-      </div>
-  </div>
-
-</div>
-
-
-<div class="ooi-section">
-
-  <a name="section-util"></a>
-
-  <div class="ooi-section__name">Util</div>
-
-  <div class="ooi-section__docs">
-      <div class="ooi-section__docs__doc">
-        <div class="ooi-doc">
-
-  <a name="doc-type-manager"></a>
-
-  <div class="ooi-doc__header">
-    <div class="ooi-doc__header__type">class</div>
-    <div class="ooi-doc__header__name">TypeEntity</div>
-  </div>
-  
-  <div class="ooi-doc__desc">
-    Type entity class.
-  </div>
-  
-  <div class="ooi-doc__code">
-    import TypeEntity from 'ooi/type-manager';
-
-let result = TypeEntity(opts);
-  </div>
-
-</div>
-
-      </div>
-      <div class="ooi-section__docs__doc">
-        <div class="ooi-doc">
-
-  <a name="doc-type-manager"></a>
-
-  <div class="ooi-doc__header">
-    <div class="ooi-doc__header__type">class</div>
-    <div class="ooi-doc__header__name">TypeManager</div>
-  </div>
-  
-  <div class="ooi-doc__desc">
-    Type manager class.
-  </div>
-  
-  <div class="ooi-doc__code">
-    import TypeManager from 'ooi/type-manager';
-
-let result = TypeManager(opts);
-  </div>
-
-</div>
-
-      </div>
-      <div class="ooi-section__docs__doc">
-        <div class="ooi-doc">
-
-  <a name="doc-type-manager"></a>
-
-  <div class="ooi-doc__header">
-    <div class="ooi-doc__header__type">function</div>
-    <div class="ooi-doc__header__name">typeManager</div>
-  </div>
-  
-  <div class="ooi-doc__desc">
-    Creates and returns new TypeManager instance;
-  </div>
-  
-  <div class="ooi-doc__code">
-    const typeManager = require('ooi/type-manager');
+let result = TypeManager(opts);</code></pre>
+              </div>         
+            </a>
+            <a href="javascript: void(0);" class="ooi-contents__doc large-button large-button--secondary" data-expanded="false" onclick="this.dataset.expanded = this.dataset.expanded === 'true' ? 'false' : 'true'; window.activeDoc ? window.activeDoc.dataset.expanded = 'false' : ''; window.activeDoc = this;">
+              <div class="ooi-contents__doc__header">
+                <div class="ooi-contents__doc__header__type">function</div>
+                <div class="ooi-contents__doc__header__name">typeManager</div>
+              </div>
+              <div class="ooi-contents__doc__desc">
+                Creates and returns new TypeManager instance;
+              </div>
+              <div class="ooi-contents__doc__code">
+                <pre><code class="lang-js language-javascript language-js">const typeManager = require('ooi/type-manager');
 
 let manager = typeManager('app', {
   // ...
@@ -1351,51 +700,64 @@ manager.create([
       },
     },
   },
-]);
+]);</code></pre>
+              </div>         
+            </a>
+        </div>
+      </div>
+      <div class="section">
+        <div class="section--miniheader">
+          <h3>
+            <a href="#section-utils" class="ooi-contents__sections__section large-button">
+              <div class="ooi-contents__sections__section__header">
+                🚀 Utils
+              </div>
+              <div class="ooi-contents__sections__section__desc">
+                <span>Section,</span>
+                <strong>1 tools</strong>
+              </div>
+            </a>
+          </h3>
+        </div>
+        <div class="ooi-contents__sections__section__docs">
+            <a href="javascript: void(0);" class="ooi-contents__doc large-button large-button--secondary" data-expanded="false" onclick="this.dataset.expanded = this.dataset.expanded === 'true' ? 'false' : 'true'; window.activeDoc ? window.activeDoc.dataset.expanded = 'false' : ''; window.activeDoc = this;">
+              <div class="ooi-contents__doc__header">
+                <div class="ooi-contents__doc__header__type">function</div>
+                <div class="ooi-contents__doc__header__name">defaults</div>
+              </div>
+              <div class="ooi-contents__doc__desc">
+                Replaces all undefined properties of data object with defaultData analog.
+              </div>
+              <div class="ooi-contents__doc__code">
+                <pre><code class="lang-js language-javascript language-js">import defaults from 'ooi/defaults';
 
-  </div>
-
-</div>
-
+let result = defaults(data, defaultData);</code></pre>
+              </div>         
+            </a>
+        </div>
       </div>
   </div>
+</div>
 
 </div>
 
-
-<div class="ooi-section">
-
-  <a name="section-utils"></a>
-
-  <div class="ooi-section__name">Utils</div>
-
-  <div class="ooi-section__docs">
-      <div class="ooi-section__docs__doc">
-        <div class="ooi-doc">
-
-  <a name="doc-defaults"></a>
-
-  <div class="ooi-doc__header">
-    <div class="ooi-doc__header__type">function</div>
-    <div class="ooi-doc__header__name">defaults</div>
-  </div>
+<div class="ooi-sections">
   
-  <div class="ooi-doc__desc">
-    Replaces all undefined properties of data object with defaultData analog.
-  </div>
-  
-  <div class="ooi-doc__code">
-    import defaults from 'ooi/defaults';
 
-let result = defaults(data, defaultData);
-  </div>
 
-</div>
 
-      </div>
-  </div>
 
-</div>
+
+
+
+
+
+
+
+
+
+
+
 
 </div>
 

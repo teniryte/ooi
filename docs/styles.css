@@ -6,6 +6,9 @@ body {
   background-color: #fff;
   background-attachment: fixed;
 }
+.markdown-body img {
+  max-width: none !important;
+}
 a.large-button {
   padding: 15px 20px !important;
   background-color: #009e54 !important;
@@ -20,10 +23,11 @@ a.large-button:hover {
   background-color: #ff8929 !important;
 }
 a.large-button--secondary {
-  background-color: #d8dee2 !important;
+  background-color: #eff2f3 !important;
   color: #263238 !important;
   font-size: 1.1em !important;
-  padding: 10px 15px !important;
+  padding: 10px 15px 15px 15px !important;
+  border-left: 3px solid #ff8929 !important;
 }
 .markdown-body {
   padding-top: 30px !important;
@@ -51,7 +55,7 @@ a.large-button--secondary {
 .forum-teniryte p:nth-of-type(2) {
   display: flex !important;
   justify-content: space-between !important;
-  width: 1000px !important;
+  width: 1200px !important;
   margin: auto !important;
 }
 .forum-teniryte p:first-of-type a,

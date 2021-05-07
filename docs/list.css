@@ -3,15 +3,38 @@
   margin-bottom: 20px !important;
   margin: 10px !important;
 }
+.markdown-body .forum-teniryte .ooi-contents__sections__section__desc {
+  font-size: 18px !important;
+  font-weight: 500 !important;
+  margin-left: 58px !important;
+}
 .markdown-body .forum-teniryte .ooi-contents__sections__section__docs .ooi-contents__doc {
   min-width: 300px !important;
+}
+.markdown-body .forum-teniryte .ooi-contents__sections__section__docs .ooi-contents__doc .ooi-contents__doc__code {
+  display: none !important;
+  margin-top: 10px !important;
+}
+.markdown-body .forum-teniryte .ooi-contents__sections__section__docs .ooi-contents__doc .ooi-contents__doc__code pre {
+  margin-bottom: 0 !important;
+  font-family: 'Fira Code', 'Hack', 'Menlo', 'Consolas', monospace !important;
+  font-size: 14px !important;
+  line-height: 1.2em !important;
+  background: #333 !important;
+}
+.markdown-body .forum-teniryte .ooi-contents__sections__section__docs .ooi-contents__doc[data-expanded="true"] {
+  display: block !important;
+  margin-bottom: 20px !important;
+}
+.markdown-body .forum-teniryte .ooi-contents__sections__section__docs .ooi-contents__doc[data-expanded="true"] .ooi-contents__doc__code {
+  display: block !important;
 }
 .markdown-body .forum-teniryte .ooi-contents__sections__section__docs .ooi-contents__doc__header {
   display: flex !important;
 }
 .markdown-body .forum-teniryte .ooi-contents__sections__section__docs .ooi-contents__doc__header__type {
-  opacity: 0.5 !important;
-  font-weight: 300 !important;
+  opacity: 0.7 !important;
+  font-weight: 400 !important;
   display: block !important;
   margin-right: 5px !important;
   font-style: italic !important;
@@ -22,10 +45,10 @@
 }
 .markdown-body .forum-teniryte .ooi-contents__sections__section__docs .ooi-contents__doc__desc {
   color: #546e7a !important;
-  font-weight: 400;
-  font-size: 0.9em;
-  border-radius: 4px;
-  padding: 6px 12px 8px 12px;
-  background-color: #fff;
-  margin-top: 10px;
+  font-weight: 400 !important;
+  font-size: 0.9em !important;
+  border-radius: 4px !important;
+  padding: 6px 12px 8px 12px !important;
+  background-color: #fff !important;
+  margin-top: 10px !important;
 }

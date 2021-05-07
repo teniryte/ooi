@@ -9,6 +9,9 @@ body
 	background-color: #fff;
 	background-attachment: fixed;
 
+.markdown-body img
+	max-width: none !important;
+
 a.large-button
 	padding: 15px 20px !important;
 	background-color: #009e54 !important;
@@ -23,10 +26,11 @@ a.large-button
 		background-color: #ff8929 !important;
 	
 	&--secondary
-		background-color: lighten(#B0BEC5, 50%) !important;
+		background-color: lighten(#B0BEC5, 80%) !important;
 		color: #263238 !important;
 		font-size: 1.1em !important;
-		padding: 10px 15px !important;
+		padding: 10px 15px 15px 15px !important;
+		border-left: 3px solid #ff8929 !important;
 
 .markdown-body
 	padding-top: $header-margin !important;
@@ -53,7 +57,7 @@ a.large-button
 	p:first-of-type, p:nth-of-type(2)
 		display: flex !important;
 		justify-content: space-between !important;
-		width: 1000px !important;
+		width: 1200px !important;
 		margin: auto !important;
 		
 		a
