@@ -1,0 +1,814 @@
+<!doctype html>
+<html>
+  <head>
+    <title>ooi — JavaScript Utility & Tools Library</title>
+    <link rel="icon" type="image/png" href="https://cdn.sencort.com/icons/sencort/logo.png" />
+    <link rel="stylesheet" href="./markdown.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./list.css" />
+  </head>
+  <body>
+    <div class="markdown-body">
+      <div class="forum-teniryte">
+        <p><a name="contents"></a></p>
+        <h1>|ooi|</h1>
+        <h1>JavaScript Helpers &amp; Tools</h1>
+        <hr />
+        <h2>Table of Сontents</h2>
+        <ul>
+        <li>
+        <p><a href="#arrays"><strong>Arrays</strong></a></p>
+        <ul>
+        <li><a href="#arrays-append"><code>append(arr, ...items)</code></a></li>
+        <li><a href="#arrays-concat"><code>concat()</code></a></li>
+        <li><a href="#arrays-ensure-array"><code>ensureArray()</code></a></li>
+        <li><a href="#arrays-list"><code>List(...values)</code></a></li>
+        <li><a href="#arrays-list"><code>list(...array)</code></a></li>
+        </ul>
+        </li>
+        <li>
+        <p><a href="#collections"><strong>Collections</strong></a></p>
+        <ul>
+        <li><a href="#collections-clone"><code>clone(data)</code></a></li>
+        <li><a href="#collections-deep-clone"><code>deepClone(data)</code></a></li>
+        <li><a href="#collections-each"><code>each(data, cb)</code></a></li>
+        <li><a href="#collections-flatten"><code>flatten(object)</code></a></li>
+        <li><a href="#collections-flatten-unflatten"><code>flatten.unflatten(object)</code></a></li>
+        </ul>
+        </li>
+        <li>
+        <p><a href="#convert"><strong>Convert</strong></a></p>
+        <ul>
+        <li><a href="#convert-base64-decode"><code>base64.decode()</code></a></li>
+        <li><a href="#convert-base64-encode"><code>base64.encode()</code></a></li>
+        <li><a href="#convert-parse"><code>parse(string)</code></a></li>
+        <li><a href="#convert-query"><code>query(string | object)</code></a></li>
+        <li><a href="#convert-stringify"><code>stringify(object)</code></a></li>
+        <li><a href="#convert-uri"><code>uri(string)</code></a></li>
+        <li><a href="#convert-uri"><code>uri(string)</code></a></li>
+        </ul>
+        </li>
+        <li>
+        <p><a href="#events"><strong>Events</strong></a></p>
+        <ul>
+        <li><a href="#events-event-emitter"><code>EventEmitter()</code></a></li>
+        </ul>
+        </li>
+        <li>
+        <p><a href="#format"><strong>Format</strong></a></p>
+        <ul>
+        <li><a href="#format-class-names"><code>classNames(...any)</code></a></li>
+        <li><a href="#format-template"><code>template(source, opts)</code></a></li>
+        </ul>
+        </li>
+        <li>
+        <p><a href="#meta"><strong>Meta</strong></a></p>
+        <ul>
+        <li><a href="#meta-class-meta"><code>classMeta(Class)</code></a></li>
+        <li><a href="#meta-wrap-class"><code>wrap.class(Class, options)</code></a></li>
+        </ul>
+        </li>
+        <li>
+        <p><a href="#objects"><strong>Objects</strong></a></p>
+        <ul>
+        <li><a href="#objects-aliases"><code>aliases(data, { propName: [...aliases] })</code></a></li>
+        <li><a href="#objects-define-box"><code>define.box(object, name[, isEnumerable])</code></a></li>
+        <li><a href="#objects-define-prop"><code>define.prop({ object, name, value, get, set, configurable, enumerable, writable })</code></a></li>
+        <li><a href="#objects-extend"><code>extend(target, ...sources)</code></a></li>
+        <li><a href="#objects-extend-deep"><code>extend.deep(target, ...sources)</code></a></li>
+        <li><a href="#objects-keys"><code>keys(object)</code></a></li>
+        <li><a href="#objects-proto"><code>proto(object)</code></a></li>
+        <li><a href="#objects-proto-chain"><code>proto.chain(obj1, obj2, obj3)</code></a></li>
+        </ul>
+        </li>
+        <li>
+        <p><a href="#util"><strong>Util</strong></a></p>
+        <ul>
+        <li><a href="#util-type-entity"><code>TypeEntity(opts)</code></a></li>
+        <li><a href="#util-type-manager"><code>TypeManager(opts)</code></a></li>
+        <li><a href="#util-type-manager"><code>typeManager(name, options)</code></a></li>
+        </ul>
+        </li>
+        <li>
+        <p><a href="#utils"><strong>Utils</strong></a></p>
+        <ul>
+        <li><a href="#utils-defaults"><code>defaults(data, defaultData)</code></a></li>
+        </ul>
+        </li>
+        </ul>
+        <hr />
+        <p><a name="arrays"></a></p>
+        <h2><a href="#contents">⇧</a> Arrays</h2>
+        <p><a name="arrays-append"></a></p>
+        <h2><a href="#contents">⇧</a> <em>function</em> append</h2>
+        <h3>Call</h3>
+        <pre><code class="language-js">ooi.append(arr, ...items) =&gt; arr
+        </code></pre>
+        <h3>Description</h3>
+        <blockquote>
+        <p>Appends elements to array.</p>
+        </blockquote>
+        <h3>Info</h3>
+        <p>| <strong>Source File</strong> | <strong>Dependencies</strong> | <strong>Included in <em>index.js</em></strong> | <strong>Has Test</strong> | <strong>Tags</strong>    |<br />
+        |:----------------|:-----------------|:---------------------------|:-------------|:------------|<br />
+        | <code>append.js</code>     |                  | <strong>✖</strong>                      | <strong>✖</strong>        | <code>all</code>, <code>fn</code> |</p>
+        <h3>Example</h3>
+        <pre><code class="language-js">import append from &quot;ooi/append&quot;;
+        
+        let result = append(arr, ...items);
+        </code></pre>
+        <hr />
+        <p><a name="arrays-concat"></a></p>
+        <h2><a href="#contents">⇧</a> <em>function</em> concat</h2>
+        <h3>Call</h3>
+        <pre><code class="language-js">ooi.concat() =&gt; array
+        </code></pre>
+        <h3>Description</h3>
+        <blockquote>
+        <p>Concatenates arrays.</p>
+        </blockquote>
+        <h3>Info</h3>
+        <p>| <strong>Source File</strong> | <strong>Dependencies</strong> | <strong>Included in <em>index.js</em></strong> | <strong>Has Test</strong> | <strong>Tags</strong>    |<br />
+        |:----------------|:-----------------|:---------------------------|:-------------|:------------|<br />
+        | <code>concat.js</code>     |                  | <strong>✖</strong>                      | <strong>✖</strong>        | <code>all</code>, <code>fn</code> |</p>
+        <h3>Example</h3>
+        <pre><code class="language-js">import concat from &quot;ooi/concat&quot;;
+        
+        let result = concat();
+        </code></pre>
+        <hr />
+        <p><a name="arrays-ensure-array"></a></p>
+        <h2><a href="#contents">⇧</a> <em>function</em> ensureArray</h2>
+        <h3>Call</h3>
+        <pre><code class="language-js">ooi.ensureArray() =&gt; array
+        </code></pre>
+        <h3>Description</h3>
+        <blockquote>
+        <p>Wrapper for array.</p>
+        </blockquote>
+        <h3>Info</h3>
+        <p>| <strong>Source File</strong>   | <strong>Dependencies</strong>     | <strong>Included in <em>index.js</em></strong> | <strong>Has Test</strong> | <strong>Tags</strong>    |<br />
+        |:------------------|:---------------------|:---------------------------|:-------------|:------------|<br />
+        | <code>ensure-array.js</code> | <code>concat</code>, <code>is-array</code> | <strong>✖</strong>                      | <strong>✖</strong>        | <code>all</code>, <code>fn</code> |</p>
+        <h3>Example</h3>
+        <pre><code class="language-js">import ensureArray from &quot;ooi/ensure-array&quot;;
+        
+        let result = ensureArray();
+        </code></pre>
+        <hr />
+        <p><a name="arrays-list"></a></p>
+        <h2><a href="#contents">⇧</a> <em>class</em> List</h2>
+        <h3>Call</h3>
+        <pre><code class="language-js">ooi.List(...values) =&gt; new List
+        </code></pre>
+        <h3>Description</h3>
+        <blockquote>
+        <p>List class.</p>
+        </blockquote>
+        <h3>Info</h3>
+        <p>| <strong>Source File</strong> | <strong>Dependencies</strong>                                                                                         | <strong>Included in <em>index.js</em></strong> | <strong>Has Test</strong> | <strong>Tags</strong>       |<br />
+        |:----------------|:---------------------------------------------------------------------------------------------------------|:---------------------------|:-------------|:---------------|<br />
+        | <code>list.js</code>       | <code>define</code>, <code>keys</code>, <code>extend</code>, <code>each</code>, <code>defaults</code>, <code>values</code>, <code>flatten</code>, <code>strcase</code>, <code>range</code>, <code>event-emitter</code> | <strong>✖</strong>                      | <strong>✖</strong>        | <code>all</code>, <code>class</code> |</p>
+        <h3>Example</h3>
+        <pre><code class="language-js">import List from &quot;ooi/list&quot;;
+        
+        let result = List(...values);
+        </code></pre>
+        <hr />
+        <p><a name="arrays-list"></a></p>
+        <h2><a href="#contents">⇧</a> <em>function</em> list</h2>
+        <h3>Call</h3>
+        <pre><code class="language-js">ooi.list(...array) =&gt; new List(...array)
+        </code></pre>
+        <h3>Description</h3>
+        <blockquote>
+        <p>Creates List object (extends Array) with additional list methods.</p>
+        </blockquote>
+        <h3>Info</h3>
+        <p>| <strong>Source File</strong> | <strong>Dependencies</strong>                                                                                         | <strong>Included in <em>index.js</em></strong> | <strong>Has Test</strong> | <strong>Tags</strong>    |<br />
+        |:----------------|:---------------------------------------------------------------------------------------------------------|:---------------------------|:-------------|:------------|<br />
+        | <code>list.js</code>       | <code>define</code>, <code>keys</code>, <code>extend</code>, <code>each</code>, <code>defaults</code>, <code>values</code>, <code>flatten</code>, <code>strcase</code>, <code>range</code>, <code>event-emitter</code> | <strong>✖</strong>                      | <strong>✖</strong>        | <code>all</code>, <code>fn</code> |</p>
+        <h3>Example</h3>
+        <pre><code class="language-js">import list from &quot;ooi/list&quot;;
+        
+        let result = list(...array);
+        </code></pre>
+        <hr />
+        <hr />
+        <p><a name="collections"></a></p>
+        <h2><a href="#contents">⇧</a> Collections</h2>
+        <p><a name="collections-clone"></a></p>
+        <h2><a href="#contents">⇧</a> <em>function</em> clone</h2>
+        <h3>Call</h3>
+        <pre><code class="language-js">ooi.clone(data) =&gt; data
+        </code></pre>
+        <h3>Description</h3>
+        <blockquote>
+        <p>Shallow copy of object.</p>
+        </blockquote>
+        <h3>Info</h3>
+        <p>| <strong>Source File</strong> | <strong>Dependencies</strong>               | <strong>Included in <em>index.js</em></strong> | <strong>Has Test</strong> | <strong>Tags</strong>            |<br />
+        |:----------------|:-------------------------------|:---------------------------|:-------------|:--------------------|<br />
+        | <code>clone.js</code>      | <code>each</code>, <code>extend</code>, <code>deep-clone</code> | <strong>✖</strong>                      | <strong>✖</strong>        | <code>all</code>, <code>copy</code>, <code>fn</code> |</p>
+        <h3>Example</h3>
+        <pre><code class="language-js">import clone from &quot;ooi/clone&quot;;
+        
+        let result = clone(data);
+        </code></pre>
+        <hr />
+        <p><a name="collections-deep-clone"></a></p>
+        <h2><a href="#contents">⇧</a> <em>function</em> deepClone</h2>
+        <h3>Call</h3>
+        <pre><code class="language-js">ooi.deepClone(data) =&gt; data
+        </code></pre>
+        <h3>Description</h3>
+        <blockquote>
+        <p>Deep copy of object</p>
+        </blockquote>
+        <h3>Info</h3>
+        <p>| <strong>Source File</strong> | <strong>Dependencies</strong>                      | <strong>Included in <em>index.js</em></strong> | <strong>Has Test</strong> | <strong>Tags</strong>               |<br />
+        |:----------------|:--------------------------------------|:---------------------------|:-------------|:-----------------------|<br />
+        | <code>deep-clone.js</code> | <code>ooi/deep-clone</code>, <code>ooi/clone</code>, <code>each</code> | <strong>✖</strong>                      | <strong>✖</strong>        | <code>all</code>, <code>copy</code>, <code>clone</code> |</p>
+        <h3>Example</h3>
+        <pre><code class="language-js">const deepClone = require(&quot;ooi/deep-clone&quot;);
+        // or
+        const deepClone = require(&quot;ooi/clone&quot;).deep;
+        </code></pre>
+        <hr />
+        <p><a name="collections-each"></a></p>
+        <h2><a href="#contents">⇧</a> <em>function</em> each</h2>
+        <h3>Call</h3>
+        <pre><code class="language-js">ooi.each(data, cb) =&gt; void
+        </code></pre>
+        <h3>Description</h3>
+        <blockquote>
+        <p>Iterates over all properties of data and calls cb(value, key) for each of them.</p>
+        </blockquote>
+        <h3>Info</h3>
+        <p>| <strong>Source File</strong> | <strong>Dependencies</strong> | <strong>Included in <em>index.js</em></strong> | <strong>Has Test</strong> | <strong>Tags</strong>                 |<br />
+        |:----------------|:-----------------|:---------------------------|:-------------|:-------------------------|<br />
+        | <code>each.js</code>       | <code>keys</code>           | <strong>✖</strong>                      | <strong>✖</strong>        | <code>all</code>, <code>iteration</code>, <code>fn</code> |</p>
+        <h3>Example</h3>
+        <pre><code class="language-js">import each from &quot;ooi/each&quot;;
+        
+        let result = each(data, cb);
+        </code></pre>
+        <hr />
+        <p><a name="collections-flatten"></a></p>
+        <h2><a href="#contents">⇧</a> <em>function</em> flatten</h2>
+        <h3>Call</h3>
+        <pre><code class="language-js">ooi.flatten(object) =&gt; object
+        </code></pre>
+        <h3>Description</h3>
+        <blockquote>
+        <p>Flattens all <code>object</code> properties and returns plain object.</p>
+        </blockquote>
+        <h3>Info</h3>
+        <p>| <strong>Source File</strong> | <strong>Dependencies</strong> | <strong>Included in <em>index.js</em></strong> | <strong>Has Test</strong> | <strong>Tags</strong>    |<br />
+        |:----------------|:-----------------|:---------------------------|:-------------|:------------|<br />
+        | <code>flatten.js</code>    | <code>set</code>, <code>keys</code>    | <strong>✖</strong>                      | <strong>✖</strong>        | <code>all</code>, <code>fn</code> |</p>
+        <h3>Example</h3>
+        <pre><code class="language-js">import flatten from &quot;ooi/flatten&quot;;
+        
+        let result = flatten(object);
+        </code></pre>
+        <hr />
+        <p><a name="collections-flatten-unflatten"></a></p>
+        <h2><a href="#contents">⇧</a> <em>function</em> flatten.unflatten</h2>
+        <h3>Call</h3>
+        <pre><code class="language-js">ooi.flatten.unflatten(object) =&gt; object
+        </code></pre>
+        <h3>Description</h3>
+        <blockquote>
+        <p>Returns object with resurrected properties structure.</p>
+        </blockquote>
+        <h3>Info</h3>
+        <p>| <strong>Source File</strong> | <strong>Dependencies</strong> | <strong>Included in <em>index.js</em></strong> | <strong>Has Test</strong> | <strong>Tags</strong>    |<br />
+        |:----------------|:-----------------|:---------------------------|:-------------|:------------|<br />
+        | <code>flatten.js</code>    | <code>set</code>, <code>keys</code>    | <strong>✖</strong>                      | <strong>✖</strong>        | <code>all</code>, <code>fn</code> |</p>
+        <h3>Example</h3>
+        <pre><code class="language-js">import flatten.unflatten from 'ooi/flatten';
+        
+        let result = flatten.unflatten(object);
+        </code></pre>
+        <hr />
+        <hr />
+        <p><a name="convert"></a></p>
+        <h2><a href="#contents">⇧</a> Convert</h2>
+        <p><a name="convert-base64-decode"></a></p>
+        <h2><a href="#contents">⇧</a> <em>function</em> base64.decode</h2>
+        <h3>Call</h3>
+        <pre><code class="language-js">ooi.base64.decode() =&gt; string
+        </code></pre>
+        <h3>Description</h3>
+        <blockquote>
+        <p>Converts base64-string to regular string.</p>
+        </blockquote>
+        <h3>Info</h3>
+        <p>| <strong>Source File</strong> | <strong>Dependencies</strong> | <strong>Included in <em>index.js</em></strong> | <strong>Has Test</strong> | <strong>Tags</strong>                         |<br />
+        |:----------------|:-----------------|:---------------------------|:-------------|:---------------------------------|<br />
+        | <code>base64.js</code>     | <code>extend</code>         | <strong>✖</strong>                      | <strong>✖</strong>        | <code>all</code>, <code>strings</code>, <code>encode</code>, <code>fn</code> |</p>
+        <h3>Example</h3>
+        <pre><code class="language-js">import base64.decode from 'ooi/base64';
+        
+        let result = base64.decode();
+        </code></pre>
+        <hr />
+        <p><a name="convert-base64-encode"></a></p>
+        <h2><a href="#contents">⇧</a> <em>function</em> base64.encode</h2>
+        <h3>Call</h3>
+        <pre><code class="language-js">ooi.base64.encode() =&gt; string
+        </code></pre>
+        <h3>Description</h3>
+        <blockquote>
+        <p>Convert regular string to base64.</p>
+        </blockquote>
+        <h3>Info</h3>
+        <p>| <strong>Source File</strong> | <strong>Dependencies</strong> | <strong>Included in <em>index.js</em></strong> | <strong>Has Test</strong> | <strong>Tags</strong>                         |<br />
+        |:----------------|:-----------------|:---------------------------|:-------------|:---------------------------------|<br />
+        | <code>base64.js</code>     | <code>extend</code>         | <strong>✖</strong>                      | <strong>✖</strong>        | <code>all</code>, <code>strings</code>, <code>encode</code>, <code>fn</code> |</p>
+        <h3>Example</h3>
+        <pre><code class="language-js">import base64.encode from 'ooi/base64';
+        
+        let result = base64.encode();
+        </code></pre>
+        <hr />
+        <p><a name="convert-parse"></a></p>
+        <h2><a href="#contents">⇧</a> <em>function</em> parse</h2>
+        <h3>Call</h3>
+        <pre><code class="language-js">ooi.parse(string) =&gt; object
+        </code></pre>
+        <h3>Description</h3>
+        <blockquote>
+        <p>Parse url query string.</p>
+        </blockquote>
+        <h3>Info</h3>
+        <p>| <strong>Source File</strong> | <strong>Dependencies</strong>    | <strong>Included in <em>index.js</em></strong> | <strong>Has Test</strong> | <strong>Tags</strong>    |<br />
+        |:----------------|:--------------------|:---------------------------|:-------------|:------------|<br />
+        | <code>query.js</code>      | <code>extend</code>, <code>flatten</code> | <strong>✖</strong>                      | <strong>✖</strong>        | <code>all</code>, <code>fn</code> |</p>
+        <h3>Example</h3>
+        <pre><code class="language-js">import parse from &quot;ooi/query&quot;;
+        
+        let result = parse(string);
+        </code></pre>
+        <hr />
+        <p><a name="convert-query"></a></p>
+        <h2><a href="#contents">⇧</a> <em>function</em> query</h2>
+        <h3>Call</h3>
+        <pre><code class="language-js">ooi.query(string | object) =&gt; object | string
+        </code></pre>
+        <h3>Description</h3>
+        <blockquote>
+        <p>If receives not URI string, returns parsed query object. If receives object, returns stringified query url.</p>
+        </blockquote>
+        <h3>Info</h3>
+        <p>| <strong>Source File</strong> | <strong>Dependencies</strong>    | <strong>Included in <em>index.js</em></strong> | <strong>Has Test</strong> | <strong>Tags</strong>    |<br />
+        |:----------------|:--------------------|:---------------------------|:-------------|:------------|<br />
+        | <code>query.js</code>      | <code>extend</code>, <code>flatten</code> | <strong>✖</strong>                      | <strong>✖</strong>        | <code>all</code>, <code>fn</code> |</p>
+        <h3>Example</h3>
+        <pre><code class="language-js">import query from &quot;ooi/query&quot;;
+        
+        let result = query(string | object);
+        </code></pre>
+        <hr />
+        <p><a name="convert-stringify"></a></p>
+        <h2><a href="#contents">⇧</a> <em>function</em> stringify</h2>
+        <h3>Call</h3>
+        <pre><code class="language-js">ooi.stringify(object) =&gt; string
+        </code></pre>
+        <h3>Description</h3>
+        <blockquote>
+        <p>Stringifies plain object into query url.</p>
+        </blockquote>
+        <h3>Info</h3>
+        <p>| <strong>Source File</strong> | <strong>Dependencies</strong>    | <strong>Included in <em>index.js</em></strong> | <strong>Has Test</strong> | <strong>Tags</strong>    |<br />
+        |:----------------|:--------------------|:---------------------------|:-------------|:------------|<br />
+        | <code>query.js</code>      | <code>extend</code>, <code>flatten</code> | <strong>✖</strong>                      | <strong>✖</strong>        | <code>all</code>, <code>fn</code> |</p>
+        <h3>Example</h3>
+        <pre><code class="language-js">import stringify from &quot;ooi/query&quot;;
+        
+        let result = stringify(object);
+        </code></pre>
+        <hr />
+        <p><a name="convert-uri"></a></p>
+        <h2><a href="#contents">⇧</a> <em>function</em> uri</h2>
+        <h3>Call</h3>
+        <pre><code class="language-js">ooi.uri(string) =&gt; object
+        </code></pre>
+        <h3>Description</h3>
+        <blockquote>
+        <p>Parses string URI and returns object with properties uri, protocol, host, path, filename, extname, query, request.</p>
+        </blockquote>
+        <h3>Info</h3>
+        <p>| <strong>Source File</strong> | <strong>Dependencies</strong>                     | <strong>Included in <em>index.js</em></strong> | <strong>Has Test</strong> | <strong>Tags</strong>    |<br />
+        |:----------------|:-------------------------------------|:---------------------------|:-------------|:------------|<br />
+        | <code>uri.js</code>        | <code>extend</code>, <code>flatten</code>, <code>query</code>, <code>path</code> | <strong>✖</strong>                      | <strong>✖</strong>        | <code>all</code>, <code>fn</code> |</p>
+        <h3>Example</h3>
+        <pre><code class="language-js">import uri from &quot;ooi/uri&quot;;
+        
+        let result = uri(string);
+        </code></pre>
+        <hr />
+        <p><a name="convert-uri"></a></p>
+        <h2><a href="#contents">⇧</a> <em>function</em> uri</h2>
+        <h3>Call</h3>
+        <pre><code class="language-js">ooi.uri(string) =&gt; object
+        </code></pre>
+        <h3>Description</h3>
+        <blockquote>
+        <p>Same as uri.parse.</p>
+        </blockquote>
+        <h3>Info</h3>
+        <p>| <strong>Source File</strong> | <strong>Dependencies</strong>                     | <strong>Included in <em>index.js</em></strong> | <strong>Has Test</strong> | <strong>Tags</strong>    |<br />
+        |:----------------|:-------------------------------------|:---------------------------|:-------------|:------------|<br />
+        | <code>uri.js</code>        | <code>extend</code>, <code>flatten</code>, <code>query</code>, <code>path</code> | <strong>✖</strong>                      | <strong>✖</strong>        | <code>all</code>, <code>fn</code> |</p>
+        <h3>Example</h3>
+        <pre><code class="language-js">import uri from &quot;ooi/uri&quot;;
+        
+        let result = uri(string);
+        </code></pre>
+        <hr />
+        <hr />
+        <p><a name="events"></a></p>
+        <h2><a href="#contents">⇧</a> Events</h2>
+        <p><a name="events-event-emitter"></a></p>
+        <h2><a href="#contents">⇧</a> <em>class</em> EventEmitter</h2>
+        <h3>Call</h3>
+        <pre><code class="language-js">ooi.EventEmitter() =&gt; new EventEmitter()
+        </code></pre>
+        <h3>Description</h3>
+        <blockquote>
+        <p>Class for events handling.</p>
+        </blockquote>
+        <h3>Info</h3>
+        <p>| <strong>Source File</strong>    | <strong>Dependencies</strong>                  | <strong>Included in <em>index.js</em></strong> | <strong>Has Test</strong> | <strong>Tags</strong>       |<br />
+        |:-------------------|:----------------------------------|:---------------------------|:-------------|:---------------|<br />
+        | <code>event-emitter.js</code> | <code>ooi</code>, <code>each</code>, <code>define</code>, <code>extend</code> | <strong>✖</strong>                      | <strong>✖</strong>        | <code>all</code>, <code>class</code> |</p>
+        <h3>Example</h3>
+        <pre><code class="language-js">const ooi = require(&quot;ooi&quot;);
+        
+        class Manager extends ooi.EventEmitter {
+          constructor() {
+            super();
+          }
+        }
+        
+        let manager = new Manager();
+        
+        manager.on(&quot;message&quot;, message =&gt; {
+          console.log(&quot;New message:&quot;, message);
+        });
+        
+        setTimeout(() =&gt; {
+          manager.emit(&quot;message&quot;, &quot;This is new message!&quot;);
+        }, 1000);
+        </code></pre>
+        <hr />
+        <hr />
+        <p><a name="format"></a></p>
+        <h2><a href="#contents">⇧</a> Format</h2>
+        <p><a name="format-class-names"></a></p>
+        <h2><a href="#contents">⇧</a> <em>function</em> classNames</h2>
+        <h3>Call</h3>
+        <pre><code class="language-js">ooi.classNames(...any) =&gt; array
+        </code></pre>
+        <h3>Description</h3>
+        <blockquote>
+        <p>Receives classes in any format, returns array of class names</p>
+        </blockquote>
+        <h3>Info</h3>
+        <p>| <strong>Source File</strong>  | <strong>Dependencies</strong>  | <strong>Included in <em>index.js</em></strong> | <strong>Has Test</strong> | <strong>Tags</strong>    |<br />
+        |:-----------------|:------------------|:---------------------------|:-------------|:------------|<br />
+        | <code>class-names.js</code> | <code>each</code>, <code>flatten</code> | <strong>✖</strong>                      | <strong>✖</strong>        | <code>all</code>, <code>fn</code> |</p>
+        <h3>Example</h3>
+        <pre><code class="language-js">import classNames from &quot;ooi/class-names&quot;;
+        
+        let result = classNames(...any);
+        </code></pre>
+        <hr />
+        <p><a name="format-template"></a></p>
+        <h2><a href="#contents">⇧</a> <em>function</em> template</h2>
+        <h3>Call</h3>
+        <pre><code class="language-js">ooi.template(source, opts) =&gt; function(data)
+        </code></pre>
+        <h3>Description</h3>
+        <blockquote>
+        <p>Creates function-template with specified template code, which returns content with replaced all expressions surrounded by [[ and ]].</p>
+        </blockquote>
+        <h3>Info</h3>
+        <p>| <strong>Source File</strong> | <strong>Dependencies</strong>                               | <strong>Included in <em>index.js</em></strong> | <strong>Has Test</strong> | <strong>Tags</strong>               |<br />
+        |:----------------|:-----------------------------------------------|:---------------------------|:-------------|:-----------------------|<br />
+        | <code>template.js</code>   | <code>extend</code>, <code>expression</code>, <code>reg</code>, <code>trim</code>, <code>proto</code> | <strong>✖</strong>                      | <strong>✖</strong>        | <code>all</code>, <code>strings</code>, <code>fn</code> |</p>
+        <h3>Example</h3>
+        <pre><code class="language-js">import template from &quot;ooi/template&quot;;
+        
+        let result = template(source, opts);
+        </code></pre>
+        <hr />
+        <hr />
+        <p><a name="meta"></a></p>
+        <h2><a href="#contents">⇧</a> Meta</h2>
+        <p><a name="meta-class-meta"></a></p>
+        <h2><a href="#contents">⇧</a> <em>function</em> classMeta</h2>
+        <h3>Call</h3>
+        <pre><code class="language-js">ooi.classMeta(Class) =&gt; { methods, methodsNames, staticMethods, staticMethodsNames, extended }
+        </code></pre>
+        <h3>Description</h3>
+        <blockquote>
+        <p>Extemdan;</p>
+        </blockquote>
+        <h3>Info</h3>
+        <p>| <strong>Source File</strong> | <strong>Dependencies</strong>         | <strong>Included in <em>index.js</em></strong> | <strong>Has Test</strong> | <strong>Tags</strong>    |<br />
+        |:----------------|:-------------------------|:---------------------------|:-------------|:------------|<br />
+        | <code>class-meta.js</code> | <code>extend</code>, <code>each</code>, <code>keys</code> | <strong>✖</strong>                      | <strong>✖</strong>        | <code>all</code>, <code>fn</code> |</p>
+        <h3>Example</h3>
+        <pre><code class="language-js">import classMeta from &quot;ooi/class-meta&quot;;
+        
+        let result = classMeta(Class);
+        </code></pre>
+        <hr />
+        <p><a name="meta-wrap-class"></a></p>
+        <h2><a href="#contents">⇧</a> <em>function</em> wrap.class</h2>
+        <h3>Call</h3>
+        <pre><code class="language-js">ooi.wrap.class(Class, options) =&gt; Class
+        </code></pre>
+        <h3>Description</h3>
+        <blockquote>
+        <p>Modifies target class with options: init.</p>
+        </blockquote>
+        <h3>Info</h3>
+        <p>| <strong>Source File</strong> | <strong>Dependencies</strong>                                               | <strong>Included in <em>index.js</em></strong> | <strong>Has Test</strong> | <strong>Tags</strong>    |<br />
+        |:----------------|:---------------------------------------------------------------|:---------------------------|:-------------|:------------|<br />
+        | <code>wrap.js</code>       | <code>extend</code>, <code>each</code>, <code>define</code>, <code>get</code>, <code>set</code>, <code>keys</code>, <code>expression</code> | <strong>✖</strong>                      | <strong>✖</strong>        | <code>all</code>, <code>fn</code> |</p>
+        <h3>Example</h3>
+        <pre><code class="language-js">import wrap.class from 'ooi/wrap';
+        
+        let result = wrap.class(Class, options);
+        </code></pre>
+        <hr />
+        <hr />
+        <p><a name="objects"></a></p>
+        <h2><a href="#contents">⇧</a> Objects</h2>
+        <p><a name="objects-aliases"></a></p>
+        <h2><a href="#contents">⇧</a> <em>function</em> aliases</h2>
+        <h3>Call</h3>
+        <pre><code class="language-js">ooi.aliases(data, { propName: [...aliases] }) =&gt; data
+        </code></pre>
+        <h3>Description</h3>
+        <blockquote>
+        <p>Defines property aliases for object.</p>
+        </blockquote>
+        <h3>Info</h3>
+        <p>| <strong>Source File</strong> | <strong>Dependencies</strong>                                                                                            | <strong>Included in <em>index.js</em></strong> | <strong>Has Test</strong> | <strong>Tags</strong>    |<br />
+        |:----------------|:------------------------------------------------------------------------------------------------------------|:---------------------------|:-------------|:------------|<br />
+        | <code>aliases.js</code>    | <code>ooi</code>, <code>each</code>, <code>extend</code>, <code>flatten</code>, <code>defaults</code>, <code>type</code>, <code>get</code>, <code>set</code>, <code>map</code>, <code>keys</code>, <code>trim</code>, <code>ensure-array</code> | <strong>✖</strong>                      | <strong>✖</strong>        | <code>all</code>, <code>fn</code> |</p>
+        <h3>Example</h3>
+        <pre><code class="language-js">const ooi = require(&quot;ooi&quot;);
+        
+        let data = {
+          one: 1,
+          two: 2,
+          three: 3
+        };
+        
+        ooi.aliases(data, {
+          one: [&quot;first&quot;, &quot;number1&quot;],
+          two: [&quot;second&quot;, &quot;number2&quot;],
+          three: [&quot;third&quot;, &quot;number3&quot;]
+        });
+        </code></pre>
+        <hr />
+        <p><a name="objects-define-box"></a></p>
+        <h2><a href="#contents">⇧</a> <em>function</em> define.box</h2>
+        <h3>Call</h3>
+        <pre><code class="language-js">ooi.define.box(object, name[, isEnumerable]) =&gt; data
+        </code></pre>
+        <h3>Description</h3>
+        <blockquote>
+        <p>Defines new virtual property on object and serves it by property name. If the property gets assigned — new object deep merges with existing.</p>
+        </blockquote>
+        <h3>Info</h3>
+        <p>| <strong>Source File</strong> | <strong>Dependencies</strong>                            | <strong>Included in <em>index.js</em></strong> | <strong>Has Test</strong> | <strong>Tags</strong>                 |<br />
+        |:----------------|:--------------------------------------------|:---------------------------|:-------------|:-------------------------|<br />
+        | <code>define.js</code>     | <code>each</code>, <code>extend</code>, <code>flatten</code>, <code>set</code>, <code>range</code> | <strong>✖</strong>                      | <strong>✖</strong>        | <code>all</code>, <code>meta</code>, <code>objects</code> |</p>
+        <h3>Example</h3>
+        <pre><code class="language-js">import define.box from 'ooi/define';
+        
+        let result = define.box(object, name[, isEnumerable]);
+        </code></pre>
+        <hr />
+        <p><a name="objects-define-prop"></a></p>
+        <h2><a href="#contents">⇧</a> <em>function</em> define.prop</h2>
+        <h3>Call</h3>
+        <pre><code class="language-js">ooi.define.prop({ object, name, value, get, set, configurable, enumerable, writable }) =&gt; object
+        </code></pre>
+        <h3>Description</h3>
+        <blockquote>
+        <p>Defines new property on object.</p>
+        </blockquote>
+        <h3>Info</h3>
+        <p>| <strong>Source File</strong> | <strong>Dependencies</strong>                            | <strong>Included in <em>index.js</em></strong> | <strong>Has Test</strong> | <strong>Tags</strong>                 |<br />
+        |:----------------|:--------------------------------------------|:---------------------------|:-------------|:-------------------------|<br />
+        | <code>define.js</code>     | <code>each</code>, <code>extend</code>, <code>flatten</code>, <code>set</code>, <code>range</code> | <strong>✖</strong>                      | <strong>✖</strong>        | <code>all</code>, <code>meta</code>, <code>objects</code> |</p>
+        <h3>Example</h3>
+        <pre><code class="language-js">import define.prop from 'ooi/define';
+        
+        let result = define.prop({ object, name, value, get, set, configurable, enumerable, writable });
+        </code></pre>
+        <hr />
+        <p><a name="objects-extend"></a></p>
+        <h2><a href="#contents">⇧</a> <em>function</em> extend</h2>
+        <h3>Call</h3>
+        <pre><code class="language-js">ooi.extend(target, ...sources) =&gt; object
+        </code></pre>
+        <h3>Description</h3>
+        <blockquote>
+        <p>Extends <code>target</code> object with properties of sources objects.</p>
+        </blockquote>
+        <h3>Info</h3>
+        <p>| <strong>Source File</strong> | <strong>Dependencies</strong>                | <strong>Included in <em>index.js</em></strong> | <strong>Has Test</strong> | <strong>Tags</strong>    |<br />
+        |:----------------|:--------------------------------|:---------------------------|:-------------|:------------|<br />
+        | <code>extend.js</code>     | <code>each</code>, <code>set</code>, <code>get</code>, <code>flatten</code> | <strong>✖</strong>                      | <strong>✖</strong>        | <code>all</code>, <code>fn</code> |</p>
+        <h3>Example</h3>
+        <pre><code class="language-js">import extend from &quot;ooi/extend&quot;;
+        
+        let result = extend(target, ...sources);
+        </code></pre>
+        <hr />
+        <p><a name="objects-extend-deep"></a></p>
+        <h2><a href="#contents">⇧</a> <em>function</em> extend.deep</h2>
+        <h3>Call</h3>
+        <pre><code class="language-js">ooi.extend.deep(target, ...sources) =&gt; object
+        </code></pre>
+        <h3>Description</h3>
+        <blockquote>
+        <p>Extends <code>target</code> object with properties of sources objects (deep extending).</p>
+        </blockquote>
+        <h3>Info</h3>
+        <p>| <strong>Source File</strong> | <strong>Dependencies</strong>                | <strong>Included in <em>index.js</em></strong> | <strong>Has Test</strong> | <strong>Tags</strong> |<br />
+        |:----------------|:--------------------------------|:---------------------------|:-------------|:---------|<br />
+        | <code>extend.js</code>     | <code>each</code>, <code>set</code>, <code>get</code>, <code>flatten</code> | <strong>✖</strong>                      | <strong>✖</strong>        | <code>all</code>    |</p>
+        <h3>Example</h3>
+        <pre><code class="language-js">import extend.deep from 'ooi/extend';
+        
+        let result = extend.deep(target, ...sources);
+        </code></pre>
+        <hr />
+        <p><a name="objects-keys"></a></p>
+        <h2><a href="#contents">⇧</a> <em>function</em> keys</h2>
+        <h3>Call</h3>
+        <pre><code class="language-js">ooi.keys(object) =&gt; array
+        </code></pre>
+        <h3>Description</h3>
+        <blockquote>
+        <p>Returns array of <code>object</code> property names.</p>
+        </blockquote>
+        <h3>Info</h3>
+        <p>| <strong>Source File</strong> | <strong>Dependencies</strong> | <strong>Included in <em>index.js</em></strong> | <strong>Has Test</strong> | <strong>Tags</strong>    |<br />
+        |:----------------|:-----------------|:---------------------------|:-------------|:------------|<br />
+        | <code>keys.js</code>       |                  | <strong>✖</strong>                      | <strong>✖</strong>        | <code>all</code>, <code>fn</code> |</p>
+        <h3>Example</h3>
+        <pre><code class="language-js">import keys from &quot;ooi/keys&quot;;
+        
+        let result = keys(object);
+        </code></pre>
+        <hr />
+        <p><a name="objects-proto"></a></p>
+        <h2><a href="#contents">⇧</a> <em>function</em> proto</h2>
+        <h3>Call</h3>
+        <pre><code class="language-js">ooi.proto(object) =&gt; prototype
+        </code></pre>
+        <h3>Description</h3>
+        <blockquote>
+        <p>Returns object's prototype.</p>
+        </blockquote>
+        <h3>Info</h3>
+        <p>| <strong>Source File</strong> | <strong>Dependencies</strong> | <strong>Included in <em>index.js</em></strong> | <strong>Has Test</strong> | <strong>Tags</strong>                             |<br />
+        |:----------------|:-----------------|:---------------------------|:-------------|:-------------------------------------|<br />
+        | <code>proto.js</code>      | <code>extend</code>         | <strong>✖</strong>                      | <strong>✖</strong>        | <code>all</code>, <code>objects</code>, <code>prototypes</code>, <code>fn</code> |</p>
+        <h3>Example</h3>
+        <pre><code class="language-js">import proto from &quot;ooi/proto&quot;;
+        
+        let result = proto(object);
+        </code></pre>
+        <hr />
+        <p><a name="objects-proto-chain"></a></p>
+        <h2><a href="#contents">⇧</a> <em>function</em> proto.chain</h2>
+        <h3>Call</h3>
+        <pre><code class="language-js">ooi.proto.chain(obj1, obj2, obj3) =&gt; void
+        </code></pre>
+        <h3>Description</h3>
+        <blockquote>
+        <p>Sets second argument as prototype of first, third as prototype of second etc.</p>
+        </blockquote>
+        <h3>Info</h3>
+        <p>| <strong>Source File</strong> | <strong>Dependencies</strong> | <strong>Included in <em>index.js</em></strong> | <strong>Has Test</strong> | <strong>Tags</strong>                             |<br />
+        |:----------------|:-----------------|:---------------------------|:-------------|:-------------------------------------|<br />
+        | <code>proto.js</code>      | <code>extend</code>         | <strong>✖</strong>                      | <strong>✖</strong>        | <code>all</code>, <code>objects</code>, <code>prototypes</code>, <code>fn</code> |</p>
+        <h3>Example</h3>
+        <pre><code class="language-js">import proto.chain from 'ooi/proto';
+        
+        let result = proto.chain(obj1, obj2, obj3);
+        </code></pre>
+        <hr />
+        <hr />
+        <p><a name="util"></a></p>
+        <h2><a href="#contents">⇧</a> Util</h2>
+        <p><a name="util-type-entity"></a></p>
+        <h2><a href="#contents">⇧</a> <em>class</em> TypeEntity</h2>
+        <h3>Call</h3>
+        <pre><code class="language-js">ooi.TypeEntity(opts) =&gt; new TypeEntity
+        </code></pre>
+        <h3>Description</h3>
+        <blockquote>
+        <p>Type entity class.</p>
+        </blockquote>
+        <h3>Info</h3>
+        <p>| <strong>Source File</strong>   | <strong>Dependencies</strong>                                                                                                                                                          | <strong>Included in <em>index.js</em></strong> | <strong>Has Test</strong> | <strong>Tags</strong>       |<br />
+        |:------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:---------------------------|:-------------|:---------------|<br />
+        | <code>type-manager.js</code> | <code>is-class</code>, <code>is-array</code>, <code>extend</code>, <code>each</code>, <code>strcase</code>, <code>define</code>, <code>defaults</code>, <code>wrap</code>, <code>flatten</code>, <code>keys</code>, <code>values</code>, <code>sort</code>, <code>set</code>, <code>get</code>, <code>event-emitter</code>, <code>ooi/type-manager</code> | <strong>✖</strong>                      | <strong>✖</strong>        | <code>all</code>, <code>class</code> |</p>
+        <h3>Example</h3>
+        <pre><code class="language-js">import TypeEntity from &quot;ooi/type-manager&quot;;
+        
+        let result = TypeEntity(opts);
+        </code></pre>
+        <hr />
+        <p><a name="util-type-manager"></a></p>
+        <h2><a href="#contents">⇧</a> <em>class</em> TypeManager</h2>
+        <h3>Call</h3>
+        <pre><code class="language-js">ooi.TypeManager(opts) =&gt; new TypeManager
+        </code></pre>
+        <h3>Description</h3>
+        <blockquote>
+        <p>Type manager class.</p>
+        </blockquote>
+        <h3>Info</h3>
+        <p>| <strong>Source File</strong>   | <strong>Dependencies</strong>                                                                                                                                                          | <strong>Included in <em>index.js</em></strong> | <strong>Has Test</strong> | <strong>Tags</strong>       |<br />
+        |:------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:---------------------------|:-------------|:---------------|<br />
+        | <code>type-manager.js</code> | <code>is-class</code>, <code>is-array</code>, <code>extend</code>, <code>each</code>, <code>strcase</code>, <code>define</code>, <code>defaults</code>, <code>wrap</code>, <code>flatten</code>, <code>keys</code>, <code>values</code>, <code>sort</code>, <code>set</code>, <code>get</code>, <code>event-emitter</code>, <code>ooi/type-manager</code> | <strong>✖</strong>                      | <strong>✖</strong>        | <code>all</code>, <code>class</code> |</p>
+        <h3>Example</h3>
+        <pre><code class="language-js">import TypeManager from &quot;ooi/type-manager&quot;;
+        
+        let result = TypeManager(opts);
+        </code></pre>
+        <hr />
+        <p><a name="util-type-manager"></a></p>
+        <h2><a href="#contents">⇧</a> <em>function</em> typeManager</h2>
+        <h3>Call</h3>
+        <pre><code class="language-js">ooi.typeManager(name, options) =&gt; new TypeManager()
+        </code></pre>
+        <h3>Description</h3>
+        <blockquote>
+        <p>Creates and returns new TypeManager instance;</p>
+        </blockquote>
+        <h3>Info</h3>
+        <p>| <strong>Source File</strong>   | <strong>Dependencies</strong>                                                                                                                                                          | <strong>Included in <em>index.js</em></strong> | <strong>Has Test</strong> | <strong>Tags</strong>    |<br />
+        |:------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:---------------------------|:-------------|:------------|<br />
+        | <code>type-manager.js</code> | <code>is-class</code>, <code>is-array</code>, <code>extend</code>, <code>each</code>, <code>strcase</code>, <code>define</code>, <code>defaults</code>, <code>wrap</code>, <code>flatten</code>, <code>keys</code>, <code>values</code>, <code>sort</code>, <code>set</code>, <code>get</code>, <code>event-emitter</code>, <code>ooi/type-manager</code> | <strong>✖</strong>                      | <strong>✖</strong>        | <code>all</code>, <code>fn</code> |</p>
+        <h3>Example</h3>
+        <pre><code class="language-js">const typeManager = require('ooi/type-manager');
+        
+        let manager = typeManager('app', {
+          // ...
+        });
+        
+        manager.create([
+          number: {
+            matcher: val =&gt; !isNaN(val),
+            children: {
+              integer: {
+                matcher: val =&gt; +val === Math.round(+val),
+              },
+            },
+          },
+        ]);
+        
+        </code></pre>
+        <hr />
+        <hr />
+        <p><a name="utils"></a></p>
+        <h2><a href="#contents">⇧</a> Utils</h2>
+        <p><a name="utils-defaults"></a></p>
+        <h2><a href="#contents">⇧</a> <em>function</em> defaults</h2>
+        <h3>Call</h3>
+        <pre><code class="language-js">ooi.defaults(data, defaultData) =&gt; data
+        </code></pre>
+        <h3>Description</h3>
+        <blockquote>
+        <p>Replaces all undefined properties of data object with defaultData analog.</p>
+        </blockquote>
+        <h3>Info</h3>
+        <p>| <strong>Source File</strong> | <strong>Dependencies</strong>                                            | <strong>Included in <em>index.js</em></strong> | <strong>Has Test</strong> | <strong>Tags</strong>               |<br />
+        |:----------------|:------------------------------------------------------------|:---------------------------|:-------------|:-----------------------|<br />
+        | <code>defaults.js</code>   | <code>extend</code>, <code>each</code>, <code>keys</code>, <code>flatten</code>, <code>define</code>, <code>set</code>, <code>get</code> | <strong>✖</strong>                      | <strong>✖</strong>        | <code>all</code>, <code>options</code>, <code>fn</code> |</p>
+        <h3>Example</h3>
+        <pre><code class="language-js">import defaults from &quot;ooi/defaults&quot;;
+        
+        let result = defaults(data, defaultData);
+        </code></pre>
+        <hr />
+        <hr />
+      </div>
+    </div>
+  </body>
+</html>

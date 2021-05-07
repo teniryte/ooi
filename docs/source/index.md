@@ -36,7 +36,7 @@
   <br />
 
   <p class="section--header__button">
-    <a href="#utils">
+    <a href="https://ooi.sencort.com/list.html">
       <strong>Explore Full Utils List 🚀</strong>
     </a>
   </p>
@@ -59,7 +59,6 @@
 - [About The Project](#about-the-project)
 - [Installation](#installation)
 - [Documentation](#documentation)
-- [Utils List](#utils)
 - [CLI](#cli)
 - [Testing](#testing)
 
@@ -86,14 +85,6 @@
 <div class="section" data-a="documentation">
 
 ## <span class="marker">{{marker}}</span> Documentation <a href="#top">▲</a>
-
-</div>
-
-<!-- Utilities List========================================================= -->
-
-<div class="section" data-a="utils">
-
-## <span class="marker">{{marker}}</span> Utils List <a href="#top">▲</a>
 
 </div>
 
