@@ -55,12 +55,14 @@ a.large-button--secondary {
 .forum-teniryte p:nth-of-type(2) {
   display: flex !important;
   justify-content: space-between !important;
-  width: 1200px !important;
   margin: auto !important;
 }
 .forum-teniryte p:first-of-type a,
 .forum-teniryte p:nth-of-type(2) a {
   margin: 10px !important;
+}
+.forum-teniryte .section--header__slogan {
+  width: auto !important;
 }
 .forum-teniryte p:nth-of-type(2) {
   justify-content: center !important;

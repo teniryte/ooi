@@ -95,14 +95,20 @@ ooi.append(arr, ...items) => arr
 
 | **Source File** | **Dependencies** | **Included in *index.js*** | **Has Test** | **Tags**    |
 |:----------------|:-----------------|:---------------------------|:-------------|:------------|
-| `append.js`     |                  | **✖**                      | **✖**        | `all`, `fn` |
+| `append.js`     | `ooi/append`     | **✖**                      | **✖**        | `all`, `fn` |
 
 ### Example
 
 ```js
-import append from 'ooi/append';
+const append = require('ooi/append');
 
-let result = append(arr, ...items);
+let arr1 = [1, 2, 3];
+
+append(arr1, 4, 5, 6);
+
+console.log(arr1)
+> [1, 2, 3, 4, 5, 6]
+
 ```
 
 ---
@@ -815,7 +821,7 @@ ooi.aliases(data, { propName: [...aliases] }) => data
 
 | **Source File** | **Dependencies**                                                                                            | **Included in *index.js*** | **Has Test** | **Tags**    |
 |:----------------|:------------------------------------------------------------------------------------------------------------|:---------------------------|:-------------|:------------|
-| `aliases.js`    | `ooi`, `each`, `extend`, `flatten`, `defaults`, `type`, `get`, `set`, `map`, `keys`, `trim`, `ensure-array` | **✖**                      | **✖**        | `all`, `fn` |
+| `aliases.js`    | `ooi`, `each`, `extend`, `flatten`, `defaults`, `type`, `get`, `set`, `map`, `keys`, `trim`, `ensure-array` | **✔**                      | **✖**        | `all`, `fn` |
 
 ### Example
 

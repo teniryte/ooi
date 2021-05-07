@@ -1,6 +1,16 @@
 /** .all.fn
 * Arrays : append(arr, ...items) => arr
 * Appends elements to array.
+```js
+const append = require('ooi/append');
+
+let arr1 = [1, 2, 3];
+
+append(arr1, 4, 5, 6);
+
+console.log(arr1)
+> [1, 2, 3, 4, 5, 6]
+```
 */
 
 module.exports = append;
