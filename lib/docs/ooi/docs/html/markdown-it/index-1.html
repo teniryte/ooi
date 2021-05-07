@@ -1,0 +1,1326 @@
+
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+        <title>|ooi|</title>
+        <link rel="stylesheet" href="../../assets/css/reset.css">
+        <link rel="stylesheet" href="../../assets/css/common.css">
+        <link rel="stylesheet" href="../../assets/css/markdown/github.css">
+      </head>
+      <body>
+        <div class="markdown-body">
+          <p>&lt;a name=&quot;contents&quot;&gt;&lt;/a&gt;</p>
+<h1>|ooi|</h1>
+<h1>JavaScript Helpers &amp; Tools</h1>
+<hr>
+<h2>Table of Сontents</h2>
+<ul>
+<li>
+<p><a href="#arrays"><strong>Arrays</strong></a></p>
+<ul>
+<li><a href="#arrays-append"><code>append(arr, ...items)</code></a></li>
+<li><a href="#arrays-concat"><code>concat()</code></a></li>
+<li><a href="#arrays-ensure-array"><code>ensureArray()</code></a></li>
+<li><a href="#arrays-list"><code>List(...values)</code></a></li>
+<li><a href="#arrays-list"><code>list(...array)</code></a></li>
+</ul>
+</li>
+<li>
+<p><a href="#collections"><strong>Collections</strong></a></p>
+<ul>
+<li><a href="#collections-clone"><code>clone(data)</code></a></li>
+<li><a href="#collections-clone-deep"><code>clone.deep(data)</code></a></li>
+<li><a href="#collections-each"><code>each(data, cb)</code></a></li>
+<li><a href="#collections-flatten"><code>flatten(object)</code></a></li>
+<li><a href="#collections-flatten-unflatten"><code>flatten.unflatten(object)</code></a></li>
+</ul>
+</li>
+<li>
+<p><a href="#convert"><strong>Convert</strong></a></p>
+<ul>
+<li><a href="#convert-base64-decode"><code>base64.decode()</code></a></li>
+<li><a href="#convert-base64-encode"><code>base64.encode()</code></a></li>
+<li><a href="#convert-parse"><code>parse(string)</code></a></li>
+<li><a href="#convert-query"><code>query(string | object)</code></a></li>
+<li><a href="#convert-stringify"><code>stringify(object)</code></a></li>
+<li><a href="#convert-uri"><code>uri(string)</code></a></li>
+<li><a href="#convert-uri"><code>uri(string)</code></a></li>
+</ul>
+</li>
+<li>
+<p><a href="#events"><strong>Events</strong></a></p>
+<ul>
+<li><a href="#events-event-emitter"><code>EventEmitter()</code></a></li>
+</ul>
+</li>
+<li>
+<p><a href="#format"><strong>Format</strong></a></p>
+<ul>
+<li><a href="#format-class-names"><code>classNames(...any)</code></a></li>
+<li><a href="#format-template"><code>template(source, opts)</code></a></li>
+</ul>
+</li>
+<li>
+<p><a href="#meta"><strong>Meta</strong></a></p>
+<ul>
+<li><a href="#meta-class-meta"><code>classMeta(Class)</code></a></li>
+<li><a href="#meta-wrap-class"><code>wrap.class(Class, options)</code></a></li>
+</ul>
+</li>
+<li>
+<p><a href="#objects"><strong>Objects</strong></a></p>
+<ul>
+<li><a href="#objects-aliases"><code>aliases(data, { propName: [...aliases] })</code></a></li>
+<li><a href="#objects-define-box"><code>define.box(object, name[, isEnumerable])</code></a></li>
+<li><a href="#objects-define-prop"><code>define.prop({ object, name, value, get, set, configurable, enumerable, writable })</code></a></li>
+<li><a href="#objects-extend"><code>extend(target, ...sources)</code></a></li>
+<li><a href="#objects-extend-deep"><code>extend.deep(target, ...sources)</code></a></li>
+<li><a href="#objects-keys"><code>keys(object)</code></a></li>
+<li><a href="#objects-proto"><code>proto(object)</code></a></li>
+<li><a href="#objects-proto-chain"><code>proto.chain(obj1, obj2, obj3)</code></a></li>
+</ul>
+</li>
+<li>
+<p><a href="#util"><strong>Util</strong></a></p>
+<ul>
+<li><a href="#util-type-entity"><code>TypeEntity(opts)</code></a></li>
+<li><a href="#util-type-manager"><code>TypeManager(opts)</code></a></li>
+<li><a href="#util-type-manager"><code>typeManager(name, options)</code></a></li>
+</ul>
+</li>
+<li>
+<p><a href="#utils"><strong>Utils</strong></a></p>
+<ul>
+<li><a href="#utils-defaults"><code>defaults(data, defaultData)</code></a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<p>&lt;a name=&quot;arrays&quot;&gt;&lt;/a&gt;</p>
+<h2><a href="#contents">⇧</a> Arrays</h2>
+<p>&lt;a name=&quot;arrays-append&quot;&gt;&lt;/a&gt;</p>
+<h2><a href="#contents">⇧</a> <em>function</em> append</h2>
+<h3>Call</h3>
+<pre><code class="language-js">append(arr, ...items) =&gt; arr
+</code></pre>
+<h3>Description</h3>
+<p>Appends elements to array.</p>
+<h3>Info</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><strong>Source File</strong></th>
+<th style="text-align:left"><strong>Dependencies</strong></th>
+<th style="text-align:left"><strong>Included in <em>index.js</em></strong></th>
+<th style="text-align:left"><strong>Has Test</strong></th>
+<th style="text-align:left"><strong>Tags</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>append.js</code></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"><strong>✖</strong></td>
+<td style="text-align:left"><strong>✖</strong></td>
+<td style="text-align:left"><code>all</code>, <code>fn</code></td>
+</tr>
+</tbody>
+</table>
+<h3>Example</h3>
+<pre><code class="language-js">import append from 'ooi/append';
+
+let result = append(arr, ...items);
+</code></pre>
+<hr>
+<p>&lt;a name=&quot;arrays-concat&quot;&gt;&lt;/a&gt;</p>
+<h2><a href="#contents">⇧</a> <em>function</em> concat</h2>
+<h3>Call</h3>
+<pre><code class="language-js">concat() =&gt; array
+</code></pre>
+<h3>Description</h3>
+<p>Concatenates arrays.</p>
+<h3>Info</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><strong>Source File</strong></th>
+<th style="text-align:left"><strong>Dependencies</strong></th>
+<th style="text-align:left"><strong>Included in <em>index.js</em></strong></th>
+<th style="text-align:left"><strong>Has Test</strong></th>
+<th style="text-align:left"><strong>Tags</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>concat.js</code></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"><strong>✖</strong></td>
+<td style="text-align:left"><strong>✖</strong></td>
+<td style="text-align:left"><code>all</code>, <code>fn</code></td>
+</tr>
+</tbody>
+</table>
+<h3>Example</h3>
+<pre><code class="language-js">import concat from 'ooi/concat';
+
+let result = concat();
+</code></pre>
+<hr>
+<p>&lt;a name=&quot;arrays-ensure-array&quot;&gt;&lt;/a&gt;</p>
+<h2><a href="#contents">⇧</a> <em>function</em> ensureArray</h2>
+<h3>Call</h3>
+<pre><code class="language-js">ensureArray() =&gt; array
+</code></pre>
+<h3>Description</h3>
+<p>Wrapper for array.</p>
+<h3>Info</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><strong>Source File</strong></th>
+<th style="text-align:left"><strong>Dependencies</strong></th>
+<th style="text-align:left"><strong>Included in <em>index.js</em></strong></th>
+<th style="text-align:left"><strong>Has Test</strong></th>
+<th style="text-align:left"><strong>Tags</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>ensure-array.js</code></td>
+<td style="text-align:left"><code>concat</code>, <code>is-array</code></td>
+<td style="text-align:left"><strong>✖</strong></td>
+<td style="text-align:left"><strong>✖</strong></td>
+<td style="text-align:left"><code>all</code>, <code>fn</code></td>
+</tr>
+</tbody>
+</table>
+<h3>Example</h3>
+<pre><code class="language-js">import ensureArray from 'ooi/ensure-array';
+
+let result = ensureArray();
+</code></pre>
+<hr>
+<p>&lt;a name=&quot;arrays-list&quot;&gt;&lt;/a&gt;</p>
+<h2><a href="#contents">⇧</a> <em>class</em> List</h2>
+<h3>Call</h3>
+<pre><code class="language-js">List(...values) =&gt; new List
+</code></pre>
+<h3>Description</h3>
+<p>List class.</p>
+<h3>Info</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><strong>Source File</strong></th>
+<th style="text-align:left"><strong>Dependencies</strong></th>
+<th style="text-align:left"><strong>Included in <em>index.js</em></strong></th>
+<th style="text-align:left"><strong>Has Test</strong></th>
+<th style="text-align:left"><strong>Tags</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>list.js</code></td>
+<td style="text-align:left"><code>define</code>, <code>keys</code>, <code>extend</code>, <code>each</code>, <code>defaults</code>, <code>values</code>, <code>flatten</code>, <code>strcase</code>, <code>range</code>, <code>event-emitter</code></td>
+<td style="text-align:left"><strong>✖</strong></td>
+<td style="text-align:left"><strong>✖</strong></td>
+<td style="text-align:left"><code>all</code>, <code>class</code></td>
+</tr>
+</tbody>
+</table>
+<h3>Example</h3>
+<pre><code class="language-js">import List from 'ooi/list';
+
+let result = List(...values);
+</code></pre>
+<hr>
+<p>&lt;a name=&quot;arrays-list&quot;&gt;&lt;/a&gt;</p>
+<h2><a href="#contents">⇧</a> <em>function</em> list</h2>
+<h3>Call</h3>
+<pre><code class="language-js">list(...array) =&gt; new List(...array)
+</code></pre>
+<h3>Description</h3>
+<p>Creates List object (extends Array) with additional list methods.</p>
+<h3>Info</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><strong>Source File</strong></th>
+<th style="text-align:left"><strong>Dependencies</strong></th>
+<th style="text-align:left"><strong>Included in <em>index.js</em></strong></th>
+<th style="text-align:left"><strong>Has Test</strong></th>
+<th style="text-align:left"><strong>Tags</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>list.js</code></td>
+<td style="text-align:left"><code>define</code>, <code>keys</code>, <code>extend</code>, <code>each</code>, <code>defaults</code>, <code>values</code>, <code>flatten</code>, <code>strcase</code>, <code>range</code>, <code>event-emitter</code></td>
+<td style="text-align:left"><strong>✖</strong></td>
+<td style="text-align:left"><strong>✖</strong></td>
+<td style="text-align:left"><code>all</code>, <code>fn</code></td>
+</tr>
+</tbody>
+</table>
+<h3>Example</h3>
+<pre><code class="language-js">import list from 'ooi/list';
+
+let result = list(...array);
+</code></pre>
+<hr>
+<hr>
+<p>&lt;a name=&quot;collections&quot;&gt;&lt;/a&gt;</p>
+<h2><a href="#contents">⇧</a> Collections</h2>
+<p>&lt;a name=&quot;collections-clone&quot;&gt;&lt;/a&gt;</p>
+<h2><a href="#contents">⇧</a> <em>function</em> clone</h2>
+<h3>Call</h3>
+<pre><code class="language-js">clone(data) =&gt; data
+</code></pre>
+<h3>Description</h3>
+<p>Shallow copy of object.</p>
+<h3>Info</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><strong>Source File</strong></th>
+<th style="text-align:left"><strong>Dependencies</strong></th>
+<th style="text-align:left"><strong>Included in <em>index.js</em></strong></th>
+<th style="text-align:left"><strong>Has Test</strong></th>
+<th style="text-align:left"><strong>Tags</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>clone.js</code></td>
+<td style="text-align:left"><code>each</code>, <code>extend</code></td>
+<td style="text-align:left"><strong>✖</strong></td>
+<td style="text-align:left"><strong>✖</strong></td>
+<td style="text-align:left"><code>all</code>, <code>copy</code>, <code>fn</code></td>
+</tr>
+</tbody>
+</table>
+<h3>Example</h3>
+<pre><code class="language-js">import clone from 'ooi/clone';
+
+let result = clone(data);
+</code></pre>
+<hr>
+<p>&lt;a name=&quot;collections-clone-deep&quot;&gt;&lt;/a&gt;</p>
+<h2><a href="#contents">⇧</a> <em>function</em> clone.deep</h2>
+<h3>Call</h3>
+<pre><code class="language-js">clone.deep(data) =&gt; data
+</code></pre>
+<h3>Description</h3>
+<p>Deep copy of object.</p>
+<h3>Info</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><strong>Source File</strong></th>
+<th style="text-align:left"><strong>Dependencies</strong></th>
+<th style="text-align:left"><strong>Included in <em>index.js</em></strong></th>
+<th style="text-align:left"><strong>Has Test</strong></th>
+<th style="text-align:left"><strong>Tags</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>clone.js</code></td>
+<td style="text-align:left"><code>each</code>, <code>extend</code></td>
+<td style="text-align:left"><strong>✖</strong></td>
+<td style="text-align:left"><strong>✖</strong></td>
+<td style="text-align:left"><code>all</code>, <code>copy</code></td>
+</tr>
+</tbody>
+</table>
+<h3>Example</h3>
+<pre><code class="language-js">import clone.deep from 'ooi/clone';
+
+let result = clone.deep(data);
+</code></pre>
+<hr>
+<p>&lt;a name=&quot;collections-each&quot;&gt;&lt;/a&gt;</p>
+<h2><a href="#contents">⇧</a> <em>function</em> each</h2>
+<h3>Call</h3>
+<pre><code class="language-js">each(data, cb) =&gt; void
+</code></pre>
+<h3>Description</h3>
+<p>Iterates over all properties of data and calls cb(value, key) for each of them.</p>
+<h3>Info</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><strong>Source File</strong></th>
+<th style="text-align:left"><strong>Dependencies</strong></th>
+<th style="text-align:left"><strong>Included in <em>index.js</em></strong></th>
+<th style="text-align:left"><strong>Has Test</strong></th>
+<th style="text-align:left"><strong>Tags</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>each.js</code></td>
+<td style="text-align:left"><code>keys</code></td>
+<td style="text-align:left"><strong>✖</strong></td>
+<td style="text-align:left"><strong>✖</strong></td>
+<td style="text-align:left"><code>all</code>, <code>iteration</code>, <code>fn</code></td>
+</tr>
+</tbody>
+</table>
+<h3>Example</h3>
+<pre><code class="language-js">import each from 'ooi/each';
+
+let result = each(data, cb);
+</code></pre>
+<hr>
+<p>&lt;a name=&quot;collections-flatten&quot;&gt;&lt;/a&gt;</p>
+<h2><a href="#contents">⇧</a> <em>function</em> flatten</h2>
+<h3>Call</h3>
+<pre><code class="language-js">flatten(object) =&gt; object
+</code></pre>
+<h3>Description</h3>
+<p>Flattens all <code>object</code> properties and returns plain object.</p>
+<h3>Info</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><strong>Source File</strong></th>
+<th style="text-align:left"><strong>Dependencies</strong></th>
+<th style="text-align:left"><strong>Included in <em>index.js</em></strong></th>
+<th style="text-align:left"><strong>Has Test</strong></th>
+<th style="text-align:left"><strong>Tags</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>flatten.js</code></td>
+<td style="text-align:left"><code>set</code>, <code>keys</code></td>
+<td style="text-align:left"><strong>✖</strong></td>
+<td style="text-align:left"><strong>✖</strong></td>
+<td style="text-align:left"><code>all</code>, <code>fn</code></td>
+</tr>
+</tbody>
+</table>
+<h3>Example</h3>
+<pre><code class="language-js">import flatten from 'ooi/flatten';
+
+let result = flatten(object);
+</code></pre>
+<hr>
+<p>&lt;a name=&quot;collections-flatten-unflatten&quot;&gt;&lt;/a&gt;</p>
+<h2><a href="#contents">⇧</a> <em>function</em> flatten.unflatten</h2>
+<h3>Call</h3>
+<pre><code class="language-js">flatten.unflatten(object) =&gt; object
+</code></pre>
+<h3>Description</h3>
+<p>Returns object with resurrected properties structure.</p>
+<h3>Info</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><strong>Source File</strong></th>
+<th style="text-align:left"><strong>Dependencies</strong></th>
+<th style="text-align:left"><strong>Included in <em>index.js</em></strong></th>
+<th style="text-align:left"><strong>Has Test</strong></th>
+<th style="text-align:left"><strong>Tags</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>flatten.js</code></td>
+<td style="text-align:left"><code>set</code>, <code>keys</code></td>
+<td style="text-align:left"><strong>✖</strong></td>
+<td style="text-align:left"><strong>✖</strong></td>
+<td style="text-align:left"><code>all</code>, <code>fn</code></td>
+</tr>
+</tbody>
+</table>
+<h3>Example</h3>
+<pre><code class="language-js">import flatten.unflatten from 'ooi/flatten';
+
+let result = flatten.unflatten(object);
+</code></pre>
+<hr>
+<hr>
+<p>&lt;a name=&quot;convert&quot;&gt;&lt;/a&gt;</p>
+<h2><a href="#contents">⇧</a> Convert</h2>
+<p>&lt;a name=&quot;convert-base64-decode&quot;&gt;&lt;/a&gt;</p>
+<h2><a href="#contents">⇧</a> <em>function</em> base64.decode</h2>
+<h3>Call</h3>
+<pre><code class="language-js">base64.decode() =&gt; string
+</code></pre>
+<h3>Description</h3>
+<p>Converts base64-string to regular string.</p>
+<h3>Info</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><strong>Source File</strong></th>
+<th style="text-align:left"><strong>Dependencies</strong></th>
+<th style="text-align:left"><strong>Included in <em>index.js</em></strong></th>
+<th style="text-align:left"><strong>Has Test</strong></th>
+<th style="text-align:left"><strong>Tags</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>base64.js</code></td>
+<td style="text-align:left"><code>extend</code></td>
+<td style="text-align:left"><strong>✖</strong></td>
+<td style="text-align:left"><strong>✖</strong></td>
+<td style="text-align:left"><code>all</code>, <code>strings</code>, <code>encode</code>, <code>fn</code></td>
+</tr>
+</tbody>
+</table>
+<h3>Example</h3>
+<pre><code class="language-js">import base64.decode from 'ooi/base64';
+
+let result = base64.decode();
+</code></pre>
+<hr>
+<p>&lt;a name=&quot;convert-base64-encode&quot;&gt;&lt;/a&gt;</p>
+<h2><a href="#contents">⇧</a> <em>function</em> base64.encode</h2>
+<h3>Call</h3>
+<pre><code class="language-js">base64.encode() =&gt; string
+</code></pre>
+<h3>Description</h3>
+<p>Convert regular string to base64.</p>
+<h3>Info</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><strong>Source File</strong></th>
+<th style="text-align:left"><strong>Dependencies</strong></th>
+<th style="text-align:left"><strong>Included in <em>index.js</em></strong></th>
+<th style="text-align:left"><strong>Has Test</strong></th>
+<th style="text-align:left"><strong>Tags</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>base64.js</code></td>
+<td style="text-align:left"><code>extend</code></td>
+<td style="text-align:left"><strong>✖</strong></td>
+<td style="text-align:left"><strong>✖</strong></td>
+<td style="text-align:left"><code>all</code>, <code>strings</code>, <code>encode</code>, <code>fn</code></td>
+</tr>
+</tbody>
+</table>
+<h3>Example</h3>
+<pre><code class="language-js">import base64.encode from 'ooi/base64';
+
+let result = base64.encode();
+</code></pre>
+<hr>
+<p>&lt;a name=&quot;convert-parse&quot;&gt;&lt;/a&gt;</p>
+<h2><a href="#contents">⇧</a> <em>function</em> parse</h2>
+<h3>Call</h3>
+<pre><code class="language-js">parse(string) =&gt; object
+</code></pre>
+<h3>Description</h3>
+<p>Parse url query string.</p>
+<h3>Info</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><strong>Source File</strong></th>
+<th style="text-align:left"><strong>Dependencies</strong></th>
+<th style="text-align:left"><strong>Included in <em>index.js</em></strong></th>
+<th style="text-align:left"><strong>Has Test</strong></th>
+<th style="text-align:left"><strong>Tags</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>query.js</code></td>
+<td style="text-align:left"><code>extend</code>, <code>flatten</code></td>
+<td style="text-align:left"><strong>✖</strong></td>
+<td style="text-align:left"><strong>✖</strong></td>
+<td style="text-align:left"><code>all</code>, <code>fn</code></td>
+</tr>
+</tbody>
+</table>
+<h3>Example</h3>
+<pre><code class="language-js">import parse from 'ooi/query';
+
+let result = parse(string);
+</code></pre>
+<hr>
+<p>&lt;a name=&quot;convert-query&quot;&gt;&lt;/a&gt;</p>
+<h2><a href="#contents">⇧</a> <em>function</em> query</h2>
+<h3>Call</h3>
+<pre><code class="language-js">query(string | object) =&gt; object | string
+</code></pre>
+<h3>Description</h3>
+<p>If receives not URI string, returns parsed query object. If receives object, returns stringified query url.</p>
+<h3>Info</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><strong>Source File</strong></th>
+<th style="text-align:left"><strong>Dependencies</strong></th>
+<th style="text-align:left"><strong>Included in <em>index.js</em></strong></th>
+<th style="text-align:left"><strong>Has Test</strong></th>
+<th style="text-align:left"><strong>Tags</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>query.js</code></td>
+<td style="text-align:left"><code>extend</code>, <code>flatten</code></td>
+<td style="text-align:left"><strong>✖</strong></td>
+<td style="text-align:left"><strong>✖</strong></td>
+<td style="text-align:left"><code>all</code>, <code>fn</code></td>
+</tr>
+</tbody>
+</table>
+<h3>Example</h3>
+<pre><code class="language-js">import query from 'ooi/query';
+
+let result = query(string | object);
+</code></pre>
+<hr>
+<p>&lt;a name=&quot;convert-stringify&quot;&gt;&lt;/a&gt;</p>
+<h2><a href="#contents">⇧</a> <em>function</em> stringify</h2>
+<h3>Call</h3>
+<pre><code class="language-js">stringify(object) =&gt; string
+</code></pre>
+<h3>Description</h3>
+<p>Stringifies plain object into query url.</p>
+<h3>Info</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><strong>Source File</strong></th>
+<th style="text-align:left"><strong>Dependencies</strong></th>
+<th style="text-align:left"><strong>Included in <em>index.js</em></strong></th>
+<th style="text-align:left"><strong>Has Test</strong></th>
+<th style="text-align:left"><strong>Tags</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>query.js</code></td>
+<td style="text-align:left"><code>extend</code>, <code>flatten</code></td>
+<td style="text-align:left"><strong>✖</strong></td>
+<td style="text-align:left"><strong>✖</strong></td>
+<td style="text-align:left"><code>all</code>, <code>fn</code></td>
+</tr>
+</tbody>
+</table>
+<h3>Example</h3>
+<pre><code class="language-js">import stringify from 'ooi/query';
+
+let result = stringify(object);
+</code></pre>
+<hr>
+<p>&lt;a name=&quot;convert-uri&quot;&gt;&lt;/a&gt;</p>
+<h2><a href="#contents">⇧</a> <em>function</em> uri</h2>
+<h3>Call</h3>
+<pre><code class="language-js">uri(string) =&gt; object
+</code></pre>
+<h3>Description</h3>
+<p>Parses string URI and returns object with properties uri, protocol, host, path, filename, extname, query, request.</p>
+<h3>Info</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><strong>Source File</strong></th>
+<th style="text-align:left"><strong>Dependencies</strong></th>
+<th style="text-align:left"><strong>Included in <em>index.js</em></strong></th>
+<th style="text-align:left"><strong>Has Test</strong></th>
+<th style="text-align:left"><strong>Tags</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>uri.js</code></td>
+<td style="text-align:left"><code>extend</code>, <code>flatten</code>, <code>query</code>, <code>path</code></td>
+<td style="text-align:left"><strong>✖</strong></td>
+<td style="text-align:left"><strong>✖</strong></td>
+<td style="text-align:left"><code>all</code>, <code>fn</code></td>
+</tr>
+</tbody>
+</table>
+<h3>Example</h3>
+<pre><code class="language-js">import uri from 'ooi/uri';
+
+let result = uri(string);
+</code></pre>
+<hr>
+<p>&lt;a name=&quot;convert-uri&quot;&gt;&lt;/a&gt;</p>
+<h2><a href="#contents">⇧</a> <em>function</em> uri</h2>
+<h3>Call</h3>
+<pre><code class="language-js">uri(string) =&gt; object
+</code></pre>
+<h3>Description</h3>
+<p>Same as uri.parse.</p>
+<h3>Info</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><strong>Source File</strong></th>
+<th style="text-align:left"><strong>Dependencies</strong></th>
+<th style="text-align:left"><strong>Included in <em>index.js</em></strong></th>
+<th style="text-align:left"><strong>Has Test</strong></th>
+<th style="text-align:left"><strong>Tags</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>uri.js</code></td>
+<td style="text-align:left"><code>extend</code>, <code>flatten</code>, <code>query</code>, <code>path</code></td>
+<td style="text-align:left"><strong>✖</strong></td>
+<td style="text-align:left"><strong>✖</strong></td>
+<td style="text-align:left"><code>all</code>, <code>fn</code></td>
+</tr>
+</tbody>
+</table>
+<h3>Example</h3>
+<pre><code class="language-js">import uri from 'ooi/uri';
+
+let result = uri(string);
+</code></pre>
+<hr>
+<hr>
+<p>&lt;a name=&quot;events&quot;&gt;&lt;/a&gt;</p>
+<h2><a href="#contents">⇧</a> Events</h2>
+<p>&lt;a name=&quot;events-event-emitter&quot;&gt;&lt;/a&gt;</p>
+<h2><a href="#contents">⇧</a> <em>class</em> EventEmitter</h2>
+<h3>Call</h3>
+<pre><code class="language-js">EventEmitter() =&gt; new EventEmitter()
+</code></pre>
+<h3>Description</h3>
+<p>Class for events handling.</p>
+<h3>Info</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><strong>Source File</strong></th>
+<th style="text-align:left"><strong>Dependencies</strong></th>
+<th style="text-align:left"><strong>Included in <em>index.js</em></strong></th>
+<th style="text-align:left"><strong>Has Test</strong></th>
+<th style="text-align:left"><strong>Tags</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>event-emitter.js</code></td>
+<td style="text-align:left"><code>ooi</code>, <code>each</code>, <code>define</code>, <code>extend</code></td>
+<td style="text-align:left"><strong>✖</strong></td>
+<td style="text-align:left"><strong>✖</strong></td>
+<td style="text-align:left"><code>all</code>, <code>class</code></td>
+</tr>
+</tbody>
+</table>
+<h3>Example</h3>
+<pre><code class="language-js">const ooi = require('ooi');
+
+class Manager extends ooi.EventEmitter {
+
+  constructor () {
+    super();
+  }
+
+}
+
+let manager = new Manager();
+
+manager.on('message', message =&gt; {
+  console.log('New message:', message);
+});
+
+setTimeout(() =&gt; {
+  manager.emit('message', 'This is new message!');
+}, 1000);
+
+</code></pre>
+<hr>
+<hr>
+<p>&lt;a name=&quot;format&quot;&gt;&lt;/a&gt;</p>
+<h2><a href="#contents">⇧</a> Format</h2>
+<p>&lt;a name=&quot;format-class-names&quot;&gt;&lt;/a&gt;</p>
+<h2><a href="#contents">⇧</a> <em>function</em> classNames</h2>
+<h3>Call</h3>
+<pre><code class="language-js">classNames(...any) =&gt; array
+</code></pre>
+<h3>Description</h3>
+<p>Receives classes in any format, returns array of class names</p>
+<h3>Info</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><strong>Source File</strong></th>
+<th style="text-align:left"><strong>Dependencies</strong></th>
+<th style="text-align:left"><strong>Included in <em>index.js</em></strong></th>
+<th style="text-align:left"><strong>Has Test</strong></th>
+<th style="text-align:left"><strong>Tags</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>class-names.js</code></td>
+<td style="text-align:left"><code>each</code>, <code>flatten</code></td>
+<td style="text-align:left"><strong>✖</strong></td>
+<td style="text-align:left"><strong>✔</strong></td>
+<td style="text-align:left"><code>all</code>, <code>fn</code></td>
+</tr>
+</tbody>
+</table>
+<h3>Example</h3>
+<pre><code class="language-js">import classNames from 'ooi/class-names';
+
+let result = classNames(...any);
+</code></pre>
+<hr>
+<p>&lt;a name=&quot;format-template&quot;&gt;&lt;/a&gt;</p>
+<h2><a href="#contents">⇧</a> <em>function</em> template</h2>
+<h3>Call</h3>
+<pre><code class="language-js">template(source, opts) =&gt; function(data)
+</code></pre>
+<h3>Description</h3>
+<p>Creates function-template with specified template code, which returns content with replaced all expressions surrounded by [[ and ]].</p>
+<h3>Info</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><strong>Source File</strong></th>
+<th style="text-align:left"><strong>Dependencies</strong></th>
+<th style="text-align:left"><strong>Included in <em>index.js</em></strong></th>
+<th style="text-align:left"><strong>Has Test</strong></th>
+<th style="text-align:left"><strong>Tags</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>template.js</code></td>
+<td style="text-align:left"><code>extend</code>, <code>expression</code>, <code>reg</code>, <code>trim</code>, <code>proto</code></td>
+<td style="text-align:left"><strong>✖</strong></td>
+<td style="text-align:left"><strong>✖</strong></td>
+<td style="text-align:left"><code>all</code>, <code>strings</code>, <code>fn</code></td>
+</tr>
+</tbody>
+</table>
+<h3>Example</h3>
+<pre><code class="language-js">import template from 'ooi/template';
+
+let result = template(source, opts);
+</code></pre>
+<hr>
+<hr>
+<p>&lt;a name=&quot;meta&quot;&gt;&lt;/a&gt;</p>
+<h2><a href="#contents">⇧</a> Meta</h2>
+<p>&lt;a name=&quot;meta-class-meta&quot;&gt;&lt;/a&gt;</p>
+<h2><a href="#contents">⇧</a> <em>function</em> classMeta</h2>
+<h3>Call</h3>
+<pre><code class="language-js">classMeta(Class) =&gt; { methods, methodsNames, staticMethods, staticMethodsNames, extended }
+</code></pre>
+<h3>Description</h3>
+<h3>Info</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><strong>Source File</strong></th>
+<th style="text-align:left"><strong>Dependencies</strong></th>
+<th style="text-align:left"><strong>Included in <em>index.js</em></strong></th>
+<th style="text-align:left"><strong>Has Test</strong></th>
+<th style="text-align:left"><strong>Tags</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>class-meta.js</code></td>
+<td style="text-align:left"><code>extend</code>, <code>each</code>, <code>keys</code></td>
+<td style="text-align:left"><strong>✖</strong></td>
+<td style="text-align:left"><strong>✔</strong></td>
+<td style="text-align:left"><code>all</code>, <code>fn</code></td>
+</tr>
+</tbody>
+</table>
+<h3>Example</h3>
+<pre><code class="language-js">import classMeta from 'ooi/class-meta';
+
+let result = classMeta(Class);
+</code></pre>
+<hr>
+<p>&lt;a name=&quot;meta-wrap-class&quot;&gt;&lt;/a&gt;</p>
+<h2><a href="#contents">⇧</a> <em>function</em> wrap.class</h2>
+<h3>Call</h3>
+<pre><code class="language-js">wrap.class(Class, options) =&gt; Class
+</code></pre>
+<h3>Description</h3>
+<p>Modifies target class with options: init.</p>
+<h3>Info</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><strong>Source File</strong></th>
+<th style="text-align:left"><strong>Dependencies</strong></th>
+<th style="text-align:left"><strong>Included in <em>index.js</em></strong></th>
+<th style="text-align:left"><strong>Has Test</strong></th>
+<th style="text-align:left"><strong>Tags</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>wrap.js</code></td>
+<td style="text-align:left"><code>extend</code>, <code>each</code>, <code>define</code>, <code>get</code>, <code>set</code>, <code>keys</code>, <code>expression</code></td>
+<td style="text-align:left"><strong>✖</strong></td>
+<td style="text-align:left"><strong>✖</strong></td>
+<td style="text-align:left"><code>all</code>, <code>fn</code></td>
+</tr>
+</tbody>
+</table>
+<h3>Example</h3>
+<pre><code class="language-js">import wrap.class from 'ooi/wrap';
+
+let result = wrap.class(Class, options);
+</code></pre>
+<hr>
+<hr>
+<p>&lt;a name=&quot;objects&quot;&gt;&lt;/a&gt;</p>
+<h2><a href="#contents">⇧</a> Objects</h2>
+<p>&lt;a name=&quot;objects-aliases&quot;&gt;&lt;/a&gt;</p>
+<h2><a href="#contents">⇧</a> <em>function</em> aliases</h2>
+<h3>Call</h3>
+<pre><code class="language-js">aliases(data, { propName: [...aliases] }) =&gt; data
+</code></pre>
+<h3>Description</h3>
+<p>Defines property aliases for object.</p>
+<h3>Info</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><strong>Source File</strong></th>
+<th style="text-align:left"><strong>Dependencies</strong></th>
+<th style="text-align:left"><strong>Included in <em>index.js</em></strong></th>
+<th style="text-align:left"><strong>Has Test</strong></th>
+<th style="text-align:left"><strong>Tags</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>aliases.js</code></td>
+<td style="text-align:left"><code>ooi</code>, <code>each</code>, <code>extend</code>, <code>flatten</code>, <code>defaults</code>, <code>type</code>, <code>get</code>, <code>set</code>, <code>map</code>, <code>keys</code>, <code>trim</code>, <code>ensure-array</code></td>
+<td style="text-align:left"><strong>✖</strong></td>
+<td style="text-align:left"><strong>✖</strong></td>
+<td style="text-align:left"><code>all</code>, <code>fn</code></td>
+</tr>
+</tbody>
+</table>
+<h3>Example</h3>
+<pre><code class="language-js">const ooi = require('ooi');
+
+let data = {
+  one: 1,
+  two: 2,
+  three: 3,
+};
+
+ooi.aliases(data, {
+  one: ['first', 'number1'],
+  two: ['second', 'number2'],
+  three: ['third', 'number3'],
+});
+
+</code></pre>
+<hr>
+<p>&lt;a name=&quot;objects-define-box&quot;&gt;&lt;/a&gt;</p>
+<h2><a href="#contents">⇧</a> <em>function</em> define.box</h2>
+<h3>Call</h3>
+<pre><code class="language-js">define.box(object, name[, isEnumerable]) =&gt; data
+</code></pre>
+<h3>Description</h3>
+<p>Defines new virtual property on object and serves it by property name. If the property gets assigned — new object deep merges with existing.</p>
+<h3>Info</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><strong>Source File</strong></th>
+<th style="text-align:left"><strong>Dependencies</strong></th>
+<th style="text-align:left"><strong>Included in <em>index.js</em></strong></th>
+<th style="text-align:left"><strong>Has Test</strong></th>
+<th style="text-align:left"><strong>Tags</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>define.js</code></td>
+<td style="text-align:left"><code>each</code>, <code>extend</code>, <code>flatten</code>, <code>set</code>, <code>range</code></td>
+<td style="text-align:left"><strong>✖</strong></td>
+<td style="text-align:left"><strong>✖</strong></td>
+<td style="text-align:left"><code>all</code>, <code>meta</code>, <code>objects</code></td>
+</tr>
+</tbody>
+</table>
+<h3>Example</h3>
+<pre><code class="language-js">import define.box from 'ooi/define';
+
+let result = define.box(object, name[, isEnumerable]);
+</code></pre>
+<hr>
+<p>&lt;a name=&quot;objects-define-prop&quot;&gt;&lt;/a&gt;</p>
+<h2><a href="#contents">⇧</a> <em>function</em> define.prop</h2>
+<h3>Call</h3>
+<pre><code class="language-js">define.prop({ object, name, value, get, set, configurable, enumerable, writable }) =&gt; object
+</code></pre>
+<h3>Description</h3>
+<p>Defines new property on object.</p>
+<h3>Info</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><strong>Source File</strong></th>
+<th style="text-align:left"><strong>Dependencies</strong></th>
+<th style="text-align:left"><strong>Included in <em>index.js</em></strong></th>
+<th style="text-align:left"><strong>Has Test</strong></th>
+<th style="text-align:left"><strong>Tags</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>define.js</code></td>
+<td style="text-align:left"><code>each</code>, <code>extend</code>, <code>flatten</code>, <code>set</code>, <code>range</code></td>
+<td style="text-align:left"><strong>✖</strong></td>
+<td style="text-align:left"><strong>✖</strong></td>
+<td style="text-align:left"><code>all</code>, <code>meta</code>, <code>objects</code></td>
+</tr>
+</tbody>
+</table>
+<h3>Example</h3>
+<pre><code class="language-js">import define.prop from 'ooi/define';
+
+let result = define.prop({ object, name, value, get, set, configurable, enumerable, writable });
+</code></pre>
+<hr>
+<p>&lt;a name=&quot;objects-extend&quot;&gt;&lt;/a&gt;</p>
+<h2><a href="#contents">⇧</a> <em>function</em> extend</h2>
+<h3>Call</h3>
+<pre><code class="language-js">extend(target, ...sources) =&gt; object
+</code></pre>
+<h3>Description</h3>
+<p>Extends <code>target</code> object with properties of sources objects.</p>
+<h3>Info</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><strong>Source File</strong></th>
+<th style="text-align:left"><strong>Dependencies</strong></th>
+<th style="text-align:left"><strong>Included in <em>index.js</em></strong></th>
+<th style="text-align:left"><strong>Has Test</strong></th>
+<th style="text-align:left"><strong>Tags</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>extend.js</code></td>
+<td style="text-align:left"><code>polyfills</code>, <code>each</code>, <code>set</code>, <code>get</code>, <code>flatten</code></td>
+<td style="text-align:left"><strong>✖</strong></td>
+<td style="text-align:left"><strong>✖</strong></td>
+<td style="text-align:left"><code>all</code>, <code>fn</code></td>
+</tr>
+</tbody>
+</table>
+<h3>Example</h3>
+<pre><code class="language-js">import extend from 'ooi/extend';
+
+let result = extend(target, ...sources);
+</code></pre>
+<hr>
+<p>&lt;a name=&quot;objects-extend-deep&quot;&gt;&lt;/a&gt;</p>
+<h2><a href="#contents">⇧</a> <em>function</em> extend.deep</h2>
+<h3>Call</h3>
+<pre><code class="language-js">extend.deep(target, ...sources) =&gt; object
+</code></pre>
+<h3>Description</h3>
+<p>Extends <code>target</code> object with properties of sources objects (deep extending).</p>
+<h3>Info</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><strong>Source File</strong></th>
+<th style="text-align:left"><strong>Dependencies</strong></th>
+<th style="text-align:left"><strong>Included in <em>index.js</em></strong></th>
+<th style="text-align:left"><strong>Has Test</strong></th>
+<th style="text-align:left"><strong>Tags</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>extend.js</code></td>
+<td style="text-align:left"><code>polyfills</code>, <code>each</code>, <code>set</code>, <code>get</code>, <code>flatten</code></td>
+<td style="text-align:left"><strong>✖</strong></td>
+<td style="text-align:left"><strong>✖</strong></td>
+<td style="text-align:left"><code>all</code></td>
+</tr>
+</tbody>
+</table>
+<h3>Example</h3>
+<pre><code class="language-js">import extend.deep from 'ooi/extend';
+
+let result = extend.deep(target, ...sources);
+</code></pre>
+<hr>
+<p>&lt;a name=&quot;objects-keys&quot;&gt;&lt;/a&gt;</p>
+<h2><a href="#contents">⇧</a> <em>function</em> keys</h2>
+<h3>Call</h3>
+<pre><code class="language-js">keys(object) =&gt; array
+</code></pre>
+<h3>Description</h3>
+<p>Returns array of <code>object</code> property names.</p>
+<h3>Info</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><strong>Source File</strong></th>
+<th style="text-align:left"><strong>Dependencies</strong></th>
+<th style="text-align:left"><strong>Included in <em>index.js</em></strong></th>
+<th style="text-align:left"><strong>Has Test</strong></th>
+<th style="text-align:left"><strong>Tags</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>keys.js</code></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"><strong>✖</strong></td>
+<td style="text-align:left"><strong>✖</strong></td>
+<td style="text-align:left"><code>all</code>, <code>fn</code></td>
+</tr>
+</tbody>
+</table>
+<h3>Example</h3>
+<pre><code class="language-js">import keys from 'ooi/keys';
+
+let result = keys(object);
+</code></pre>
+<hr>
+<p>&lt;a name=&quot;objects-proto&quot;&gt;&lt;/a&gt;</p>
+<h2><a href="#contents">⇧</a> <em>function</em> proto</h2>
+<h3>Call</h3>
+<pre><code class="language-js">proto(object) =&gt; prototype
+</code></pre>
+<h3>Description</h3>
+<p>Returns object's prototype.</p>
+<h3>Info</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><strong>Source File</strong></th>
+<th style="text-align:left"><strong>Dependencies</strong></th>
+<th style="text-align:left"><strong>Included in <em>index.js</em></strong></th>
+<th style="text-align:left"><strong>Has Test</strong></th>
+<th style="text-align:left"><strong>Tags</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>proto.js</code></td>
+<td style="text-align:left"><code>extend</code></td>
+<td style="text-align:left"><strong>✖</strong></td>
+<td style="text-align:left"><strong>✖</strong></td>
+<td style="text-align:left"><code>all</code>, <code>objects</code>, <code>prototypes</code>, <code>fn</code></td>
+</tr>
+</tbody>
+</table>
+<h3>Example</h3>
+<pre><code class="language-js">import proto from 'ooi/proto';
+
+let result = proto(object);
+</code></pre>
+<hr>
+<p>&lt;a name=&quot;objects-proto-chain&quot;&gt;&lt;/a&gt;</p>
+<h2><a href="#contents">⇧</a> <em>function</em> proto.chain</h2>
+<h3>Call</h3>
+<pre><code class="language-js">proto.chain(obj1, obj2, obj3) =&gt; void
+</code></pre>
+<h3>Description</h3>
+<p>Sets second argument as prototype of first, third as prototype of second etc.</p>
+<h3>Info</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><strong>Source File</strong></th>
+<th style="text-align:left"><strong>Dependencies</strong></th>
+<th style="text-align:left"><strong>Included in <em>index.js</em></strong></th>
+<th style="text-align:left"><strong>Has Test</strong></th>
+<th style="text-align:left"><strong>Tags</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>proto.js</code></td>
+<td style="text-align:left"><code>extend</code></td>
+<td style="text-align:left"><strong>✖</strong></td>
+<td style="text-align:left"><strong>✖</strong></td>
+<td style="text-align:left"><code>all</code>, <code>objects</code>, <code>prototypes</code>, <code>fn</code></td>
+</tr>
+</tbody>
+</table>
+<h3>Example</h3>
+<pre><code class="language-js">import proto.chain from 'ooi/proto';
+
+let result = proto.chain(obj1, obj2, obj3);
+</code></pre>
+<hr>
+<hr>
+<p>&lt;a name=&quot;util&quot;&gt;&lt;/a&gt;</p>
+<h2><a href="#contents">⇧</a> Util</h2>
+<p>&lt;a name=&quot;util-type-entity&quot;&gt;&lt;/a&gt;</p>
+<h2><a href="#contents">⇧</a> <em>class</em> TypeEntity</h2>
+<h3>Call</h3>
+<pre><code class="language-js">TypeEntity(opts) =&gt; new TypeEntity
+</code></pre>
+<h3>Description</h3>
+<p>Type entity class.</p>
+<h3>Info</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><strong>Source File</strong></th>
+<th style="text-align:left"><strong>Dependencies</strong></th>
+<th style="text-align:left"><strong>Included in <em>index.js</em></strong></th>
+<th style="text-align:left"><strong>Has Test</strong></th>
+<th style="text-align:left"><strong>Tags</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>type-manager.js</code></td>
+<td style="text-align:left"><code>is-class</code>, <code>is-array</code>, <code>extend</code>, <code>each</code>, <code>strcase</code>, <code>define</code>, <code>defaults</code>, <code>wrap</code>, <code>flatten</code>, <code>keys</code>, <code>values</code>, <code>sort</code>, <code>set</code>, <code>get</code>, <code>event-emitter</code>, <code>ooi/type-manager</code></td>
+<td style="text-align:left"><strong>✖</strong></td>
+<td style="text-align:left"><strong>✖</strong></td>
+<td style="text-align:left"><code>all</code>, <code>class</code></td>
+</tr>
+</tbody>
+</table>
+<h3>Example</h3>
+<pre><code class="language-js">import TypeEntity from 'ooi/type-manager';
+
+let result = TypeEntity(opts);
+</code></pre>
+<hr>
+<p>&lt;a name=&quot;util-type-manager&quot;&gt;&lt;/a&gt;</p>
+<h2><a href="#contents">⇧</a> <em>class</em> TypeManager</h2>
+<h3>Call</h3>
+<pre><code class="language-js">TypeManager(opts) =&gt; new TypeManager
+</code></pre>
+<h3>Description</h3>
+<p>Type manager class.</p>
+<h3>Info</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><strong>Source File</strong></th>
+<th style="text-align:left"><strong>Dependencies</strong></th>
+<th style="text-align:left"><strong>Included in <em>index.js</em></strong></th>
+<th style="text-align:left"><strong>Has Test</strong></th>
+<th style="text-align:left"><strong>Tags</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>type-manager.js</code></td>
+<td style="text-align:left"><code>is-class</code>, <code>is-array</code>, <code>extend</code>, <code>each</code>, <code>strcase</code>, <code>define</code>, <code>defaults</code>, <code>wrap</code>, <code>flatten</code>, <code>keys</code>, <code>values</code>, <code>sort</code>, <code>set</code>, <code>get</code>, <code>event-emitter</code>, <code>ooi/type-manager</code></td>
+<td style="text-align:left"><strong>✖</strong></td>
+<td style="text-align:left"><strong>✖</strong></td>
+<td style="text-align:left"><code>all</code>, <code>class</code></td>
+</tr>
+</tbody>
+</table>
+<h3>Example</h3>
+<pre><code class="language-js">import TypeManager from 'ooi/type-manager';
+
+let result = TypeManager(opts);
+</code></pre>
+<hr>
+<p>&lt;a name=&quot;util-type-manager&quot;&gt;&lt;/a&gt;</p>
+<h2><a href="#contents">⇧</a> <em>function</em> typeManager</h2>
+<h3>Call</h3>
+<pre><code class="language-js">typeManager(name, options) =&gt; new TypeManager()
+</code></pre>
+<h3>Description</h3>
+<p>Creates and returns new TypeManager instance;</p>
+<h3>Info</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><strong>Source File</strong></th>
+<th style="text-align:left"><strong>Dependencies</strong></th>
+<th style="text-align:left"><strong>Included in <em>index.js</em></strong></th>
+<th style="text-align:left"><strong>Has Test</strong></th>
+<th style="text-align:left"><strong>Tags</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>type-manager.js</code></td>
+<td style="text-align:left"><code>is-class</code>, <code>is-array</code>, <code>extend</code>, <code>each</code>, <code>strcase</code>, <code>define</code>, <code>defaults</code>, <code>wrap</code>, <code>flatten</code>, <code>keys</code>, <code>values</code>, <code>sort</code>, <code>set</code>, <code>get</code>, <code>event-emitter</code>, <code>ooi/type-manager</code></td>
+<td style="text-align:left"><strong>✖</strong></td>
+<td style="text-align:left"><strong>✖</strong></td>
+<td style="text-align:left"><code>all</code>, <code>fn</code></td>
+</tr>
+</tbody>
+</table>
+<h3>Example</h3>
+<pre><code class="language-js">const typeManager = require('ooi/type-manager');
+
+let manager = typeManager('app', {
+  // ...
+});
+
+manager.create([
+  number: {
+    matcher: val =&gt; !isNaN(val),
+    children: {
+      integer: {
+        matcher: val =&gt; +val === Math.round(+val),
+      },
+    },
+  },
+]);
+
+</code></pre>
+<hr>
+<hr>
+<p>&lt;a name=&quot;utils&quot;&gt;&lt;/a&gt;</p>
+<h2><a href="#contents">⇧</a> Utils</h2>
+<p>&lt;a name=&quot;utils-defaults&quot;&gt;&lt;/a&gt;</p>
+<h2><a href="#contents">⇧</a> <em>function</em> defaults</h2>
+<h3>Call</h3>
+<pre><code class="language-js">defaults(data, defaultData) =&gt; data
+</code></pre>
+<h3>Description</h3>
+<p>Replaces all undefined properties of data object with defaultData analog.</p>
+<h3>Info</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><strong>Source File</strong></th>
+<th style="text-align:left"><strong>Dependencies</strong></th>
+<th style="text-align:left"><strong>Included in <em>index.js</em></strong></th>
+<th style="text-align:left"><strong>Has Test</strong></th>
+<th style="text-align:left"><strong>Tags</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>defaults.js</code></td>
+<td style="text-align:left"><code>extend</code>, <code>each</code>, <code>keys</code>, <code>flatten</code>, <code>define</code>, <code>set</code>, <code>get</code></td>
+<td style="text-align:left"><strong>✖</strong></td>
+<td style="text-align:left"><strong>✖</strong></td>
+<td style="text-align:left"><code>all</code>, <code>options</code>, <code>fn</code></td>
+</tr>
+</tbody>
+</table>
+<h3>Example</h3>
+<pre><code class="language-js">import defaults from 'ooi/defaults';
+
+let result = defaults(data, defaultData);
+</code></pre>
+<hr>
+<hr>
+
+        </div>
+      </html>
+    

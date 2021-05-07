@@ -1,0 +1,60 @@
+{
+  "name": "ooi",
+  "description": "JavaScript Utility & Tools Library",
+  "version": "0.1.9",
+  "keywords": [
+    "tools",
+    "utilities",
+    "helpers",
+    "objects",
+    "meta",
+    "string",
+    "collections",
+    "structures",
+    "prototype",
+    "dom",
+    "format",
+    "math",
+    "types",
+    "events",
+    "json",
+    "yaml",
+    "functions",
+    "polyfills",
+    "regexp",
+    "datetime"
+  ],
+  "homepage": "https://github.com/teniryte/ooi",
+  "bugs": {
+    "url": "https://github.com/teniryte/ooi/issues",
+    "email": "teniryte@gmail.com"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Denis Ronzhin",
+    "email": "teniryte@gmail.com",
+    "url": "https://github.com/teniryte/"
+  },
+  "main": "./index.js",
+  "bin": {
+    "ooi": "node ./bin/ooi"
+  },
+  "devDependencies": {
+    "chokidar": "^3.5.1",
+    "jest": "^26.6.3",
+    "markdown-it": "^12.0.6",
+    "markdown-it-prettier": "^1.1.0",
+    "styla": "^2.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/teniryte/ooi.git"
+  },
+  "scripts": {
+    "test": "node ./node_modules/.bin/jest",
+    "docs": "node ./scripts/docs.js"
+  },
+  "engines": {
+    "npm": "~16.1.0"
+  }
+}

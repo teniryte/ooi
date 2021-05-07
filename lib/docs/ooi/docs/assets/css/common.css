@@ -1,0 +1,21 @@
+.markdown-body {
+  /* max-width: 900px; */
+  /* margin: auto; */
+  padding: 10px 30px 15px 30px;
+  margin: 0 30px 15px 30px;
+
+  font-weight: 100 !important;
+
+  font-family: 'Helvetica Neue', 'HelveticaNeueCyr', 'Roboto', 'Helvetica', sans-serif !important;
+
+  -webkit-font-smoothing: antialiased !important;
+  -webkit-text-size-adjust: 100% !important;
+  text-size-adjust: 100% !important;
+  text-rendering: optimizeLegibility !important;
+}
+
+.markdown-body em {
+  opacity: 0.5;
+  font-style: normal;
+  font-size: 0.8em;
+}
