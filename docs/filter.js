@@ -2,10 +2,6 @@
 
   class Filter {
 
-    constructor () {
-      this.index = JSON.parse(`{ "index": [[indexCode]] }`).index;
-    }
-
     init () {
       this.filterElement = document.querySelector('.ooi-filter input');
       this.setEvents();
