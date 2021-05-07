@@ -9,6 +9,25 @@ body
 	background-color: #fff;
 	background-attachment: fixed;
 
+a.large-button
+	padding: 15px 20px !important;
+	background-color: #009e54 !important;
+	color: #fff !important;
+	font-size: 1.2em !important;
+	font-weight: 500 !important;
+	display: inline-block !important;
+	border-radius: 5px !important;
+	transition: 0.3s background-color !important;
+
+	&:hover
+		background-color: #ff8929 !important;
+	
+	&--secondary
+		background-color: lighten(#B0BEC5, 50%) !important;
+		color: #263238 !important;
+		font-size: 1.1em !important;
+		padding: 10px 15px !important;
+
 .markdown-body
 	padding-top: $header-margin !important;
 
@@ -62,12 +81,12 @@ body
 					font-style: normal !important;
 
 	a
-		color: #0087e0 !important;
+		color: #0087e0;
 		font-weight: 500 !important;
 
 		&:hover
 			text-decoration: none !important;
-			color: #ff8929 !important;
+			color: #ff8929;
 
 	.section--header
 
@@ -76,6 +95,14 @@ body
 		
 		h3
 			font-size: 3em;
+	
+	.section--miniheader
+
+		img
+			border-radius: 10px;
+		
+		h3
+			font-size: 2em;
 	
 	.section
 		font-family: $font-family !important;
@@ -97,21 +124,6 @@ body
 			
 			&__slogan
 				font-size: 1.4em !important;
-			
-			&__button
-
-				a
-					padding: 15px 20px !important;
-					background-color: #009e54 !important;
-					color: #fff !important;
-					font-size: 1.2em !important;
-					font-weight: 500 !important;
-					display: inline-block !important;
-					border-radius: 5px !important;
-					transition: 0.3s background-color !important;
-
-					&:hover
-						background-color: #ff8929 !important;
 	
 	ul
 		margin-left: 30px !important;

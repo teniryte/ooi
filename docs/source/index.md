@@ -33,10 +33,12 @@
     JavaScript Utility & Tools Library
   </p>
 
+<!-- {{DEL_START}} -->
+
   <br />
 
   <p class="section--header__button">
-    <a href="https://ooi.sencort.com/list.html">
+    <a class="large-button" href="https://ooi.sencort.com/list.html">
       <strong>Explore Full Utils List 🚀</strong>
     </a>
   </p>
@@ -48,7 +50,13 @@
   </p>
 </p>
 
+<!-- {{DEL_END}} -->
+
 </div>
+
+<!-- {{CODE}} -->
+
+<!-- {{DEL_START}} -->
 
 <!-- Contents ============================================================== -->
 
@@ -103,3 +111,5 @@
 ## <span class="marker">{{marker}}</span> Testing <a href="#top">▲</a>
 
 </div>
+
+<!-- {{DEL_END}} -->

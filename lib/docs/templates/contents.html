@@ -1,0 +1,28 @@
+<div class="ooi-contents">
+  <div class="ooi-contents__sections">
+    {{#each sections}}
+      <div class="section">
+        <div class="section--miniheader">
+          <h3>
+            <a href="#section-{{this.lowerName}}" class="ooi-contents__sections__section large-button">
+              🚀 {{name}}
+            </a>
+          </h3>
+        </div>
+        <div class="ooi-contents__sections__section__docs">
+          {{#each docs}}
+            <a href="#doc-{{dashedName}}" class="ooi-contents__doc large-button large-button--secondary">
+              <div class="ooi-contents__doc__header">
+                <div class="ooi-contents__doc__header__type">{{type}}</div>
+                <div class="ooi-contents__doc__header__name">{{{call}}}</div>
+              </div>
+              <div class="ooi-contents__doc__desc">
+                {{{desc}}}
+              </div>         
+            </a>
+          {{/each}}
+        </div>
+      </div>
+    {{/each}}
+  </div>
+</div>

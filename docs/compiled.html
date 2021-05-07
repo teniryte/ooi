@@ -1002,6 +1002,25 @@
             background-color: #fff;
             background-attachment: fixed;
           }
+          a.large-button {
+            padding: 15px 20px !important;
+            background-color: #009e54 !important;
+            color: #fff !important;
+            font-size: 1.2em !important;
+            font-weight: 500 !important;
+            display: inline-block !important;
+            border-radius: 5px !important;
+            transition: 0.3s background-color !important;
+          }
+          a.large-button:hover {
+            background-color: #ff8929 !important;
+          }
+          a.large-button--secondary {
+            background-color: #d8dee2 !important;
+            color: #263238 !important;
+            font-size: 1.1em !important;
+            padding: 10px 15px !important;
+          }
           .markdown-body {
             padding-top: 30px !important;
           }
@@ -1044,18 +1063,24 @@
             font-style: normal !important;
           }
           .forum-teniryte a {
-            color: #0087e0 !important;
+            color: #0087e0;
             font-weight: 500 !important;
           }
           .forum-teniryte a:hover {
             text-decoration: none !important;
-            color: #ff8929 !important;
+            color: #ff8929;
           }
           .forum-teniryte .section--header img {
             border-radius: 10px;
           }
           .forum-teniryte .section--header h3 {
             font-size: 3em;
+          }
+          .forum-teniryte .section--miniheader img {
+            border-radius: 10px;
+          }
+          .forum-teniryte .section--miniheader h3 {
+            font-size: 2em;
           }
           .forum-teniryte .section {
             font-family: 'Helvetica Neue', 'Roboto', 'Open Sans', 'Helvetica', 'Arial', sans-serif !important;
@@ -1076,19 +1101,6 @@
           }
           .forum-teniryte .section--header__slogan {
             font-size: 1.4em !important;
-          }
-          .forum-teniryte .section--header__button a {
-            padding: 15px 20px !important;
-            background-color: #009e54 !important;
-            color: #fff !important;
-            font-size: 1.2em !important;
-            font-weight: 500 !important;
-            display: inline-block !important;
-            border-radius: 5px !important;
-            transition: 0.3s background-color !important;
-          }
-          .forum-teniryte .section--header__button a:hover {
-            background-color: #ff8929 !important;
           }
           .forum-teniryte ul {
             margin-left: 30px !important;
@@ -1189,9 +1201,10 @@
           <p class="section--header__slogan">
             JavaScript Utility & Tools Library
           </p>
+        <!-- {{DEL_START}} -->
           <br />
           <p class="section--header__button">
-            <a href="https://ooi.sencort.com/list.html">
+            <a class="large-button" href="https://ooi.sencort.com/list.html">
               <strong>Explore Full Utils List 🚀</strong>
             </a>
           </p>
@@ -1201,7 +1214,10 @@
             <a href="https://github.com/teniryte/ooi/issues">🌱 Request Feature</a>
           </p>
         </p>
+        <!-- {{DEL_END}} -->
         </div>
+        <!-- {{CODE}} -->
+        <!-- {{DEL_START}} -->
         <!-- Contents ============================================================== -->
         <div class="section contents"> <a name="table-of-contents"></a>
         <h2><span class="marker">⏹️</span> Table of Contents</h2>
@@ -1233,6 +1249,7 @@
         <div class="section"> <a name="testing"></a>
         <h2><span class="marker">⏹️</span> Testing <a href="#top">▲</a></h2>
         </div>
+        <!-- {{DEL_END}} -->
       </div>
     </div>
   </body>
