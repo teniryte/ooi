@@ -89,13 +89,13 @@ ooi.append(arr, ...items) => arr
 
 ### Description
 
-> Appends elements to array.
+> Appends one or many elements to the end of the array.
 
 ### Info
 
 | **Source File** | **Dependencies** | **Included in *index.js*** | **Has Test** | **Tags**    |
 |:----------------|:-----------------|:---------------------------|:-------------|:------------|
-| `append.js`     | `ooi/append`     | **✖**                      | **✖**        | `all`, `fn` |
+| `append.js`     | `ooi/append`     | **✔**                      | **✖**        | `all`, `fn` |
 
 ### Example
 

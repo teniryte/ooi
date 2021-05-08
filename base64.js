@@ -21,7 +21,8 @@ function base64(...args) {
 }
 
 _.extend(base64, {
-  encode, decode,
+  encode,
+  decode,
 });
 
 module.exports = base64;
@@ -65,7 +66,7 @@ function decode(input) {
     enc1, enc2, enc3, enc4,
     i = 0;
 
-  input = input.replace(/[^A-Za-z0-9\+\/\=]/g, "");
+  input = input.replace(/[^A-Za-z0-9+/=]/g, '');
 
   while (i < input.length) {
 
@@ -95,8 +96,8 @@ function decode(input) {
 }
 
 function unicodeEncode(string) {
-  string = string.replace(/\r\n/g, "\n");
-  var utftext = "";
+  string = string.replace(/\r\n/g, '\n');
+  var utftext = '';
 
   for (var n = 0; n < string.length; n++) {
 
@@ -119,11 +120,11 @@ function unicodeEncode(string) {
 }
 
 function unicodeDecode(utftext) {
-  var string = '',
+  let string = '',
     i = 0,
     c = 0,
-    c1 = 0,
-    c2 = 0;
+    c2 = 0,
+    c3 = 0;
 
   while (i < utftext.length) {
 

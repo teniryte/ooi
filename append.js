@@ -1,6 +1,6 @@
 /** .all.fn
 * Arrays : append(arr, ...items) => arr
-* Appends elements to array.
+* Appends one or many elements to the end of the array.
 ```js
 const append = require('ooi/append');
 

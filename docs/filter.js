@@ -16,6 +16,24 @@
       doc.parent.appendChild(doc.elem);
     }
 
+    getDocsCount (section) {
+      return document.querySelectorAll(`.ooi-section-wrapper[data-name="${section}"] .ooi-contents__doc`).length;
+    }
+
+    getSectionsNames () {
+      return Array.from(new Set(this.docs.map(doc => doc.section)));
+    }
+
+    updateSections () {
+      this.getSectionsNames().forEach(section => {
+        if (!this.getDocsCount(section)) {
+          document.querySelector(`.ooi-section-wrapper[data-name="${section}"]`).style.display = 'none';
+        } else {
+          document.querySelector(`.ooi-section-wrapper[data-name="${section}"]`).style.display = 'block';
+        }
+      });
+    }
+
     showAll () {
       this.docs.forEach(doc => {
         this.showDoc(doc);
@@ -29,6 +47,7 @@
     }
 
     search (value) {
+      setTimeout(() => this.updateSections(), 0);
       if (!value || value.length < 3) {
         return this.showAll();
       }
@@ -98,9 +117,10 @@
             code = elem
               .querySelector('.ooi-contents__doc__code')
               .innerHTML,
+            section = elem.dataset.section,
             parent = elem.parentElement,
             key = `${type} ${name} ${desc} ${code}`;
-          return { elem, type, desc, code, key, parent };
+          return { elem, type, desc, code, key, parent, section };
         });
       this.docs = docs;
       return docs;
