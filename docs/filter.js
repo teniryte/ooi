@@ -1,52 +1,57 @@
 (() => {
-
   class Filter {
-
-    init () {
+    init() {
       this.filterElement = document.querySelector('.ooi-filter input');
       this.setEvents();
+
       this.loadDocs();
     }
 
-    hideDoc (doc) {
+    hideDoc(doc) {
       doc.elem.remove();
     }
 
-    showDoc (doc) {
+    showDoc(doc) {
       doc.parent.appendChild(doc.elem);
     }
 
-    getDocsCount (section) {
-      return document.querySelectorAll(`.ooi-section-wrapper[data-name="${section}"] .ooi-contents__doc`).length;
+    getDocsCount(section) {
+      return document.querySelectorAll(
+        `.ooi-section-wrapper[data-name="${section}"] .ooi-contents__doc`
+      ).length;
     }
 
-    getSectionsNames () {
+    getSectionsNames() {
       return Array.from(new Set(this.docs.map(doc => doc.section)));
     }
 
-    updateSections () {
+    updateSections() {
       this.getSectionsNames().forEach(section => {
         if (!this.getDocsCount(section)) {
-          document.querySelector(`.ooi-section-wrapper[data-name="${section}"]`).style.display = 'none';
+          document.querySelector(
+            `.ooi-section-wrapper[data-name="${section}"]`
+          ).style.display = 'none';
         } else {
-          document.querySelector(`.ooi-section-wrapper[data-name="${section}"]`).style.display = 'block';
+          document.querySelector(
+            `.ooi-section-wrapper[data-name="${section}"]`
+          ).style.display = 'block';
         }
       });
     }
 
-    showAll () {
+    showAll() {
       this.docs.forEach(doc => {
         this.showDoc(doc);
       });
     }
 
-    hideAll () {
+    hideAll() {
       this.docs.forEach(doc => {
         this.hideDoc(doc);
       });
     }
 
-    search (value) {
+    search(value) {
       setTimeout(() => this.updateSections(), 0);
       if (!value || value.length < 3) {
         return this.showAll();
@@ -56,11 +61,15 @@
       docs.notMatched.forEach(doc => this.hideDoc(doc));
     }
 
-    getSectionDocsCount (name) {
-      return document.querySelector(`.ooi-contents__sections__section[data-name="${name}"]`).parentElement.parentElement.parentElement.querySelectorAll('.ooi-contents__doc').length;
+    getSectionDocsCount(name) {
+      return document
+        .querySelector(`.ooi-contents__sections__section[data-name="${name}"]`)
+        .parentElement.parentElement.parentElement.querySelectorAll(
+          '.ooi-contents__doc'
+        ).length;
     }
 
-    findDocs (value) {
+    findDocs(value) {
       let words = value.toLowerCase().split(' '),
         matched = [],
         notMatched = [];
@@ -74,16 +83,17 @@
         });
         if (count === words.length) {
           matched.push(doc);
-
         } else {
           notMatched.push(doc);
         }
       });
-      let sections = Array.from(new Set(matched.map(doc => doc.elem.dataset.section)));
+      let sections = Array.from(
+        new Set(matched.map(doc => doc.elem.dataset.section))
+      );
       return { matched, notMatched, sections };
     }
 
-    findParent (elem, selector) {
+    findParent(elem, selector) {
       let parent = elem;
       while (parent && !parent.matches(selector)) {
         parent = parent.parentElement;
@@ -91,32 +101,24 @@
       return parent;
     }
 
-    getSectionName (doc) {
-      return this
-        .findParent(doc.elem, '.section')
+    getSectionName(doc) {
+      return this.findParent(doc.elem, '.section')
         .querySelector('.ooi-contents__sections__section__header')
-        .innerHTML
-        .split(' ')
+        .innerHTML.split(' ')
         .filter(line => line.length)
         .pop()
         .trim();
     }
 
-    loadDocs () {
+    loadDocs() {
       let elems = Array.from(document.querySelectorAll('.ooi-contents__doc')),
         docs = elems.map(elem => {
-          let name = elem
-              .querySelector('.ooi-contents__doc__header__name')
+          let name = elem.querySelector('.ooi-contents__doc__header__name')
               .innerHTML,
-            type = elem
-              .querySelector('.ooi-contents__doc__header__type')
+            type = elem.querySelector('.ooi-contents__doc__header__type')
               .innerHTML,
-            desc = elem
-              .querySelector('.ooi-contents__doc__desc')
-              .innerHTML,
-            code = elem
-              .querySelector('.ooi-contents__doc__code')
-              .innerHTML,
+            desc = elem.querySelector('.ooi-contents__doc__desc').innerHTML,
+            code = elem.querySelector('.ooi-contents__doc__code').innerHTML,
             section = elem.dataset.section,
             parent = elem.parentElement,
             key = `${type} ${name} ${desc} ${code}`;
@@ -126,12 +128,15 @@
       return docs;
     }
 
-    setEvents () {
-      this.filterElement.addEventListener('keyup', ev => {
-        this.search(ev.target.value);
-      }, false);
+    setEvents() {
+      this.filterElement.addEventListener(
+        'keyup',
+        ev => {
+          this.search(ev.target.value);
+        },
+        false
+      );
     }
-
   }
 
   document.addEventListener('DOMContentLoaded', () => {
@@ -141,5 +146,4 @@
 
     window.f = filter;
   });
-
 })();
