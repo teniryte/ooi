@@ -1003,6 +1003,23 @@
             background-attachment: fixed;
             background-image: url("https://cdn.sencort.com/ooi/images/bg/sports.png");
           }
+          .index-content .section {
+            margin-bottom: 20px !important;
+          }
+          .index-content .section > p {
+            text-align: left !important;
+            margin-top: 30px !important;
+          }
+          .index-content .section > p strong {
+            margin-bottom: 20px;
+          }
+          .index-content .section pre {
+            margin-bottom: 0;
+            font-family: 'Fira Code', 'Hack', 'Menlo', 'Consolas', monospace;
+            font-size: 14px;
+            line-height: 1.2em;
+            background: #333;
+          }
           a i.fa,
           a i.fas {
             color: #f2994a;
@@ -1061,18 +1078,11 @@
             bottom: 1px;
             color: #607d8b;
           }
-          .forum-teniryte p:first-of-type,
-          .forum-teniryte p:nth-of-type(2) {
-            display: flex;
-            justify-content: space-between;
-            margin: auto;
-          }
-          .forum-teniryte p:first-of-type a,
-          .forum-teniryte p:nth-of-type(2) a {
-            margin: 10px;
-          }
           .forum-teniryte .section--header__slogan {
             width: auto;
+          }
+          .forum-teniryte p:first-of-type {
+            text-align: center;
           }
           .forum-teniryte p:nth-of-type(2) {
             justify-content: center;
@@ -1109,7 +1119,7 @@
             font-size: 16px;
             padding: 20px;
             margin: 30px;
-            background-color: #f1f1f1;
+            background-color: #f7f7f7;
             border: 1px solid #cfd8dc;
             border-radius: 5px;
           }
@@ -1131,7 +1141,7 @@
           .forum-teniryte ul {
             margin-left: 30px;
           }
-          h2 {
+          .forum-teniryte h2 {
             margin-top: 0 !important;
             color: #263238 !important;
             font-weight: 500 !important;
@@ -1143,22 +1153,22 @@
             border: 1px solid #ebebeb !important;
             font-size: 1.2em !important;
           }
-          h2 em {
+          .forum-teniryte h2 em {
             display: inline-block;
             margin-right: 20px;
             font-style: normal;
           }
-          h2 a {
+          .forum-teniryte h2 a {
             opacity: 0.2;
             color: #78909c;
             position: relative;
             bottom: 1px;
           }
-          h2 a:hover {
+          .forum-teniryte h2 a:hover {
             opacity: 0.5;
             color: #78909c;
           }
-          h1 {
+          .forum-teniryte h1 {
             font-family: 'Helvetica Neue', 'Roboto', 'Open Sans', 'Helvetica', 'Arial', sans-serif;
             color: #263238;
             font-weight: 300;
@@ -1166,14 +1176,14 @@
             padding-bottom: 30px;
             margin-bottom: 30px;
           }
-          h1 em {
+          .forum-teniryte h1 em {
             color: #546e7a;
             font-weight: 500;
             font-style: normal;
             background-color: #eceff1;
             border-radius: 5px;
           }
-          blockquote {
+          .forum-teniryte blockquote {
             text-decoration: none;
             border: none;
             font-style: normal;
@@ -1187,11 +1197,11 @@
             border-left: 3px solid #b0bec5;
             transition: 0.3s margin-left, 0.3s padding-left;
           }
-          blockquote:hover {
+          .forum-teniryte blockquote:hover {
             margin-left: 30px;
             padding-left: 30px;
           }
-          blockquote a {
+          .forum-teniryte blockquote a {
             text-decoration: none;
             color: #78909c;
             display: flex;
@@ -1203,20 +1213,8 @@
     <div class="markdown-body">
       <div class="forum-teniryte">
         <!-- favicon: https://cdn.sencort.com/icons/sencort/logo.png -->
-        <p><a href="https://shields.io/"><img src="https://img.shields.io/badge/Version-0.1.1-green.svg" alt="Generic badge" /></a><br />
-        <a href="https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity"><img src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" alt="Maintenance" /></a><br />
-        <a href="https://img.shields.io/badge/maintainer-teniryte-blue"><img src="https://img.shields.io/badge/Maintainer-teniryte-blue" alt="Maintaner" /></a><br />
-        <a href="https://ooi.sencort.com/"><img src="https://img.shields.io/website-up-down-green-red/http/shields.io.svg" alt="Website shields.io" /></a><br />
-        <a href="http://commonmark.org"><img src="https://img.shields.io/badge/Made%20with-Markdown-1f425f.svg" alt="made-with-Markdown" /></a><br />
-        <a href="https://code.visualstudio.com/"><img src="https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg" alt="made-for-VSCode" /></a><br />
-        <a href="https://github.com/Naereen/StrapDown.js/blob/master/LICENSE"><img src="https://img.shields.io/github/license/Naereen/StrapDown.js.svg" alt="GitHub license" /></a><br />
-        <a href="https://gpvc.arturio.dev/teniryte"><img src="https://gpvc.arturio.dev/teniryte" alt="Profile views" /></a><br />
-        <a href="https://GitHub.com/teniryte/ooi/graphs/contributors/"><img src="https://img.shields.io/github/contributors/teniryte/ooi.svg" alt="GitHub contributors" /></a><br />
-        <a href="https://GitHub.com/teniryte/ooi/issues/"><img src="https://img.shields.io/github/issues/teniryte/ooi.svg" alt="GitHub issues" /></a></p>
-        <p><a href="https://GitHub.com/teniryte/ooi/network/"><img src="https://img.shields.io/github/forks/teniryte/ooi.svg?style=social&amp;label=Fork&amp;maxAge=2592000" alt="GitHub forks" /></a><br />
-        <a href="https://GitHub.com/teniryte/ooi/stargazers/"><img src="https://img.shields.io/github/stars/teniryte/ooi.svg?style=social&amp;label=Star&amp;maxAge=2592000" alt="GitHub stars" /></a><br />
-        <a href="https://GitHub.com/teniryte/ooi/watchers/"><img src="https://img.shields.io/github/watchers/teniryte/ooi.svg?style=social&amp;label=Watch&amp;maxAge=2592000" alt="GitHub watchers" /></a><br />
-        <a href="https://github.com/teniryte?tab=followers"><img src="https://img.shields.io/github/followers/teniryte.svg?style=social&amp;label=Follow&amp;maxAge=2592000" alt="GitHub followers" /></a></p>
+        <p><a href="https://shields.io/"><img src="https://img.shields.io/badge/Version-0.1.1-green.svg" alt="Generic badge" /></a> <a href="https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity"><img src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" alt="Maintenance" /></a> <a href="https://img.shields.io/badge/maintainer-teniryte-blue"><img src="https://img.shields.io/badge/Maintainer-teniryte-blue" alt="Maintaner" /></a> <a href="https://ooi.sencort.com/"><img src="https://img.shields.io/website-up-down-green-red/http/shields.io.svg" alt="Website shields.io" /></a> <a href="http://commonmark.org"><img src="https://img.shields.io/badge/Made%20with-Markdown-1f425f.svg" alt="made-with-Markdown" /></a> <a href="https://code.visualstudio.com/"><img src="https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg" alt="made-for-VSCode" /></a> <a href="https://github.com/Naereen/StrapDown.js/blob/master/LICENSE"><img src="https://img.shields.io/github/license/Naereen/StrapDown.js.svg" alt="GitHub license" /></a> <a href="https://gpvc.arturio.dev/teniryte"><img src="https://gpvc.arturio.dev/teniryte" alt="Profile views" /></a> <a href="https://GitHub.com/teniryte/ooi/graphs/contributors/"><img src="https://img.shields.io/github/contributors/teniryte/ooi.svg" alt="GitHub contributors" /></a> <a href="https://GitHub.com/teniryte/ooi/issues/"><img src="https://img.shields.io/github/issues/teniryte/ooi.svg" alt="GitHub issues" /></a><br />
+        <a href="https://GitHub.com/teniryte/ooi/network/"><img src="https://img.shields.io/github/forks/teniryte/ooi.svg?style=social&amp;label=Fork&amp;maxAge=2592000" alt="GitHub forks" /></a> <a href="https://GitHub.com/teniryte/ooi/stargazers/"><img src="https://img.shields.io/github/stars/teniryte/ooi.svg?style=social&amp;label=Star&amp;maxAge=2592000" alt="GitHub stars" /></a> <a href="https://GitHub.com/teniryte/ooi/watchers/"><img src="https://img.shields.io/github/watchers/teniryte/ooi.svg?style=social&amp;label=Watch&amp;maxAge=2592000" alt="GitHub watchers" /></a> <a href="https://github.com/teniryte?tab=followers"><img src="https://img.shields.io/github/followers/teniryte.svg?style=social&amp;label=Follow&amp;maxAge=2592000" alt="GitHub followers" /></a></p>
         <!-- Logo ================================================================== -->
         <div class="section section--header"> <a name="top"></a>
         <a href="https://github.com/teniryte/ooi" class="logo">
@@ -1258,6 +1256,7 @@
         </ul>
         </div>
         <!-- Features ============================================================== -->
+        <div class="index-content">
         <div class="section"> <a name="features"></a>
         <h2><span class="marker">⏹️</span> Features <a href="#top">▲</a></h2>
         <ul>
@@ -1270,20 +1269,70 @@
         <!-- Installation ========================================================== -->
         <div class="section"> <a name="installation"></a>
         <h2><span class="marker">⏹️</span> Installation <a href="#top">▲</a></h2>
+        <p><strong>Installation as local package:</strong></p>
+        <pre><code class="language-sh">npm i --save ooi;
+</code></pre>
+        <p><strong>Using the Hole Library:</strong></p>
+        <pre><code class="language-javascript">import ooi from &quot;ooi&quot;;
+
+let arr = [1, 2, 3];
+
+ooi.append(arr, 4, 5, 6);
+
+[1, 2, 3, 4, 5, 6].forEach(num =&gt; {
+  console.log(num);
+});
+
+console.log(arr);
+</code></pre>
         </div>
         <!-- Documentation ========================================================= -->
         <div class="section"> <a name="documentation"></a>
         <h2><span class="marker">⏹️</span> Documentation <a href="#top">▲</a></h2>
+        <a class="large-button" href="./list.html">
+          <strong><i class="fas fa-list"></i> Explore Full Utils List</strong>
+        </a>
+        <p><strong>Sections</strong>:</p>
+        <ul>
+        <li><a href="./list.html#section-arrays">Arrays</a></li>
+        <li><a href="./list.html#section-collections">Collections</a></li>
+        <li><a href="./list.html#section-convert">Convert</a></li>
+        <li><a href="./list.html#section-events">Events</a></li>
+        <li><a href="./list.html#section-format">Format</a></li>
+        <li><a href="./list.html#section-meta">Meta</a></li>
+        <li><a href="./list.html#section-objects">Objects</a></li>
+        <li><a href="./list.html#section-util">Util</a></li>
+        </ul>
         </div>
         <!-- CLI =================================================================== -->
         <div class="section"> <a name="cli"></a>
         <h2><span class="marker">⏹️</span> CLI <a href="#top">▲</a></h2>
+        <p><strong>Install ooi as CLI:</strong></p>
+        <pre><code class="language-bash">sudo npm install --global ooi;
+</code></pre>
+        <p><strong>Compile library for client:</strong></p>
+        <pre><code class="language-sh">ooi compile
+  -s objects collections
+  -t fn objects
+  -min
+  -o assets/js/lib/ooi.min.js;
+</code></pre>
+        <p><strong>Pack ooi as JS-module:</strong></p>
+        <pre><code class="language-sh">cli pack
+  -s objects collections
+  -t fn objects
+  -o src/lib/ooi.js
+</code></pre>
         </div>
         <!-- Testing =============================================================== -->
         <div class="section"> <a name="testing"></a>
         <h2><span class="marker">⏹️</span> Testing <a href="#top">▲</a></h2>
+        <p><strong>Test all utilities:</strong></p>
+        <pre><code class="language-sh">npm test;
+</code></pre>
         </div>
         <!-- {{DEL_END}} -->
+        </div>
       </div>
     </div>
     <script src="./filter.js"></script>

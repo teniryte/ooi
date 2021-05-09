@@ -52,3 +52,5 @@ rules:
     - error
   node/prefer-promises/fs:
     - error
+  newline-per-chained-call:
+    - 2
