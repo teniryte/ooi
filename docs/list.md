@@ -754,7 +754,7 @@ ooi.classMeta(Class) => { methods, methodsNames, staticMethods, staticMethodsNam
 
 | **Source File** | **Dependencies**         | **Included in *index.js*** | **Has Test** | **Tags**    |
 |:----------------|:-------------------------|:---------------------------|:-------------|:------------|
-| `class-meta.js` | `extend`, `each`, `keys` | **✖**                      | **✖**        | `all`, `fn` |
+| `class-meta.js` | `extend`, `each`, `keys` | **✖**                      | **✔**        | `all`, `fn` |
 
 ### Example
 
@@ -821,7 +821,7 @@ ooi.aliases(data, { propName: [...aliases] }) => data
 
 | **Source File** | **Dependencies**                                                                                            | **Included in *index.js*** | **Has Test** | **Tags**    |
 |:----------------|:------------------------------------------------------------------------------------------------------------|:---------------------------|:-------------|:------------|
-| `aliases.js`    | `ooi`, `each`, `extend`, `flatten`, `defaults`, `type`, `get`, `set`, `map`, `keys`, `trim`, `ensure-array` | **✔**                      | **✖**        | `all`, `fn` |
+| `aliases.js`    | `ooi`, `each`, `extend`, `flatten`, `defaults`, `type`, `get`, `set`, `map`, `keys`, `trim`, `ensure-array` | **✔**                      | **✔**        | `all`, `fn` |
 
 ### Example
 
