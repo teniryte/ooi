@@ -120,6 +120,12 @@ a.large-button--secondary {
 .forum-teniryte .section--header {
   text-align: center;
 }
+.forum-teniryte .section--header__menu span {
+  color: #aaa;
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+}
 .forum-teniryte .section--header strong {
   font-size: 1.1em;
 }
@@ -130,15 +136,16 @@ a.large-button--secondary {
   margin-left: 30px;
 }
 h2 {
-  color: #263238;
-  font-weight: 500;
-  margin-bottom: 20px;
-  margin-top: 0;
-  padding: 1em 1.1em 0.85em 1.1em;
-  border-radius: 5px;
-  background-color: #f1f1f1;
-  border: 1px solid #ebebeb;
-  font-size: 1.2em;
+  margin-top: 0 !important;
+  color: #263238 !important;
+  font-weight: 500 !important;
+  margin-bottom: 20px !important;
+  padding: 1em 1.1em 0.85em 1.1em !important;
+  border-radius: 5px !important;
+  background-color: #f1f1f1 !important;
+  background-color: #fff !important;
+  border: 1px solid #ebebeb !important;
+  font-size: 1.2em !important;
 }
 h2 em {
   display: inline-block;

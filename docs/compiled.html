@@ -1116,6 +1116,12 @@
           .forum-teniryte .section--header {
             text-align: center;
           }
+          .forum-teniryte .section--header__menu span {
+            color: #aaa;
+            display: inline-block;
+            margin-left: 10px;
+            margin-right: 10px;
+          }
           .forum-teniryte .section--header strong {
             font-size: 1.1em;
           }
@@ -1126,15 +1132,16 @@
             margin-left: 30px;
           }
           h2 {
-            color: #263238;
-            font-weight: 500;
-            margin-bottom: 20px;
-            margin-top: 0;
-            padding: 1em 1.1em 0.85em 1.1em;
-            border-radius: 5px;
-            background-color: #f1f1f1;
-            border: 1px solid #ebebeb;
-            font-size: 1.2em;
+            margin-top: 0 !important;
+            color: #263238 !important;
+            font-weight: 500 !important;
+            margin-bottom: 20px !important;
+            padding: 1em 1.1em 0.85em 1.1em !important;
+            border-radius: 5px !important;
+            background-color: #f1f1f1 !important;
+            background-color: #fff !important;
+            border: 1px solid #ebebeb !important;
+            font-size: 1.2em !important;
           }
           h2 em {
             display: inline-block;
@@ -1228,11 +1235,11 @@
             </a>
           </p>
           <!-- {{DEL_END}} -->
-          <p>
+          <p class="section--header__menu">
             <a href="./index.html"><i class="fas fa-home"></i> Home</a>
-            <span> 🔹 </span>
+            <span> • </span>
             <a href="https://github.com/teniryte/ooi"><i class="fas fa-bug"></i> Report Bug</a>
-            <span> 🔹 </span>
+            <span> • </span>
             <a href="https://github.com/teniryte/ooi/issues"><i class="fas fa-check-double"></i> Request Feature</a>
           </p>
         </p>
@@ -1243,16 +1250,22 @@
         <div class="section contents"> <a name="table-of-contents"></a>
         <h2><span class="marker">⏹️</span> Table of Contents</h2>
         <ul>
-        <li><a href="#about-the-project">About The Project</a></li>
+        <li><a href="#features">Features</a></li>
         <li><a href="#installation">Installation</a></li>
         <li><a href="#documentation">Documentation</a></li>
         <li><a href="#cli">CLI</a></li>
         <li><a href="#testing">Testing</a></li>
         </ul>
         </div>
-        <!-- About ================================================================= -->
-        <div class="section"> <a name="about-the-project"></a>
-        <h2><span class="marker">⏹️</span> About The Project <a href="#top">▲</a></h2>
+        <!-- Features ============================================================== -->
+        <div class="section"> <a name="features"></a>
+        <h2><span class="marker">⏹️</span> Features <a href="#top">▲</a></h2>
+        <ul>
+        <li><a href="./list.html#tags-common"><strong>Common JavaScript Utilities</strong></a>. <strong>ooi</strong> provides some useful functions and classes to make some specific operations more reusable. Working with objects, arrays, collections, convertation, events, formatting, meta-data and types.</li>
+        <li><a href="./list.html#tags-node"><strong>Node.js Tools</strong></a>. Some useful methods to simplify certain node.js operations.</li>
+        <li><a href="./list.html#tags-dom"><strong>DOM Utilities &amp; Tools</strong></a>. Get, create and modify DOM elements, working with DOM-events and so on.</li>
+        <li><a href="./list.html#tags-polyfills"><strong>Polyfills</strong></a>. Contains some useful polyfills.</li>
+        </ul>
         </div>
         <!-- Installation ========================================================== -->
         <div class="section"> <a name="installation"></a>

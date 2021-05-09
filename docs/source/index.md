@@ -42,11 +42,11 @@
 
   <!-- {{DEL_END}} -->
 
-  <p>
+  <p class="section--header__menu">
     <a href="./index.html"><i class="fas fa-home"></i> Home</a>
-    <span> 🔹 </span>
+    <span> • </span>
     <a href="https://github.com/teniryte/ooi"><i class="fas fa-bug"></i> Report Bug</a>
-    <span> 🔹 </span>
+    <span> • </span>
     <a href="https://github.com/teniryte/ooi/issues"><i class="fas fa-check-double"></i> Request Feature</a>
   </p>
 </p>
@@ -65,7 +65,7 @@
 
 ## <span class="marker">{{marker}}</span> Table of Contents
 
-- [About The Project](#about-the-project)
+- [Features](#features)
 - [Installation](#installation)
 - [Documentation](#documentation)
 - [CLI](#cli)
@@ -73,11 +73,16 @@
 
 </div>
 
-<!-- About ================================================================= -->
+<!-- Features ============================================================== -->
 
-<div class="section" data-a="about-the-project">
+<div class="section" data-a="features">
 
-##  <span class="marker">{{marker}}</span> About The Project <a href="#top">▲</a>
+##  <span class="marker">{{marker}}</span> Features <a href="#top">▲</a>
+
+- [**Common JavaScript Utilities**](./list.html#tags-common). **ooi** provides some useful functions and classes to make some specific operations more reusable. Working with objects, arrays, collections, convertation, events, formatting, meta-data and types.
+- [**Node.js Tools**](./list.html#tags-node). Some useful methods to simplify certain node.js operations.
+- [**DOM Utilities & Tools**](./list.html#tags-dom). Get, create and modify DOM elements, working with DOM-events and so on.
+- [**Polyfills**](./list.html#tags-polyfills). Contains some useful polyfills.
 
 </div>
 
