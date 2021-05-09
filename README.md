@@ -12,7 +12,7 @@
 
 **JavaScript Utility & Tools Library**
 
-## [**🚀 Open Full Documentation**](https://ooi.sencort.com/list.html)
+## [**🚀 Open Full Documentation**](https://ooi.sencort.com/)
 
 <br />
 
