@@ -1,186 +1,183 @@
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
+<center>
 
-<!-- PROJECT LOGO -->
+<a name="top"></a>
+
+[![Generic badge](https://img.shields.io/badge/Version-0.1.1-green.svg)](https://shields.io/) [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity) [![Maintaner](https://img.shields.io/badge/Maintainer-teniryte-blue)](https://img.shields.io/badge/maintainer-teniryte-blue) [![Website shields.io](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](https://ooi.sencort.com/) [![made-with-Markdown](https://img.shields.io/badge/Made%20with-Markdown-1f425f.svg)](http://commonmark.org) [![made-for-VSCode](https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg)](https://code.visualstudio.com/) [![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/Naereen/StrapDown.js/blob/master/LICENSE) [![Profile views](https://gpvc.arturio.dev/teniryte)](https://gpvc.arturio.dev/teniryte) [![GitHub contributors](https://img.shields.io/github/contributors/teniryte/ooi.svg)](https://GitHub.com/teniryte/ooi/graphs/contributors/) [![GitHub issues](https://img.shields.io/github/issues/teniryte/ooi.svg)](https://GitHub.com/teniryte/ooi/issues/)
+[![GitHub forks](https://img.shields.io/github/forks/teniryte/ooi.svg?style=social&label=Fork&maxAge=2592000)](https://GitHub.com/teniryte/ooi/network/) [![GitHub stars](https://img.shields.io/github/stars/teniryte/ooi.svg?style=social&label=Star&maxAge=2592000)](https://GitHub.com/teniryte/ooi/stargazers/) [![GitHub watchers](https://img.shields.io/github/watchers/teniryte/ooi.svg?style=social&label=Watch&maxAge=2592000)](https://GitHub.com/teniryte/ooi/watchers/) [![GitHub followers](https://img.shields.io/github/followers/teniryte.svg?style=social&label=Follow&maxAge=2592000)](https://github.com/teniryte?tab=followers)
+
 <br />
-<p align="center">
-  <a href="https://github.com/teniryte/ooi">
-    <img src="https://cdn.sencort.com/icons/sencort/logo.png" alt="Logo" width="80" height="80">
-  </a>
 
-  <h3 align="center">OOI</h3>
+<a href="https://github.com/teniryte/ooi" class="logo">
+  <img src="https://cdn.sencort.com/icons/sencort/logo.png" alt="Logo" width="140" height="140" style="border-radius: 10px" />
+</a>
 
-  <p align="center">
-    JavaScript Utility & Tools Library
-    <br />
-    <a href="https://teniryte.github.io/ooi/"><strong>Explore the docs »</strong></a>
-    <br />
-    <a href="https://github.com/teniryte/ooi/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/teniryte/ooi/issues">Request Feature</a>
-  </p>
-</p>
+## **OOI**
 
-<!-- TABLE OF CONTENTS -->
-<details open="open">
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-    </li>
-    <li>
-      <a href="#getting-started">Installation</a>
-    </li>
-    <li>
-      <a href="#docs">Documentation</a>
-    </li>
-    <li>
-      <a href="#cli">CLI</a>
-    </li>
-    <li>
-      <a href="#testing">Testing</a>
-    </li>
-  </ol>
-</details>
+**JavaScript Utility & Tools Library**
 
+## [**🚀 Open Full Documentation**](./list.html)
 
+<br />
 
-<!-- ABOUT THE PROJECT -->
-## About The Project
+[**🔸 Home**](./index.html) [**🔸 Report Bug**](https://github.com/teniryte/ooi) [**🔸 Request Feature**](https://github.com/teniryte/ooi/issues)
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+</center>
 
-There are many great README templates available on GitHub, however, I didn't find one that really suit my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
+<br />
 
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should element DRY principles to the rest of your life :smile:
+## ⏹️ Table of Contents <a href="#top">▲</a>
 
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have have contributed to expanding this template!
+- [⏹️ Features](#features)
+- [⏹️ Installation](#installation)
+- [⏹️ Import ooi-modules by `.ooi` text file](#import)
+- [⏹️ Documentation](#documentation)
+- [⏹️ CLI](#cli)
+- [⏹️ Testing](#testing)
 
-A list of commonly used resources that I find helpful are listed in the acknowledgements.
+<br />
 
-### Built With
+## ⏹️ Features<a href="#top">▲</a>
 
-This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-* [Bootstrap](https://getbootstrap.com)
-* [JQuery](https://jquery.com)
-* [Laravel](https://laravel.com)
+- [**Common JavaScript Utilities**](./list.html#tags-common). **ooi** provides some useful functions and classes to make some specific operations more reusable. Working with objects, arrays, collections, convertation, events, formatting, meta-data and types.
+- [**Node.js Tools**](./list.html#tags-node). Some useful methods to simplify certain node.js operations.
+- [**DOM Utilities & Tools**](./list.html#tags-dom). Get, create and modify DOM elements, working with DOM-events and so on.
+- [**Polyfills**](./list.html#tags-polyfills). Contains some useful polyfills.
 
+<br />
 
+## ⏹️ Installation <a href="#top">▲</a>
 
-<!-- GETTING STARTED -->
-## Getting Started
+**Installation as local package:**
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+```sh
+npm i --save ooi;
+```
 
-### Prerequisites
+**Using the Hole Library:**
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+```javascript
+import ooi from 'ooi';
 
-### Installation
+let arr = [1, 2, 3];
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/your_username_/Project-Name.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```JS
-   const API_KEY = 'ENTER YOUR API';
-   ```
+ooi.append(arr, 4, 5, 6);
 
+[1, 2, 3, 4, 5, 6].forEach(num => {
+  console.log(num);
+});
 
+console.log(arr);
+```
 
-<!-- USAGE EXAMPLES -->
-## Usage
+<br />
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+## ⏹️ Import ooi-modules by `.ooi` text file <a href="#top">▲</a>
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+**File `util.ooi`:**
 
+```txt
+each
+extend
+flatten
+class-meta
+plural
+isArray: $isarray
+sse: ./util/sse.js
+```
 
+**Install plugin `esbuild-import-plugin`:**
 
-<!-- ROADMAP -->
-## Roadmap
+```sh
+npm i --save esbuild-import-plugin;
+```
 
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a list of proposed features (and known issues).
+**Plug it:**
 
+```js
+const importPlugin = require('esbuild-import-plugin');
 
+esbuild
+  .build({
+    entryPoints: ['./src/index.js'],
+    bundle: true,
+    outfile: './dist/app/app.js',
+    loader: {
+      '.js': 'jsx'
+    },
+    sourcemap: true,
+    target: ['chrome58', 'firefox57', 'safari11', 'edge16'],
+    define: {
+      'process.env.NODE_ENV': '"development"'
+    },
+    plugins: [
+      // Here!
+      importPlugin
+    ]
+  })
+  .then(() => console.log('Builded!'))
+  .catch(err => console.log(err));
+```
 
-<!-- CONTRIBUTING -->
-## Contributing
+**Now you can import file `util.ooi` from esbuild module:**
 
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+```js
+import util from './util.ooi';
 
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+util.each([1, 2, 3], (n, i) => console.log(n, i));
+```
 
+<br />
 
+## ⏹️ Documentation <a href="#top">▲</a>
 
-<!-- LICENSE -->
-## License
+### 🎟️ [**Explore Full Utils List**](./list.html)
 
-Distributed under the MIT License. See `LICENSE` for more information.
+**Sections**:
 
+- [Arrays](./list.html#section-arrays)
+- [Collections](./list.html#section-collections)
+- [Convert](./list.html#section-convert)
+- [Events](./list.html#section-events)
+- [Format](./list.html#section-format)
+- [Meta](./list.html#section-meta)
+- [Objects](./list.html#section-objects)
+- [Util](./list.html#section-util)
 
+<br />
 
-<!-- CONTACT -->
-## Contact
+## ⏹️ CLI <a href="#top">▲</a>
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+**Install ooi as CLI:**
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+```sh
+sudo npm install --global ooi;
+```
 
+**Compile library for client:**
 
+```sh
+ooi compile
+  -s objects collections
+  -t fn objects
+  -min
+  -o assets/js/lib/ooi.min.js;
+```
 
-<!-- ACKNOWLEDGEMENTS -->
-## Acknowledgements
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Img Shields](https://shields.io)
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Pages](https://pages.github.com)
-* [Animate.css](https://daneden.github.io/animate.css)
-* [Loaders.css](https://connoratherton.com/loaders)
-* [Slick Carousel](https://kenwheeler.github.io/slick)
-* [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll)
-* [Sticky Kit](http://leafo.net/sticky-kit)
-* [JVectorMap](http://jvectormap.com)
-* [Font Awesome](https://fontawesome.com)
+**Pack ooi as JS-module:**
 
+```sh
+cli pack
+  -s objects collections
+  -t fn objects
+  -o src/lib/ooi.js
+```
 
+<br />
 
+## ⏹️ Testing <a href="#top">▲</a>
 
+**Test all utilities:**
 
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
-[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
-[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
-[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/othneildrew
-[product-screenshot]: images/screenshot.png
+```sh
+npm test;
+```
