@@ -30,7 +30,7 @@ jobs:
       - run: npm ci
       - run: npm publish
         env:
-          NODE_AUTH_TOKEN: c1fa1f73-35e5-480f-8265-e6e8a931ca9d
+          NODE_AUTH_TOKEN: ad33d160-50ae-447d-a45a-15cd678cd81a
 
   publish-gpr:
     needs: build
