@@ -6,19 +6,17 @@
 
 <br />
 
-> [![Logo](https://cdn.sencort.com/icons/sencort/logo.png)](https://github.com/teniryte/ooi)
+[![Logo](https://cdn.sencort.com/icons/ooi/ooi.png)](https://github.com/teniryte/ooi)
 
 ## **OOI**
 
 **JavaScript Utility & Tools Library**
 
-## [**🚀 Open Full Documentation**](./list.html)
+## [**🚀 Open Full Documentation**](https://ooi.sencort.com/list.html)
 
 <br />
 
-[**🔸 Home**](./index.html) [**🔸 Report Bug**](https://github.com/teniryte/ooi) [**🔸 Request Feature**](https://github.com/teniryte/ooi/issues)
-
-</p>
+[**🔸 Home**](https://ooi.sencort.com/index.html) [**🔸 Report Bug**](https://github.com/teniryte/ooi) [**🔸 Request Feature**](https://github.com/teniryte/ooi/issues)
 
 <br />
 
@@ -35,10 +33,10 @@
 
 ## ⏹️ Features<a href="#top">▲</a>
 
-- [**Common JavaScript Utilities**](./list.html#tags-common). **ooi** provides some useful functions and classes to make some specific operations more reusable. Working with objects, arrays, collections, convertation, events, formatting, meta-data and types.
-- [**Node.js Tools**](./list.html#tags-node). Some useful methods to simplify certain node.js operations.
-- [**DOM Utilities & Tools**](./list.html#tags-dom). Get, create and modify DOM elements, working with DOM-events and so on.
-- [**Polyfills**](./list.html#tags-polyfills). Contains some useful polyfills.
+- [**Common JavaScript Utilities**](https://ooi.sencort.com/list.html#tags-common). **ooi** provides some useful functions and classes to make some specific operations more reusable. Working with objects, arrays, collections, convertation, events, formatting, meta-data and types.
+- [**Node.js Tools**](https://ooi.sencort.com/list.html#tags-node). Some useful methods to simplify certain node.js operations.
+- [**DOM Utilities & Tools**](https://ooi.sencort.com/list.html#tags-dom). Get, create and modify DOM elements, working with DOM-events and so on.
+- [**Polyfills**](https://ooi.sencort.com/list.html#tags-polyfills). Contains some useful polyfills.
 
 <br />
 
@@ -127,18 +125,18 @@ util.each([1, 2, 3], (n, i) => console.log(n, i));
 
 ## ⏹️ Documentation <a href="#top">▲</a>
 
-### 🎟️ [**Explore Full Utils List**](./list.html)
+### 🎟️ [**Explore Full Utils List**](https://ooi.sencort.com/list.html)
 
 **Sections**:
 
-- [Arrays](./list.html#section-arrays)
-- [Collections](./list.html#section-collections)
-- [Convert](./list.html#section-convert)
-- [Events](./list.html#section-events)
-- [Format](./list.html#section-format)
-- [Meta](./list.html#section-meta)
-- [Objects](./list.html#section-objects)
-- [Util](./list.html#section-util)
+- [Arrays](https://ooi.sencort.com/list.html#section-arrays)
+- [Collections](https://ooi.sencort.com/list.html#section-collections)
+- [Convert](https://ooi.sencort.com/list.html#section-convert)
+- [Events](https://ooi.sencort.com/list.html#section-events)
+- [Format](https://ooi.sencort.com/list.html#section-format)
+- [Meta](https://ooi.sencort.com/list.html#section-meta)
+- [Objects](https://ooi.sencort.com/list.html#section-objects)
+- [Util](https://ooi.sencort.com/list.html#section-util)
 
 <br />
 
