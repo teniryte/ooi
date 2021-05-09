@@ -1,7 +1,7 @@
 {
-  "name": "ooi",
+  "name": "@teniryte/ooi",
   "description": "JavaScript Utility & Tools Library",
-  "version": "0.1.36",
+  "version": "0.1.37",
   "keywords": [
     "tools",
     "utilities",
