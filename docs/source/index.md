@@ -18,10 +18,7 @@
 
 <!-- Logo ================================================================== -->
 
-<br />
-
 <div class="section section--header" data-a="top">
-
 <a href="https://github.com/teniryte/ooi" class="logo">
   <img src="https://cdn.sencort.com/icons/sencort/logo.png" alt="Logo" width="140" height="140">
 </a>
@@ -33,24 +30,28 @@
     JavaScript Utility & Tools Library
   </p>
 
-<!-- {{DEL_START}} -->
-
   <br />
 
+  <!-- {{DEL_START}} -->
+
   <p class="section--header__button">
-    <a class="large-button" href="https://ooi.sencort.com/list.html">
-      <strong>Explore Full Utils List 🚀</strong>
+    <a class="large-button" href="./list.html">
+      <strong><i class="fas fa-list"></i> Explore Full Utils List</strong>
     </a>
   </p>
 
+  <!-- {{DEL_END}} -->
+
   <p>
-    <a href="https://github.com/teniryte/ooi/issues">🐛 Report Bug</a>
-    <span> 🔸 </span>
-    <a href="https://github.com/teniryte/ooi/issues">🌱 Request Feature</a>
+    <a href="./index.html"><i class="fas fa-home"></i> Home</a>
+    <span> 🔹 </span>
+    <a href="https://github.com/teniryte/ooi"><i class="fas fa-bug"></i> Report Bug</a>
+    <span> 🔹 </span>
+    <a href="https://github.com/teniryte/ooi/issues"><i class="fas fa-check-double"></i> Request Feature</a>
   </p>
 </p>
 
-<!-- {{DEL_END}} -->
+
 
 </div>
 

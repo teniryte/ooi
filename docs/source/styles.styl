@@ -1,105 +1,116 @@
 @import './variables.styl';
 
 body
-	display: block !important;
-	margin: 0 !important;
-	padding: 0 !important;
+	display: block;
+	margin: 0;
+	padding: 0;
 	font-family: $font-family;
-	// background-image: url('https://cdn.sencort.com/ooi/images/bg/city-buildings-up-lens.jpg') !important;
+	// background-image: url('https://cdn.sencort.com/ooi/images/bg/city-buildings-up-lens.jpg');
 	background-color: #fff;
 	background-attachment: fixed;
+	background-image: url('https://cdn.sencort.com/ooi/images/bg/sports.png');
+
+a i.fa, a i.fas
+	color: #F2994A;
+
+i.fa, i.fas
+	dosplay: inline-block;
+	margin-right: 0.26em;
 
 .markdown-body img
-	max-width: none !important;
+	max-width: none;
 
 a.large-button
-	padding: 15px 20px !important;
-	background-color: #009e54 !important;
+	padding: 15px 20px;
+	background-color: #009e54;
 	color: #fff !important;
-	font-size: 1.2em !important;
-	font-weight: 500 !important;
-	display: inline-block !important;
-	border-radius: 5px !important;
-	transition: 0.3s background-color !important;
+	font-size: 1.2em;
+	font-weight: 500;
+	display: inline-block;
+	border-radius: 5px;
+	transition: 0.3s background-color;
 
 	&:hover
-		background-color: #ff8929 !important;
+		background-color: #F2994A;
+
+		i.fa, i.fas
+			color: #fff !important;
 	
 	&--secondary
-		background-color: lighten(#ECEFF1, 80%) !important;
-		color: #263238 !important;
-		font-size: 1.1em !important;
-		padding: 10px 15px 15px 15px !important;
-		border-left: 3px solid #ff8929 !important;
+		background-color: lighten(#ECEFF1, 80%);
+		color: #263238;
+		font-size: 1.1em;
+		padding: 10px 15px 15px 15px;
+		border-left: 3px solid #F2994A;
 
 .markdown-body
-	padding-top: $header-margin !important;
+	padding-top: $header-margin;
 
-	code
-		margin-bottom: 0 !important;
-		font-family: 'Fira Code', 'Hack', 'Menlo', 'Consolas', monospace !important;
-		font-size: 14px !important;
-		line-height: 1.2em !important;
-		background: #ECEFF1 !important;
+	// code
+	// 	margin-bottom: 0;
+	// 	font-family: 'Fira Code', 'Hack', 'Menlo', 'Consolas', monospace;
+	// 	font-size: 14px;
+	// 	line-height: 1.2em;
+	// 	background: #ECEFF1;
 
 .forum-teniryte
-	font-family: $font-family !important;
-	font-weight: $font-weight !important;
-	font-size: $font-size !important;
-	padding: $header-margin !important;
-	margin: $header-margin !important;
-	background-color: transparentify(#fff, 85%) !important;
-	border-radius: 5px !important;
-	background-image: linear-gradient(#ECEFF1, #CFD8DC) !important;
-	width: 1300px !important;
-	margin-left: auto !important;
-	margin-right: auto !important;
+	font-family: $font-family;
+	font-weight: $font-weight;
+	font-size: $font-size;
+	padding: $header-margin;
+	margin: $header-margin;
+	background-color: transparentify(#fff, 85%);
+	width: 1300px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 1px solid lighten(#eee, 0%);
+	border-radius: 5px;
 
 	.marker
-		font-size: 0.8em !important;
-		position: relative !important;
-		bottom: 1px !important;
-		color: #607D8B !important;
+		font-size: 0.8em;
+		position: relative;
+		bottom: 1px;
+		color: #607D8B;
 
 	p:first-of-type, p:nth-of-type(2)
-		display: flex !important;
-		justify-content: space-between !important;
-		margin: auto !important;
+		display: flex;
+		justify-content: space-between;
+		margin: auto;
 		
 		a
-			margin: 10px !important;
+			margin: 10px;
 			// transform: scale(1.3, 1.3);
 	
 	.section--header__slogan
-		width: auto !important;
+		width: auto;
 	
 	p:first-of-type
 
 		a
 
 			img
-				// width: 106px !important;
-				// height: 20px !important;
+				// width: 106px;
+				// height: 20px;
 
 	p:nth-of-type(2)
-		justify-content: center !important;
+		justify-content: center;
 
 	.contents
 
 		a
 
 			em
-					display: inline-block !important;
-					margin-right: 3px !important;
-					font-style: normal !important;
+					display: inline-block;
+					margin-right: 3px;
+					font-style: normal;
 
 	a
 		color: #0087e0;
-		font-weight: 500 !important;
+		font-weight: 500;
 
 		&:hover
-			text-decoration: none !important;
-			color: #ff8929;
+			text-decoration: none;
+			color: #F2994A;
 
 	.section--header
 
@@ -110,99 +121,100 @@ a.large-button
 			font-size: 3em;
 	
 	.section--miniheader
+		//
 
 		img
 			border-radius: 10px;
 		
 		h3
 			font-size: 2em;
+			margin-top: 0;
 	
 	.section
-		font-family: $font-family !important;
-		font-weight: $font-weight !important;
-		font-size: $font-size !important;
-		padding: 30px !important;
-		margin: $header-margin !important;
-		background-color: lighten(#eee, 60%) !important;
-		border: 1px solid lighten(#eee, 20%) !important;
-		border-radius: 5px !important;
-		// background-image: linear-gradient(#ECEFF1, #CFD8DC) !important;
-		background-image: url('https://cdn.sencort.com/ooi/images/bg/sports.png') !important;
+		font-family: $font-family;
+		font-weight: $font-weight;
+		font-size: $font-size;
+		padding: 20px;
+		margin: $header-margin;
+		background-color: lighten(#eee, 20%);
+		border: 1px solid #CFD8DC;
+		border-radius: 5px;
+		// background-image: linear-gradient(#ECEFF1, #CFD8DC);
 
 		&--header
-			text-align: center !important;
+			text-align: center;
 
 			strong
-				font-size: 1.1em !important;
+				font-size: 1.1em;
 			
 			&__slogan
-				font-size: 1.4em !important;
+				font-size: 1.4em;
 	
 	ul
-		margin-left: 30px !important;
+		margin-left: 30px;
 
   // Top Line ==================================================================
 
 	h2
-		color: #263238 !important;
-		font-weight: 500 !important;
-		margin-bottom: 20px !important;
-		margin-top: 0 !important;
-		padding: 1em 1.1em 0.85em 1.1em !important;
-		border-radius: 5px !important;
-		background-color: lighten(#eee, 20%) !important;
-		border: 1px solid lighten(#ccc, 60%) !important;
-		font-size: 1.2em !important;
+		color: #263238;
+		font-weight: 500;
+		margin-bottom: 20px;
+		margin-top: 0;
+		padding: 1em 1.1em 0.85em 1.1em;
+		border-radius: 5px;
+		background-color: lighten(#eee, 20%);
+		border: 1px solid lighten(#ccc, 60%);
+		font-size: 1.2em;
 
 		em
-			display: inline-block !important;
-			margin-right: 20px !important;
-			font-style: normal !important;
+			display: inline-block;
+			margin-right: 20px;
+			font-style: normal;
 		
 		a
-			opacity: 0.2 !important;
-			color: #78909C !important;
-			position: relative !important;
-			bottom: 1px !important;
+			opacity: 0.2;
+			color: #78909C;
+			position: relative;
+			bottom: 1px;
 
 			&:hover
-				opacity: 0.5 !important;
-				color: #78909C !important;
+				opacity: 0.5;
+				color: #78909C;
 
 	h1
-		font-family: $font-family !important;
-		color: $text-color !important;
-		font-weight: $font-weight !important;
-		font-size: $header-font-size !important;
-		padding-bottom: $header-margin !important;
-		margin-bottom: $header-margin !important;
+		font-family: $font-family;
+		color: $text-color;
+		font-weight: $font-weight;
+		font-size: $header-font-size;
+		padding-bottom: $header-margin;
+		margin-bottom: $header-margin;
 
 		em
-			color: #546e7a !important;
-			font-weight: 500 !important;
-			font-style: normal !important;
-			background-color: #eceff1 !important;
-			border-radius: 5px !important;
+			color: #546e7a;
+			font-weight: 500;
+			font-style: normal;
+			background-color: #eceff1;
+			border-radius: 5px;
 
 	blockquote
-		text-decoration: none !important;
-		border: none !important;
-		font-style: normal !important;
-		font-size: 0.8em !important;
-		font-weight: 400 !important;
-		margin-bottom: 10px !important;
-		background-color: $light-bg !important;
-		border-radius: $border-radius !important;
-		padding: $badge-padding !important;
-		padding-left: 20px !important;
-		border-left: 3px solid #B0BEC5 !important;
-		transition: 0.3s margin-left, 0.3s padding-left !important;
+		text-decoration: none;
+		border: none;
+		font-style: normal;
+		font-size: 0.8em;
+		font-weight: 400;
+		margin-bottom: 10px;
+		background-color: $light-bg;
+		border-radius: $border-radius;
+		padding: $badge-padding;
+		padding-left: 20px;
+		border-left: 3px solid #B0BEC5;
+		transition: 0.3s margin-left, 0.3s padding-left;
 
 		&:hover
-			margin-left: 30px !important;
-			padding-left: 30px !important;
+			margin-left: 30px;
+			padding-left: 30px;
 
 		a
-			text-decoration: none !important;
-			color: #78909c !important;
-			display: flex !important;
+			text-decoration: none;
+			color: #78909c;
+			display: flex;

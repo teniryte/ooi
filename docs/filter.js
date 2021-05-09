@@ -17,8 +17,9 @@
 
     getDocsCount(section) {
       return document.querySelectorAll(
-        `.ooi-section-wrapper[data-name="${section}"] .ooi-contents__doc`
-      ).length;
+          `.ooi-section-wrapper[data-name="${section}"] .ooi-contents__doc`
+        )
+        .length;
     }
 
     getSectionsNames() {
@@ -26,17 +27,20 @@
     }
 
     updateSections() {
-      this.getSectionsNames().forEach(section => {
-        if (!this.getDocsCount(section)) {
-          document.querySelector(
-            `.ooi-section-wrapper[data-name="${section}"]`
-          ).style.display = 'none';
-        } else {
-          document.querySelector(
-            `.ooi-section-wrapper[data-name="${section}"]`
-          ).style.display = 'block';
-        }
-      });
+      this.getSectionsNames()
+        .forEach(section => {
+          if (!this.getDocsCount(section)) {
+            document.querySelector(
+                `.ooi-section-wrapper[data-name="${section}"]`
+              )
+              .style.display = 'none';
+          } else {
+            document.querySelector(
+                `.ooi-section-wrapper[data-name="${section}"]`
+              )
+              .style.display = 'block';
+          }
+        });
     }
 
     showAll() {
@@ -63,14 +67,17 @@
 
     getSectionDocsCount(name) {
       return document
-        .querySelector(`.ooi-contents__sections__section[data-name="${name}"]`)
+        .querySelector(
+          `.ooi-contents__sections__section[data-name="${name}"]`)
         .parentElement.parentElement.parentElement.querySelectorAll(
           '.ooi-contents__doc'
-        ).length;
+        )
+        .length;
     }
 
     findDocs(value) {
-      let words = value.toLowerCase().split(' '),
+      let words = value.toLowerCase()
+        .split(' '),
         matched = [],
         notMatched = [];
       this.docs.forEach(doc => {
@@ -90,7 +97,11 @@
       let sections = Array.from(
         new Set(matched.map(doc => doc.elem.dataset.section))
       );
-      return { matched, notMatched, sections };
+      return {
+        matched,
+        notMatched,
+        sections
+      };
     }
 
     findParent(elem, selector) {
@@ -111,24 +122,37 @@
     }
 
     loadDocs() {
-      let elems = Array.from(document.querySelectorAll('.ooi-contents__doc')),
+      let elems = Array.from(document.querySelectorAll(
+          '.ooi-contents__doc')),
         docs = elems.map(elem => {
-          let name = elem.querySelector('.ooi-contents__doc__header__name')
-              .innerHTML,
+          let name = elem.querySelector(
+              '.ooi-contents__doc__header__name')
+            .innerHTML,
             type = elem.querySelector('.ooi-contents__doc__header__type')
-              .innerHTML,
-            desc = elem.querySelector('.ooi-contents__doc__desc').innerHTML,
-            code = elem.querySelector('.ooi-contents__doc__code').innerHTML,
+            .innerHTML,
+            desc = elem.querySelector('.ooi-contents__doc__desc')
+            .innerHTML,
+            code = elem.querySelector('.ooi-contents__doc__code')
+            .innerHTML,
             section = elem.dataset.section,
             parent = elem.parentElement,
             key = `${type} ${name} ${desc} ${code}`;
-          return { elem, type, desc, code, key, parent, section };
+          return {
+            elem,
+            type,
+            desc,
+            code,
+            key,
+            parent,
+            section
+          };
         });
       this.docs = docs;
       return docs;
     }
 
     setEvents() {
+      if (!this.filterElement) return;
       this.filterElement.addEventListener(
         'keyup',
         ev => {
@@ -136,6 +160,13 @@
         },
         false
       );
+      window.onDocClick = (self) => {
+        self.dataset.expanded = self.dataset.expanded === 'true' ?
+          'false' :
+          'true';
+        // window.activeDoc ? window.activeDoc.dataset.expanded = 'false' : '';
+        // window.activeDoc = self;
+      };
     }
   }
 

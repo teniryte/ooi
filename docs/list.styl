@@ -1,3 +1,16 @@
+applyBadge()
+  font-size: 18px;
+  font-weight: 500;
+  // margin-left: 58px;
+  color: #546E7A;
+  font-weight: 400;
+  font-size: 0.9em;
+  border-radius: 4px;
+  padding: 6px 12px 8px 12px;
+  background-color: lighten(#ECEFF1, 0);
+  margin-top: 10px;
+  border: 1px solid #CFD8DC;
+
 .markdown-body
 
   .forum-teniryte
@@ -5,132 +18,149 @@
     .ooi-filter
 
       input
-        font-family: 'Helvetica Neue', 'HelveticaNeueCyr', 'Roboto', 'Open Sans', 'Helvetica', 'Arial', sans-serif !important;
+        font-family: 'Helvetica Neue', 'HelveticaNeueCyr', 'Roboto', 'Open Sans', 'Helvetica', 'Arial', sans-serif;
         // background: rgba(255,255,255,.1);
-        background: #fff !important;
+        background: #fff;
         // border: 1px solid transparent;
-        border: 1px solid #CFD8DC !important;
-        border-radius: 2px !important;
-        font-size: 17px !important;
-        margin: 0 !important;
-        outline: 0 !important;
-        padding: 0.7em 1em 0.7em 1em !important;
-        width: 100% !important;
-        box-sizing: border-box !important;
-        -webkit-box-sizing: border-box !important;
-        -moz-box-sizing: border-box !important;
-        color: #455A64 !important;
-        color: #333 !important;
-        -webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset !important;
-        box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset !important;
-        font-weight: 400 !important;
+        border: 1px solid #CFD8DC;
+        border-radius: 2px;
+        font-size: 17px;
+        margin: 0;
+        outline: 0;
+        padding: 0.7em 1em 0.7em 1em;
+        width: 100%;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        color: #455A64;
+        color: #333;
+        -webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+        box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+        font-weight: 400;
 
         &:focus
-          background: #fff !important;
-          border-color: #48CFAD !important;
-          border-color:  #78909C !important;
+          background: #fff;
+          border-color: #48CFAD;
+          border-color:  #78909C;
 
         &[disabled]
-          background: lighten(#CFD8DC, 50%) !important;
+          background: lighten(#CFD8DC, 50%);
 
+    .ooi-doc
+      padding: 20px;
     
     .ooi-contents
 
       &__sections
 
         .large-button
-          min-width: 300px !important;
-          margin-bottom: 20px !important;
-          margin: 10px !important;
+          min-width: 300px;
+          margin-bottom: 20px;
+          margin: 10px;
 
         &__section
+          color: #fff !important;
 
           &__desc
-            font-size: 18px !important;
-            font-weight: 500 !important;
-            margin-left: 58px !important;
+            font-size: 16px;
+            margin-left: 58px;
 
           &__docs
 
             .ooi-contents__doc
-              min-width: 300px !important;
+              min-width: 300px;
+              selection: none;
+              border: none !important;
+              border-left: 3px solid #F2994A !important;
+
+              &:hover
+                background-color: #fff !important;
+                // border: 1px solid #F2994A !important;
+                border-left: 3px solid #2D9CDB !important;
 
               .ooi-contents__doc__deps
-                display: none !important;
-                margin-top: 10px !important;
-                color: #546E7A !important;
-                font-weight: 400 !important;
-                font-size: 0.9em !important;
-                border-radius: 4px !important;
-                padding: 6px 12px 8px 12px !important;
-                background-color: #fff !important;
-                margin-top: 10px !important;
-                // border: 1px solid lighten(#B0BEC5, 50%) !important;
+                applyBadge();
+                display: none;
+                margin-top: 10px;
+                color: #546E7A;
+                font-weight: 400;
+                font-size: 0.9em;
+                border-radius: 4px;
+                padding: 6px 12px 8px 12px;
+                background-color: #fff;
+                margin-top: 10px;
+                // border: 1px solid lighten(#B0BEC5, 50%);
 
               &[data-expanded="true"]
-                display: block !important;
-                margin-bottom: 20px !important;
+                display: block;
+                margin-bottom: 20px;
 
                 .ooi-contents__doc__deps
-                  display: block !important;
+                  display: block;
               
               .ooi-contents__doc__file
-                display: none !important;
-                margin-top: 10px !important;
-                color: #546E7A !important;
-                font-weight: 400 !important;
-                font-size: 0.9em !important;
-                border-radius: 4px !important;
-                padding: 6px 12px 8px 12px !important;
-                background-color: #fff !important;
-                margin-top: 10px !important;
-                // border: 1px solid lighten(#B0BEC5, 50%) !important;
+                applyBadge();
+                display: none;
+                margin-top: 10px;
+                color: #546E7A;
+                font-weight: 400;
+                font-size: 0.9em;
+                border-radius: 4px;
+                padding: 6px 12px 8px 12px;
+                background-color: #fff;
+                margin-top: 10px;
+                // border: 1px solid lighten(#B0BEC5, 50%);
 
               &[data-expanded="true"]
-                display: block !important;
-                margin-bottom: 20px !important;
+                display: block;
+                margin-bottom: 20px;
 
                 .ooi-contents__doc__file
-                  display: block !important;
+                  display: block;
 
               .ooi-contents__doc__code
-                display: none !important;
-                margin-top: 10px !important;
-                // border: 1px solid lighten(#B0BEC5, 50%) !important;
+                display: none;
+                margin-top: 10px;
+                // border: 1px solid lighten(#B0BEC5, 50%);
                 
                 pre
-                  margin-bottom: 0 !important;
-                  font-family: 'Fira Code', 'Hack', 'Menlo', 'Consolas', monospace !important;
-                  font-size: 14px !important;
-                  line-height: 1.2em !important;
-                  background: #333 !important;
+                  margin-bottom: 0;
+                  font-family: 'Fira Code', 'Hack', 'Menlo', 'Consolas', monospace;
+                  font-size: 14px;
+                  line-height: 1.2em;
+                  background: #333;
 
               &[data-expanded="true"]
-                display: block !important;
-                margin-bottom: 20px !important;
+                display: block;
+                margin-bottom: 20px;
 
                 .ooi-contents__doc__code
-                  display: block !important;
+                  display: block;
 
               &__header
-                display: flex !important;
+                display: flex;
+                align-items: center;
+
+                & > *
+                  display: block;
+
 
                 &__type
-                  opacity: 0.7 !important;
-                  font-weight: 400 !important;
-                  display: block !important;
-                  margin-right: 5px !important;
-                  font-style: italic !important;
+                  opacity: 0.7;
+                  font-weight: 400;
+                  display: block;
+                  margin-right: 5px;
+                  font-style: italic;
+                  position: relative;
+                  top: 2px;
                 
                 &__name
-                  font-weight: 600 !important;
-                  color: #263238 !important;
+                  font-weight: 600;
+                  color: #263238;
+
+                  strong
+                    color: #0087e0;
+                    font-size: 1.2em;
 
               &__desc
-                color: #546E7A !important;
-                font-weight: 400 !important;
-                font-size: 0.9em !important;
-                border-radius: 4px !important;
-                padding: 6px 12px 8px 12px !important;
-                background-color: #fff !important;
-                margin-top: 10px !important;
+                applyBadge();

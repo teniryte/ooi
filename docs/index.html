@@ -24,14 +24,12 @@
           type="text/css"
           media="all"
           href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/monokai.min.css" />
+          <script src="https://kit.fontawesome.com/479ba04dd7.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/languages/javascript.min.js"></script>
         <script>
-          document.addEventListener('.markdown-body DOMContentLoaded', (event) => {
+          document.addEventListener('DOMContentLoaded', (event) => {
             document.querySelectorAll('pre code').forEach((block) => {
-              hljs.highlightBlock(block);
-            });
-            document.querySelectorAll('.markdown-body code').forEach((block) => {
               hljs.highlightBlock(block);
             });
           });
@@ -57,7 +55,6 @@
         <a href="https://GitHub.com/teniryte/ooi/watchers/"><img src="https://img.shields.io/github/watchers/teniryte/ooi.svg?style=social&amp;label=Watch&amp;maxAge=2592000" alt="GitHub watchers" /></a><br />
         <a href="https://github.com/teniryte?tab=followers"><img src="https://img.shields.io/github/followers/teniryte.svg?style=social&amp;label=Follow&amp;maxAge=2592000" alt="GitHub followers" /></a></p>
         <!-- Logo ================================================================== -->
-        <br />
         <div class="section section--header"> <a name="top"></a>
         <a href="https://github.com/teniryte/ooi" class="logo">
           <img src="https://cdn.sencort.com/icons/sencort/logo.png" alt="Logo" width="140" height="140">
@@ -67,20 +64,22 @@
           <p class="section--header__slogan">
             JavaScript Utility & Tools Library
           </p>
-        <!-- {{DEL_START}} -->
           <br />
+          <!-- {{DEL_START}} -->
           <p class="section--header__button">
-            <a class="large-button" href="https://ooi.sencort.com/list.html">
-              <strong>Explore Full Utils List 🚀</strong>
+            <a class="large-button" href="./list.html">
+              <strong><i class="fas fa-list"></i> Explore Full Utils List</strong>
             </a>
           </p>
+          <!-- {{DEL_END}} -->
           <p>
-            <a href="https://github.com/teniryte/ooi/issues">🐛 Report Bug</a>
-            <span> 🔸 </span>
-            <a href="https://github.com/teniryte/ooi/issues">🌱 Request Feature</a>
+            <a href="./index.html"><i class="fas fa-home"></i> Home</a>
+            <span> 🔹 </span>
+            <a href="https://github.com/teniryte/ooi"><i class="fas fa-bug"></i> Report Bug</a>
+            <span> 🔹 </span>
+            <a href="https://github.com/teniryte/ooi/issues"><i class="fas fa-check-double"></i> Request Feature</a>
           </p>
         </p>
-        <!-- {{DEL_END}} -->
         </div>
         <!-- {{CODE}} -->
         <!-- {{DEL_START}} -->
