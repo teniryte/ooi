@@ -52,6 +52,7 @@
 
 - [Features](#features)
 - [Installation](#installation)
+- [Import ooi-modules by `.ooi` text file](#import)
 - [Documentation](#documentation)
 - [CLI](#cli)
 - [Testing](#testing)
@@ -99,6 +100,67 @@ ooi.append(arr, 4, 5, 6);
 });
 
 console.log(arr);
+```
+
+</div>
+
+<!-- Importing ============================================================= -->
+
+<div class="section" data-a="import">
+
+## <span class="marker">{{marker}}</span>Import ooi-modules by `.ooi` text file <a href="#top">▲</a>
+
+**File `util.ooi`:**
+
+```txt
+each
+extend
+flatten
+class-meta
+plural
+isArray: $isarray
+sse: ./util/sse.js
+```
+
+**Install plugin `esbuild-import-plugin`:**
+
+```sh
+npm i --save esbuild-import-plugin;
+```
+
+**Plug it:**
+
+```js
+const importPlugin = require('esbuild-import-plugin');
+
+esbuild
+  .build({
+    entryPoints: ['./src/index.js'],
+    bundle: true,
+    outfile: './dist/app/app.js',
+    loader: {
+      '.js': 'jsx'
+    },
+    sourcemap: true,
+    target: ['chrome58', 'firefox57', 'safari11', 'edge16'],
+    define: {
+      'process.env.NODE_ENV': '"development"'
+    },
+    plugins: [
+      // Here!
+      importPlugin
+    ]
+  })
+  .then(() => console.log('Builded!'))
+  .catch(err => console.log(err));
+```
+
+**Now you can import file `util.ooi` from esbuild module:**
+
+```js
+import util from './util.ooi';
+
+util.each([1, 2, 3], (n, i) => console.log(n, i));
 ```
 
 </div>
