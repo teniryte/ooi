@@ -23,7 +23,6 @@ const state = {
 };
 
 async function importLibrary(args, dir, importer) {
-  console.log('ARGS', { args, dir, importer });
   let paths = [],
     flags = args.map(arg => {
       arg = arg.replace('://', '///');
@@ -74,7 +73,6 @@ async function importLibrary(args, dir, importer) {
     wrapperFilename = tempfile('.js'),
     outputFilename = tempfile('.js'),
     wrapperCode = state.templates.wrapper({ modules });
-  console.log('MODULES', modules);
   fs.writeFileSync(wrapperFilename, wrapperCode);
   try {
     await esbuild.build({
