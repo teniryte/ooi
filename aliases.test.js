@@ -1,3 +1,6 @@
+// @ts-nocheck
+/* eslint-disable */
+
 const aliases = require('./aliases');
 
 describe('aliases', () => {

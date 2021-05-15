@@ -176,3 +176,10 @@ cli pack
 ```sh
 npm test;
 ```
+
+### DevPackages
+
+- `esbuild-styla-plugin`;
+- `esbuild-xyaml-plugin`;
+- `ooi`;
+- `styla`;

@@ -1,3 +1,8 @@
+// @ts-nocheck
+/* eslint-disable */
+
+
+
 const fn = require('./class-meta');
 
 class Person {
