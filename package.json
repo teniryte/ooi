@@ -1,7 +1,7 @@
 {
   "name": "ooi",
   "description": "JavaScript Utility & Tools Library",
-  "version": "0.1.51",
+  "version": "0.1.52",
   "keywords": [
     "tools",
     "utilities",
@@ -64,6 +64,6 @@
   },
   "dependencies": {},
   "engines": {
-    "node": ">14.0.0"
+    "node": ">8.0.0"
   }
 }
