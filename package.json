@@ -1,7 +1,7 @@
 {
   "name": "ooi",
   "description": "JavaScript Utility & Tools Library",
-  "version": "0.1.59",
+  "version": "0.1.60",
   "keywords": [
     "tools",
     "utilities",
@@ -42,16 +42,7 @@
   "bin": {
     "ooi": "node ./bin/ooi"
   },
-  "devDependencies": {},
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/teniryte/ooi.git"
-  },
-  "scripts": {
-    "test": "node ./node_modules/.bin/jest",
-    "docs": "node ./scripts/docs.js"
-  },
-  "dependencies": {
+  "devDependencies": {
     "axios": "^0.21.1",
     "chokidar": "^3.5.1",
     "esbuild": "^0.11.23",
@@ -62,16 +53,13 @@
     "sync-request": "^6.1.0",
     "tempfile": "^3.0.0"
   },
-  "deps": [
-    "axios",
-    "chokidar",
-    "esbuild",
-    "handlebars",
-    "html-minifier",
-    "jest",
-    "markdown-it",
-    "markdown-it-prettier",
-    "sync-request",
-    "tempfile"
-  ]
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/teniryte/ooi.git"
+  },
+  "scripts": {
+    "test": "node ./node_modules/.bin/jest",
+    "docs": "node ./scripts/docs.js"
+  },
+  "dependencies": {}
 }
