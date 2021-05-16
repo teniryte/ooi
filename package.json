@@ -1,7 +1,7 @@
 {
   "name": "ooi",
   "description": "JavaScript Utility & Tools Library",
-  "version": "0.1.60",
+  "version": "0.1.61",
   "keywords": [
     "tools",
     "utilities",
@@ -39,9 +39,6 @@
     "url": "https://github.com/teniryte/"
   },
   "main": "./index.js",
-  "bin": {
-    "ooi": "node ./bin/ooi"
-  },
   "devDependencies": {
     "axios": "^0.21.1",
     "chokidar": "^3.5.1",
