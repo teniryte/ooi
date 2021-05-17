@@ -1,5 +1,7 @@
 'use strict';
 
+require('./ipal');
+
 const strcase = require('./strcase');
 
 const ooi = (module.exports = {});
