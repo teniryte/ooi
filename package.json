@@ -1,7 +1,7 @@
 {
   "name": "ooi",
   "description": "JavaScript Utility & Tools Library",
-  "version": "0.1.62",
+  "version": "0.1.63",
   "keywords": [
     "tools",
     "utilities",
@@ -25,8 +25,9 @@
     "datetime"
   ],
   "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
+    "registry": "https://pm.cort.one/"
   },
+  "publish": true,
   "homepage": "https://github.com/teniryte/ooi",
   "bugs": {
     "url": "https://github.com/teniryte/ooi/issues",
